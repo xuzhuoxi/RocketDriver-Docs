@@ -2,4 +2,4 @@
 layout: default
 ---
 
-[README](./page/README.html).
+[README](./pages/README.html).
