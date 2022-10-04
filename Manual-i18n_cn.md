@@ -1,0 +1,64 @@
+---
+layout: default
+---
+### 3.国际化(i18n) - 轻量级国际化解决方案
+
+**JLGames.GameDriver.Actions.i18n** 提供了国际化模块全部的功能支持。
+
+#### 初始化
+
+按照以下流程，为您的项目配置国际化功能：
+
+1. 理清楚项目需要支持的国际化语言种类。
+   这里以 **英文[英文]** 、**中文[简体]**、**中文[繁体]** 举例。
+
+2. 准备国际化数据文件，如：
+   ![image](assets/img/i18n_1.png)
+   支持多个文件集，这里以两个文件集 **unity**、**rider** 举例。
+   
+3. 向注册表注册语言。
+   ![image](assets/img/i18n_6.png)
+   
+   + langName 与 langSuffix 建议一样。
+   
+   + default=true 时设置当前语言为默认语言。
+   
+4. 向注册表注册文件集加载信息
+   ![image](assets/img/i18n_7.png)
+
+   + fileKey 用于标识当前设置的文件集。
+   
+   + default=truej时设置当前文件集为默认文件集。
+
+5. 根据注册表，加载数据到管理器中。
+   `I18NManagerShared.Manager.LoadData();`
+   ![image](assets/img/i18n_8.png)
+   
+   如果在过去已经执行为加载数据，那您应该先清除旧数据：
+   `I18NManagerShared.Manager.ClearData();`
+   ![image](assets/img/i18n_9.png)
+
+#### 使用
+
++ 使用 I18NTMPText 组件，为TMP_Text增加国际化支持。
+  ![image](assets/img/i18n_3.png)
+  
+  + File Key 为注册文件集时的fileKey参数。
+  
+  + Auto Refresh 选中时，管理器重新加载数据后会自刷新。
+  
++ 使用 I18NText 组件，为Text增加国际化支持。
+  ![image](assets/img/i18n_2.png)
+  
+  + File Key 为注册文件集时的fileKey参数。
+  
+  + Auto Refresh 选中时，管理器重新加载数据后会自刷新。
+
++ 在代码中读取国际化数据。
+  `I18NManagerShared.Manager.GetValue(id, fileKey, lang);`
+  ![image](assets/img/i18n_10.png)
+  
+#### 示例
+
+  GameDriver/Samples/i18n
+  ![image](assets/img/i18n_4.png)

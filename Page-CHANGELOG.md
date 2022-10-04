@@ -1,7 +1,6 @@
 ﻿---
 layout: default
 ---
-
 # GameDriver Pro Changle Log
 
 + New: New Function.
