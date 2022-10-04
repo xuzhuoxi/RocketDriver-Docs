@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Getting Started
 
 #### 概述

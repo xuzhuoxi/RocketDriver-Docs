@@ -1,4 +1,8 @@
-﻿# GameDriver Pro Changle Log
+﻿---
+layout: default
+---
+
+# GameDriver Pro Changle Log
 
 + New: New Function.
 + BugFix: Bug Fix.
