@@ -28,7 +28,14 @@ GameDriver Pro中的源代码存放位置是有规律的。
 
 3. **GameDriver/Runtime/Games** 中的源码依赖于Core与Actions。 是游戏开发过程常用的系统功能的通用实现。
 
-### 1. 事件 - 高效的事件模块，支持Unity多线程
+<div class="indextophtml"></div>
+<script type="text/javascript">
+  $(document).ready(function () {
+  $('.indextophtml').load('./Manual-Event.html');
+  });
+</script>
+
+### 1. 事件(Event) - 高效的事件模块，支持Unity多线程
 
 事件采用“**监听**-**捕获**”机制，监听时支持捕获次数、 捕获优先级的设置。
 
@@ -88,19 +95,19 @@ GameDriver Pro中的源代码存放位置是有规律的。
 
     + BundleSource 可选择Web、Streaming Assets、File Debug三种模式。
 
-      1. Web 用于加载直接存入在站点上的AssetBundle资源。
-         Web Site Url 中填入站点Url。
-         Web Site Pattern 中填入Parttern路径。 
-         ![image](assets/img/loader_3.png)
+      + Web 用于加载直接存入在站点上的AssetBundle资源。
+        Web Site Url 中填入站点Url。
+        Web Site Pattern 中填入Parttern路径。 
+        ![image](assets/img/loader_3.png)
       
-      2. Streaming Assets 用于加载存放在项目StreamingAssets中的AssetBundle资源。
-         Streaming Parttern 中填入相对于StreamingAssets的相对路径。
-         ![image](assets/img/loader_4.png)
+      + Streaming Assets 用于加载存放在项目StreamingAssets中的AssetBundle资源。
+        Streaming Parttern 中填入相对于StreamingAssets的相对路径。
+        ![image](assets/img/loader_4.png)
       
-      3. File Debug 用于加载本地文件系统中的AssetBundle资源，多用于调试。
-         File Url 中填入本机文件路径。
-         File Pattern 中填入与File Url相关的相对路径。 
-         ![image](assets/img/loader_9.png) 
+      + File Debug 用于加载本地文件系统中的AssetBundle资源，多用于调试。
+        File Url 中填入本机文件路径。
+        File Pattern 中填入与File Url相关的相对路径。 
+        ![image](assets/img/loader_9.png) 
 
     + Base Settings
     
@@ -116,32 +123,36 @@ GameDriver Pro中的源代码存放位置是有规律的。
     
     + Resource Release Strategy 可选择None、Time、Counter三种。
       
-      1. None为不选择释放策略，释放Bundle与资产后产生的无效内存占用需要自己调用gc释放，该策略适合自行管理内存与gc时机。
+      + None为不选择释放策略，释放Bundle与资产后产生的无效内存占用需要自己调用gc释放，该策略适合自行管理内存与gc时机。
       
-      2. Time为计时释放策略，会按照设定的时间周期调用gc。
-         ![image](assets/img/loader_10.png) 
+      + Time为计时释放策略，会按照设定的时间周期调用gc。
+        ![image](assets/img/loader_10.png) 
       
-      3. Counter为计数释放策略， 当bundle加载资源到达设定值及倍数值时调用gc.
-         ![image](assets/img/loader_11.png) 
+      + Counter为计数释放策略， 当bundle加载资源到达设定值及倍数值时调用gc. 
+        ![image](assets/img/loader_11.png) 
 
 3. 使用配置初始化加载器
    
    使用以下API初始化加载器：
    
    + 使用由[第一点]()生成的配置文件名称进行初始化。
-   ```C#
-   LoaderManager.InitLoader(string loaderName, string settingsName);
-   ```
+   
+     ```C#
+     LoaderManager.InitLoader(string loaderName, string settingsName);
+     ```
    
    + 使用配置实例进行初始化。
-   ```C#
-   LoaderManager.InitLoader(string loaderName, LoaderSettings settings);
-   ```
+   
+     ```C#
+     LoaderManager.InitLoader(string loaderName, LoaderSettings settings);
+     ```
 
    + Loader静态类中有快捷初始化函数：
-   ```C#
-   Loader.InitLoader(string settingsName);
-   ```
+   
+     ```C#
+     Loader.InitLoader(string settingsName);
+     ```
+
 4. 获得加载器实例
 
    LoaderManager是加载器实例引用的管理器，提供获取加载器实例的函数。
@@ -400,10 +411,20 @@ GameDriver Pro中的源代码存放位置是有规律的。
 8. 更多用法请参考示例、API或源码
    
    示例： GameDriver/Samples/Loader
+   ![image](assets/img/loader_8.png)
 
-### i18n - 轻量级国际化解决方案
+### 3.国际化(i18n) - 轻量级国际化解决方案
 
-### Audio - 完善的音频管理模块，支持场景与UI的音乐音效同时，去除Assetbundle的依赖。
++ **JLGames.GameDriver.Actions.i18n** 提供了国际化模块全部的功能支持。
+
+1. 向注册表中注册语言信息。
+2. 向注册表中注册相关数据文件信息。
+3. 管理器根据注册表加载数据集。
+4. 
+
++ 通过三个步骤初始化国际化管理器：注册语言、注册文件信息、 加载数据到国际化管理器II18NManager
+
+### 4.音频管理(AudioManager) - 完善的音频管理模块，支持场景与UI的音乐音效同时，去除Assetbundle的依赖。
 
 ### Panel - UI面板与层级管理模块。
 
