@@ -22,137 +22,54 @@
 
 GameDriver Pro中的源代码存放位置是有规律的。
 
-1. GameDriver/Runtime/Core中的源码**只依赖**于C#标准库，**不依赖**Unity标准库。 是对C#的扩展功能。
+1. **GameDriver/Runtime/CSharp** 中的源码**只依赖**于C#标准库，**不依赖**Unity标准库。 是对C#的扩展功能。
 
-2. GameDriver/Runtime/Actions中的源码**依赖**于Core和Unity标准库。 是对Unity引擎的扩展功能。
+2. **GameDriver/Runtime/Actions** 中的源码**依赖**于Core和Unity标准库。 是对Unity引擎的扩展功能。
 
-3. GameDriver/Runtime/Games中的源码依赖于Core与Actions。 是游戏开发过程常用的功能系统的通用实现。
+3. **GameDriver/Runtime/Games** 中的源码依赖于Core与Actions。 是游戏开发过程常用的系统功能的通用实现。
 
 ### 1. 事件 - 高效的事件模块，支持Unity多线程
 
 事件采用“**监听**-**捕获**”机制，监听时支持捕获次数、 捕获优先级的设置。
 
-事件功能包含在JLGames.GameDriver.Event和JLGames.GameDriver.Actions.ThreadEvent两个命令空间下。
++ **JLGames.GameDriver.CSharp.Event** 负责事件系统的核心逻辑实现。
 
-JLGames.GameDriver.Event负责事件系统的核心逻辑实现。
-
-JLGames.GameDriver.Actions.ThreadEvent针对多线程提供支持。
++ **JLGames.GameDriver.Actions.ThreadEvent** 针对多线程提供支持。
 
 #### 核心功能 - 添加监听、移除监听、分发事件
 
 1. 监听
-   IEventListener中  `AddEventListener`  用于添加事件监听
-   
-   ```C#
-   /// <summary>
-   /// Add single event listener
-   /// 添加单次事件监听
-   /// </summary>
-   /// <param name="type">Event Type<br/>事件类型</param>
-   /// <param name="handler">Listener Function<br/>监听函数</param>
-   /// <param name="weight">Response Weight<br/>响应权重</param>
-   /// <param name="tag">Function Tag<br/>函数的唯一标签</param>
-   void OnceEventListener(string type, EventDelegates.EventHandler handler, int weight = EventConst.DefaultWeight, string tag = null);
-
-   /// <summary>
-   /// Add event listener
-   /// 添加事件监听
-   /// </summary>
-   /// <param name="type">Event Type<br/>事件类型</param>
-   /// <param name="handler">Listener Function<br/>监听函数</param>
-   /// <param name="tag">Function Tag<br/>函数的唯一标签</param>
-   void AddEventListener(string type, EventDelegates.EventHandler handler, string tag = null);
-
-   /// <summary>
-   /// Add event listener
-   /// 添加事件监听
-   /// </summary>
-   /// <param name="type">Event Type<br/>事件类型</param>
-   /// <param name="handler">Listener Function<br/>监听函数</param>
-   /// <param name="weight">Response Weight<br/>响应权重</param>
-   /// <param name="tag">Function Tag<br/>函数的唯一标签</param>
-   void AddEventListener(string type, EventDelegates.EventHandler handler, int weight, string tag = null);
-
-   /// <summary>
-   /// Add event listener
-   /// 添加事件监听
-   /// </summary>
-   /// <param name="type">Event Type<br/>事件类型</param>
-   /// <param name="handler">Listener Function<br/>监听函数</param>
-   /// <param name="listeningTimes">Times of responses<br/>响应次数</param>
-   /// <param name="tag">Function Tag<br/>函数的唯一标签</param>
-   void AddEventListener(string type, EventDelegates.EventHandler handler, uint listeningTimes, string tag = null);
-
-   /// <summary>
-   /// Add event listener
-   /// 添加事件监听
-   /// </summary>
-   /// <param name="type">Event Type<br/>事件类型</param>
-   /// <param name="handler">Listener Function<br/>监听函数</param>
-   /// <param name="weight">Response Weight<br/>响应权重</param>
-   /// <param name="listeningTimes">Times of responses<br/>响应次数</param>
-   /// <param name="tag">Function Tag<br/>函数的唯一标签</param>
-   void AddEventListener(string type, EventDelegates.EventHandler handler, int weight, uint listeningTimes, string tag = null);
-   ```
+   接口IEventListener中  `AddEventListener`系列函数用于添加事件监听。
+   实现类EventDispathver中已经完成逻辑实现。
+   ![image](assets/img/event_2.png)
 
 2. 移除监听
-   IEventListener中 `RemoveEventListener` 用于移除事件监听
-   
-   ```C#
-   /// <summary>
-   /// Delete event listener
-   /// 删除事件监听
-   /// </summary>
-   /// <param name="type">事件类型</param>
-   /// <param name="handler">监听函数</param>
-   /// <param name="tag"></param>
-   void RemoveEventListener(string type, EventDelegates.EventHandler handler, string tag = null);
-
-   /// <summary>
-   /// Delete event listener
-   /// 删除事件监听
-   /// </summary>
-   /// <param name="type">事件类型</param>
-   /// <param name="tag"></param>
-   void RemoveEventListener(string type, string tag);
-
-   /// <summary>
-   /// Delete a type of event listeners
-   /// 删除一类事件监听
-   /// </summary>
-   /// <param name="type">事件类型</param>
-   void RemoveEventListener(string type);
-
-   /// <summary>
-   /// Clear all event listeners
-   /// 清除全部事件监听
-   /// </summary>
-   void RemoveEventListener();
-   ```
+   接口IEventListener中 `RemoveEventListener`系列函数用于移除事件监听。
+   实现类EventDispathver中已经完成逻辑实现。
+   ![image](assets/img/event_3.png)
 
 3. 分发事件
-   IEventDispatcher中 `DispatchEvent`  用于分发事件。
+   接口IEventDispatcher中 `DispatchEvent`系列函数用于分发事件。
+   实现类EventDispathver中已经完成逻辑实现。
+   ![image](assets/img/event_4.png)
 
-   ```C#
-   /// <summary>
-   /// Trigger an event of a certain type and pass data
-   /// 触发某一类型的事件,并传递数据
-   /// </summary>
-   /// <param name="evd">Evd.</param>
-   void DispatchEvent(EventData evd);
+4. 多线程支持
+   接口IThreadEventProxy中声明的函数定义了多线程支持规范。
+   实现类ThreadEventDispatcher中已经完成逻辑实现
+   ![image](assets/img/event_5.png)
 
-   /// <summary>
-   /// Trigger an event of a certain type and pass data
-   /// 触发某一类型的事件,并传递数据
-   /// </summary>
-   /// <param name="type">事件类型</param>
-   /// <param name="data">事件的数据(可为null)</param>
-   void DispatchEvent(string type, object data);
-   ```
+5. 扩展
+   继承EventDispathver或ThreadEventDispatcher并实现自定义接口，可用于扩展事件行为。
 
-示例位置：GameDriver/Samples/Event
+示例：GameDriver/Samples/Event
 
-### 2.Loader - 加载管理模块, 支持Resources、Editor、Assetbundle三种模式自由切换
+### 2.加载管理模块(Loader) -  支持Resources、Editor、Assetbundle三种模式自由切换
+
++ **JLGames.GameDriver.Actions.Loader** 提供了加载器全部的功能支持。
+
++ **“Tools -> GameDriver -> Project -> Gen LoaderSettings”**提供了加载器配置文件的生成入口。
+
+以下是为项目部署Loader的过程：
 
 1. 执行菜单 “Tools -> GameDriver -> Project -> Gen LoaderSettings”。在项目Assets/Resources下会生成 LoaderSettings.asset(可重命名) 文件。
 ![image](assets/img/loader_1.png)![image](assets/img/loader_2.png)
@@ -161,11 +78,11 @@ JLGames.GameDriver.Actions.ThreadEvent针对多线程提供支持。
 
   + Editor配置
     ProjectBasePath可以设置项目的资源查找的基础路径部分，在加载资源时可拼接到资源路径前。
-  ![image](assets/img/loader_5.png)
+    ![image](assets/img/loader_5.png)
   
   + Resource配置
     ProjectBasePath可以设置项目的资源查找的基础路径部分，在加载资源时可拼接到资源路径前。
-  ![image](assets/img/loader_6.png) ![image](assets/img/loader_7.png)
+    ![image](assets/img/loader_6.png) ![image](assets/img/loader_7.png)
   
   +  AssetBundle配置
 
@@ -184,9 +101,9 @@ JLGames.GameDriver.Actions.ThreadEvent针对多线程提供支持。
          File Url 中填入本机文件路径。
          File Pattern 中填入与File Url相关的相对路径。 
          ![image](assets/img/loader_9.png) 
- 
+
     + Base Settings
-  
+    
       主要是关于项目的Bundle目录信息的设置与加载时缓存信息的设置。
       
       + Project Base Path 设置项目的Bundle目录路径
@@ -238,7 +155,7 @@ JLGames.GameDriver.Actions.ThreadEvent针对多线程提供支持。
      ```
    
    + 获取指定实例： 
-      
+     
      ```C#
      LoaderManager.FindLoader(string loaderName);
      ```
@@ -482,7 +399,7 @@ JLGames.GameDriver.Actions.ThreadEvent针对多线程提供支持。
 
 8. 更多用法请参考示例、API或源码
    
-   示例位置： GameDriver/Samples/Loader
+   示例： GameDriver/Samples/Loader
 
 ### i18n - 轻量级国际化解决方案
 
