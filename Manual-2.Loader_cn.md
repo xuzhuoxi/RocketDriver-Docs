@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-### 2.加载管理模块(Loader) -  支持Resources、Editor、Assetbundle三种模式自由切换
+### 2. 加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换
 
 + **JLGames.GameDriver.Actions.Loader** 提供了加载器全部的功能支持。
 

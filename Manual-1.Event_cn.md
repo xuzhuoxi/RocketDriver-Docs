@@ -9,7 +9,7 @@ layout: default
 
 + **JLGames.GameDriver.Actions.ThreadEvent** 针对多线程提供支持。
 
-#### 核心功能 - 添加监听、移除监听、分发事件
+#### 1.1 核心功能 - 添加监听、移除监听、分发事件
 
 1. 监听
    接口IEventListener中  `AddEventListener`系列函数用于添加事件监听。
@@ -34,7 +34,7 @@ layout: default
 5. 扩展
    继承EventDispathver或ThreadEventDispatcher并实现自定义接口，可用于扩展事件行为。
 
-#### 示例：
+#### 1.2 示例：
 
 GameDriver/Samples/Event
 ![image](assets/img/event_1.png)

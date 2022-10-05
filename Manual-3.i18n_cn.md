@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-### 3.国际化(i18n) - 轻量级国际化解决方案
+### 3. 国际化(i18n) - 轻量级国际化解决方案
 
 **JLGames.GameDriver.Actions.i18n** 提供了国际化模块全部的功能支持。
 
-#### 初始化
+#### 3.1 初始化
 
 按照以下流程，为您的项目配置国际化功能：
 
@@ -15,6 +15,10 @@ layout: default
 2. 准备国际化数据文件，如：
    ![image](assets/img/i18n_1.png)
    支持多个文件集，这里以两个文件集 **unity**、**rider** 举例。
+  
+   ![image](assets/img/i18n_11.png)
+   数据格式以 Key-Value 形式。
+   当前测试数据集使用 Jetbrains 的 [BabelEdit](https://www.codeandweb.com/babeledit) 创作，这是一个不错的工具。
    
 3. 向注册表注册语言。
    ![image](assets/img/i18n_6.png)
@@ -38,7 +42,7 @@ layout: default
    `I18NManagerShared.Manager.ClearData();`
    ![image](assets/img/i18n_9.png)
 
-#### 使用
+#### 3.2 使用
 
 + 使用 I18NTMPText 组件，为TMP_Text增加国际化支持。
   ![image](assets/img/i18n_3.png)
@@ -58,7 +62,7 @@ layout: default
   `I18NManagerShared.Manager.GetValue(id, fileKey, lang);`
   ![image](assets/img/i18n_10.png)
   
-#### 示例
+#### 3.3 示例
 
   GameDriver/Samples/i18n
   ![image](assets/img/i18n_4.png)
