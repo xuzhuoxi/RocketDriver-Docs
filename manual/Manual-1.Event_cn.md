@@ -12,16 +12,13 @@ layout: manual
 
 #### 1.1.1 监听
 接口IEventListener中  `AddEventListener`系列函数用于添加事件监听。
-
 实现类EventDispathver中已经完成逻辑实现。
 
 ![image](assets/img/event_2.png)
 
 #### 1.1.2 移除监听
 接口IEventListener中 `RemoveEventListener`系列函数用于移除事件监听。
-
 实现类EventDispathver中已经完成逻辑实现。
-
 ![image](assets/img/event_3.png)
 
 #### 1.1.3 分发事件
