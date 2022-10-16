@@ -1,7 +1,7 @@
 title: GameDriver
 logo: /assets/img/logo.png
 description: GameDriver is a game framework for Unity engine.
-show_downloads: false
+show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
