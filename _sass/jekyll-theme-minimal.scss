@@ -119,6 +119,7 @@ kbd {
 }
 
 header {
+  background-color: #0ff;
   width:270px;
   float:left;
   position:fixed;
@@ -186,7 +187,8 @@ strong {
 }
 
 section {
-  width:650px;
+  background-color: #f0f;
+  width:500px;
   float:right;
   padding-bottom:50px;
 }
@@ -203,6 +205,7 @@ hr {
 }
 
 footer {
+  background-color: #ff0;
   width:270px;
   float:left;
   position:fixed;
