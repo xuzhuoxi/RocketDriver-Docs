@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 ---
 # GameDriver Pro Changle Log
