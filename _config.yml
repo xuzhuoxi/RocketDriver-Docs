@@ -4,3 +4,5 @@ description: GameDriver is a game framework for Unity engine.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+
+show_catalog: true
