@@ -44,8 +44,12 @@
         {% endif %}
 		
 	    <nav>
-		{% for p in site.data.pages.cn_pages %}	
-          <ul><li class="active"><a herf="{{ p.url }}">{{ p.name}}</a></li></ul>
+		{% for p in site.data.pages.cn_pages %}
+			{% if p.name == page.page_id %}
+			<ul><li class="active"><a herf="{{ p.url }}">{{ p.name}}</a></li></ul>
+			{% else %}
+			<ul><li><a herf="{{ p.url }}">{{ p.name}}</a></li></ul>
+			{% endif %}
 		{% endfor %}
         </nav>
 		
