@@ -35,7 +35,7 @@ GameDriver Pro中的源代码存放位置是有规律的。
 {% for pages in site.data.manual.cn_pages %}
 {% assign p = pages[1] %}
   <li>
-    <a href="{{ site.home }}/{{ p.pattern }}">{{ p.text }} </a>
+    <a href="{{ site.home }}/{{ p.pattern }}">{{ p.text }}</a>
   </li>
 {% endfor %}
 </ul>

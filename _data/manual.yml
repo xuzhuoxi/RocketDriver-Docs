@@ -1,51 +1,51 @@
 cn_pages:
   - name: event
-    text: 1.事件(Event) - 高效的事件模块，支持Unity多线程
-    pattern: Manual-1.Event_cn.html
+    text: '1.事件(Event) - 高效的事件模块，支持Unity多线程'
+    pattern: 'Manual-1.Event_cn.html'
   - name: loader
-    text: 2.加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换
-    pattern: Manual-2.Loader_cn.html
+    text: '2.加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换'
+    pattern: 'Manual-2.Loader_cn.html'
   - name: i18n
-    text: 3.国际化(i18n) - 轻量级国际化解决方案
-    pattern: Manual-3.i18n_cn.html
+    text: '3.国际化(i18n) - 轻量级国际化解决方案'
+    pattern: 'Manual-3.i18n_cn.html'
   - name: net
-    text: 4.网络管理扩展模块(NetManager)
-    pattern: Manual-4.Net_cn.html
+    text: '4.网络管理扩展模块(NetManager)'
+    pattern: 'Manual-4.Net_cn.html'
   - name: audio
-    text: 5.音频管理模块(AudioManager) 
-    pattern: Manual-5.Audio_cn.html
+    text: '5.音频管理模块(AudioManager)'
+    pattern: 'Manual-5.Audio_cn.html'
   - name: panel
-    text: 6.面板管理模块(PanelManager)
-    pattern: Manual-6.Panel_cn.html
+    text: '6.面板管理模块(PanelManager)'
+    pattern: 'Manual-6.Panel_cn.html'
   - name: service
-    text: 7.服务框架(Service)
-    pattern: Manual-7.Service_cn.html
+    text: '7.服务框架(Service)'
+    pattern: 'Manual-7.Service_cn.html'
   - name: material
-    text: 8.Rpg材料数据系统
-    pattern: Manual-8.RpgMaterial_cn.html
+    text: '8.Rpg材料数据系统'
+    pattern: 'Manual-8.RpgMaterial_cn.html'
 
 en_pages:
   - name: event
-    text: 事件(Event) 
-    pattern: Manual-1.Event_en.html
+    text: '事件(Event) '
+    pattern: 'Manual-1.Event_en.html'
   - name: loader
-    text: 加载管理模块(Loader) 
-    pattern: Manual-2.Loader_en.html
+    text: '加载管理模块(Loader) '
+    pattern: 'Manual-2.Loader_en.html'
   - name: i18n
-    text: 国际化(i18n)
-    pattern: Manual-3.i18n_en.html
+    text: '国际化(i18n)'
+    pattern: 'Manual-3.i18n_en.html'
   - name: net
-    text: 网络管理扩展模块(NetManager)
-    pattern: Manual-4.Net_en.html
+    text: '网络管理扩展模块(NetManager)'
+    pattern: 'Manual-4.Net_en.html'
   - name: audio
-    text: 音频管理模块(AudioManager) 
-    pattern: Manual-5.Audio_en.html
+    text: '音频管理模块(AudioManager) '
+    pattern: 'Manual-5.Audio_en.html'
   - name: panel
-    text: 面板管理模块(PanelManager)
-    pattern: Manual-6.Panel_en.html
+    text: '面板管理模块(PanelManager)'
+    pattern: 'Manual-6.Panel_en.html'
   - name: service
-    text: 服务框架(Service)
-    pattern: Manual-7.Service_en.html
+    text: '服务框架(Service)'
+    pattern: 'Manual-7.Service_en.html'
   - name: material
-    text: Rpg材料数据系统
-    pattern: Manual-8.RpgMaterial_en.html
+    text: 'Rpg材料数据系统'
+    pattern: 'Manual-8.RpgMaterial_en.html'
