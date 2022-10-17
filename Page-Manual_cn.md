@@ -28,10 +28,7 @@ GameDriver Pro中的源代码存放位置是有规律的。
 + **GameDriver/Runtime/Games** 中的源码依赖于CSharp与Actions。 是游戏开发过程常用的系统功能的通用实现。
 
 **目录**：  
-<ul>
+
 {% for p in site.data.manual.cn_pages %}
-  <h4>
-    <a href="{{ site.docs.url }}/{{ p.pattern }}">{{ p.text }}</a>
-  <h4>
+  <h4><a href="{{ site.docs.url }}/{{ p.pattern }}">{{ p.text }}</a><h4>
 {% endfor %}
-</ul>
