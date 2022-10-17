@@ -11,8 +11,6 @@ layout: default
 
 您也可以选择所需的部分进行导入。  
 
-如果你觉得安装对你来说并不方便, 请 [file an issue](https://github.com/jekyll/jekyll/issues/new) (或者提交一个 pull request) 来描述一下你的遭遇并告诉我们如何使这个安装过程更加便捷。  
-
 ### 支持
 如果您想快速了解 GameDriver Pro 中的重要功能，可以直接参考GameDriver/Samples中的示例。  
 
