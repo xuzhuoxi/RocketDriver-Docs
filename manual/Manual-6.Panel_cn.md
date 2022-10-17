@@ -1,5 +1,6 @@
 ---
 layout: manual
+lang: cn
 ---
 ## 6. 面板管理模块(PanelManager)
 + **JLGames.GameDriver.Actions.Layer** 提供了容器层级管理功能。

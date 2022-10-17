@@ -1,5 +1,6 @@
 ---
 layout: manual
+lang: cn
 ---
 ## 1. 事件(Event) - 高效的事件模块，支持Unity多线程
 

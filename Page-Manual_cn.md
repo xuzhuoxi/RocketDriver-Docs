@@ -14,7 +14,7 @@ layout: default
 ### 支持
 如果您想快速了解 GameDriver Pro 中的重要功能，可以直接参考GameDriver/Samples中的示例。  
 
-如果您想详细了解 GameDriver Pro 中的各功能模块的设计思路和细节, 您可以在[在线帮助](http://www.xuzhuoxi.com/GameDriver-Docs/)中找到更多信息和常见问题解答。  
+如果您想详细了解 GameDriver Pro 中的各功能模块的设计思路和细节, 您可以在[在线帮助](https://www.xuzhuoxi.com/GameDriver-Docs/)中找到更多信息和常见问题解答。  
 
 如果您无法要查找您寻求的信息，请 [file an issue](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new)(或者提交一个 pull request) 来描述一下你的遭遇。  
 

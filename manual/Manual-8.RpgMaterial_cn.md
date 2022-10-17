@@ -1,5 +1,6 @@
 ---
 layout: manual
+lang: cn
 ---
 ## 8. Rpg材料数据系统
 这是一套通用的用户数据管理系统。  

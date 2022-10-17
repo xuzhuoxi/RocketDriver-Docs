@@ -33,9 +33,13 @@
 
         {% if site.show_downloads %}
         <ul class="downloads">
-          <li><a href="{{ site.unity.package_url }}">Download From<strong>AssetStore</strong></a></li>
-          <li><a href="{{ site.unity.publisher_url }}">View Publisher On<strong>AssetStore</strong></a></li>
-          <li><a href="{{ site.github.issues_new_url }}">File an Issue On<strong>GitHub</strong></a></li>
+          <li><a href="{{ site.unity.package_url }}">Download <strong>UnityPackage</strong></a></li>
+		  {% if page.lang == "cn" %}
+		  <li><a href="{{ site.github.downloads.manaual_cn_pdf }}">Download<strong>Manual pdf</strong></a></li>
+		  {% else %}
+		  <li><a href="{{ site.github.downloads.manaual_en_pdf }}">Download<strong>Manual pdf</strong></a></li>
+		  {% endif %}
+          <li><a href="{{ site.github.issues_new_url }}">File an<strong>Issue</strong></a></li>
         </ul>
         {% endif %}
 		

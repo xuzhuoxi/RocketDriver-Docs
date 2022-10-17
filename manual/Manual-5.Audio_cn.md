@@ -1,5 +1,6 @@
 ---
 layout: manual
+lang: cn
 ---
 ## 5. 音频管理模块(AudioManager) 
 完善的音频管理模块，支持场景与UI的音乐音效同时，去除Assetbundle的依赖。  
