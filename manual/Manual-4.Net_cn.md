@@ -1,6 +1,8 @@
 ---
 layout: manual
 lang: cn
+page_id: net
+group_id: manual
 ---
 ## 4. 网络管理扩展模块(NetManager)
 简单易用的网络链接管理模块  

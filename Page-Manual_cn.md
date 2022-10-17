@@ -1,6 +1,7 @@
 ---
 layout: default
 page_id: manual
+group_id: home
 ---
 # Getting Started
 

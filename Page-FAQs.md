@@ -1,6 +1,7 @@
 ---
 layout: default
 page_id: faqs
+group_id: home
 ---
 
 # README

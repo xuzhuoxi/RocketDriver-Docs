@@ -1,6 +1,7 @@
 ---
 layout: default
 page_id: readme
+group_id: home
 ---
 
 # README

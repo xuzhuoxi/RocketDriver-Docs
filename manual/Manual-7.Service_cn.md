@@ -1,6 +1,8 @@
 ---
 layout: manual
 lang: cn
+page_id: service
+group_id: manual
 ---
 ## 7. 服务框架(Service)
 + **JLGames.GameDriver.CSharp.Service** 提供了服务框架的基础接口与行为规范。

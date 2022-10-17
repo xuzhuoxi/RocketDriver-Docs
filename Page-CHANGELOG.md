@@ -1,6 +1,7 @@
 ---
 layout: default
 page_id: changelog
+group_id: home
 ---
 # GameDriver Pro Changle Log
 

@@ -1,6 +1,8 @@
 ---
 layout: manual
 lang: cn
+page_id: i18n
+group_id: manual
 ---
 ## 3. 国际化(i18n) - 轻量级国际化解决方案
 
