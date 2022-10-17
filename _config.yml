@@ -5,8 +5,6 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
-show_navigation: false
-
 author:
   name: XUZHUOXI
   home_page_url: https://www.xuzhuoxi.com/

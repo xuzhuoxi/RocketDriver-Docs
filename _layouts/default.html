@@ -43,7 +43,12 @@
         </ul>
         {% endif %}
 		
-		<a herf="{{site.docs.url}}">Home</a>
+	    <nav>
+		{% for p in site.data.pages.cn_pages %}	
+          <ul><li><a herf="{{ p.url }}">{{ p.name}}</a></li></ul>
+		{% endfor %}
+        </nav>
+		
       </header>
       <section>
 
