@@ -33,16 +33,17 @@
 
         {% if site.show_downloads %}
         <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download 6666<strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+          <li><a href="{{ site.unity.package_url }}">Download From<strong>AssetStore</strong></a></li>
+          <li><a href="{{ site.unity.publisher_url }}">View Publisher On<strong>AssetStore</strong></a></li>
+          <li><a href="{{ site.github.issues_new_url }}">File an Issue On<strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
 		
+		{% if site.show_navigation %}
 	    <nav>
           <ul></ul>
         </nav>
-		
+		{% endif %}
       </header>
 
       <section>

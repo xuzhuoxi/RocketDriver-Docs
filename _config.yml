@@ -1,9 +1,16 @@
-title: GameDriver
+title: GameDriver Pro
 logo: /assets/img/logo.png
-description: GameDriver is a game framework for Unity engine.
+description: GameDriver Pro is a game framework for Unity engine.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
-home: https://www.xuzhuoxi.com/GameDriver-Docs
-show_catalog: true
+unity:
+  package_url: https://assetstore.unity.com/packages/slug/234202
+  publisher_url: https://assetstore.unity.com/publishers/74539
+github:
+  home_url: https://www.xuzhuoxi.com/GameDriver-Docs
+  issues_url: https://www.xuzhuoxi.com/GameDriver-Docs/issues
+  issues_new_url: https://www.xuzhuoxi.com/GameDriver-Docs/issues/new
+
+show_navigation: false

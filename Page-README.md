@@ -8,7 +8,7 @@ layout: default
 
 + Name: 
   
-  **GameDriver - Pro**
+  **GameDriver Pro**
 
 + Category
 
