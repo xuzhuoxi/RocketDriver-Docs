@@ -28,7 +28,7 @@ GameDriver Pro中的源代码存放位置是有规律的。
 + **GameDriver/Runtime/Actions** 中的源码**依赖**于Core和Unity标准库。 是对Unity引擎的扩展功能。
 + **GameDriver/Runtime/Games** 中的源码依赖于Core与Actions。 是游戏开发过程常用的系统功能的通用实现。
 
-**功能目录**：
+**目录**：  
 
 ---
 <ul>
@@ -38,20 +38,3 @@ GameDriver Pro中的源代码存放位置是有规律的。
   </li>
 {% endfor %}
 </ul>
----
-
-[1. 事件(Event) - 高效的事件模块，支持Unity多线程](manual/Manual-1.Event_cn.html)
-
-[2. 加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换](manual/Manual-2.Loader_cn.html)
-
-[3. 国际化(i18n) - 轻量级国际化解决方案](manual/Manual-3.i18n_cn.html)
-
-[4. 网络管理扩展模块(NetManager)](manual/Manual-4.Net_cn.html)
-
-[5. 音频管理模块(AudioManager) ](manual/Manual-5.Audio_cn.html)
-
-[6. 面板管理模块(PanelManager)](manual/Manual-6.Panel_cn.html)
-
-[7. 服务框架(Service)](manual/Manual-7.Service_cn.html)
-
-[8. Rpg材料数据系统](manual/Manual-8.RpgMaterial_cn.html)
