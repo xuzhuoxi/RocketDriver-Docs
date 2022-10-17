@@ -191,10 +191,10 @@ nav {
   width: 270px;
   position: fixed;
 //top: 22px;
-  left:50%;
-  margin-left:-580px;
+//left:50%;
+//margin-left:-580px;
   text-align: right;
-
+  bottom:50px;
   ul {
     list-style: none;
     list-style-image:none;
@@ -233,12 +233,6 @@ nav {
         color: #333;
       }
     }
-
-    a {
-      color: #666;
-      &:hover { color: #999; }
-    }
-
     .active {
       border-right:solid 4px #39C;
       padding-right:13px;
