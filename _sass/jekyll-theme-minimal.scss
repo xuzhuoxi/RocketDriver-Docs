@@ -189,11 +189,14 @@ strong {
 nav {
 //  background-color: #ffffff;
   width: 270px;
-  position: fixed;
+//  position: fixed;
 //top: 22px;
   left:50%;
   margin-left:-580px;
   text-align: right;
+
+  z-index: 1;
+  position: relative;
 
   ul {
     list-style: none;
