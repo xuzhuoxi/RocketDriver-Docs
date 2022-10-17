@@ -187,9 +187,10 @@ strong {
 }
 
 nav {
+  background-color: #ffffff;
   width: 270px;
   position: fixed;
- // top: 22px;
+//top: 22px;
   left:50%;
   margin-left:-580px;
   text-align: right;
@@ -202,7 +203,7 @@ nav {
 
     li {
       padding: 5px 0px;
-      line-height: 16px;
+      line-height: 8px;
       // padding-right:17px;
       // position:relative;
       // right:-12px;
@@ -230,14 +231,13 @@ nav {
 
     a {
       color: #666;
-
       &:hover { color: #999; }
     }
 
-    // .active {
-    //   border-right:solid 4px #39C;
-    //   padding-right:13px;
-    // }
+    .active {
+      border-right:solid 4px #39C;
+      padding-right:13px;
+    }
   }
 }
 
