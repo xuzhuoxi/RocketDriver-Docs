@@ -186,28 +186,10 @@ strong {
   color:#222;
 }
 
-section {
-  background-color: #ffffff;
-  width:710px;
-  float:right;
-  padding-bottom:50px;
-}
-
-small {
-  font-size:11px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
-}
-
 nav {
   width: 270px;
   position: fixed;
-  top: 22px;
+ // top: 22px;
   left:50%;
   margin-left:-580px;
   text-align: right;
@@ -267,6 +249,26 @@ footer {
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+
+section {
+  background-color: #ffffff;
+  width:710px;
+  float:right;
+  padding-bottom:50px;
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+
 
 @media print, screen and (max-width: 1024px) {
 
