@@ -1,5 +1,6 @@
 ---
 layout: default
+page_id: home
 ---
 
 [CHANGELOG](Page-CHANGELOG.html).
