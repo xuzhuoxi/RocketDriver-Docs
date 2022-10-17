@@ -12,35 +12,35 @@ layout: manual
 执行菜单 “Tools -> GameDriver -> Project -> Gen LoaderSettings”。  
 在项目Assets/Resources下会生成 LoaderSettings.asset(可重命名) 文件。  
 ![image](assets/img/loader_1.png)  
-![image](assets/img/loader_2.png)
+![image](assets/img/loader_2.png)  
 
 #### 2.1.2  按项目需求设置配置
-LoaderSettings中共有5个可用配置，一个是Editor模式， 两个是Resource模式， 剩下两个是AssetBundle模式。  
+LoaderSettings中共有5个可用配置，一个Editor模式， 两个Resource模式， 两个AssetBundle模式。  
 
 + Editor配置
   ProjectBasePath可以设置项目的资源查找的基础路径部分，在加载资源时可拼接到资源路径前。  
-  ![image](assets/img/loader_5.png)
+  ![image](assets/img/loader_5.png)  
 + Resource配置
   ProjectBasePath可以设置项目的资源查找的基础路径部分，在加载资源时可拼接到资源路径前。  
-  ![image](assets/img/loader_6.png) ![image](assets/img/loader_7.png)
+  ![image](assets/img/loader_6.png) ![image](assets/img/loader_7.png)  
 + AssetBundle配置
 
   + BundleSource 
-    可选择Web、Streaming Assets、File Debug三种模式。
+    可选择Web、Streaming Assets、File Debug三种模式。  
     + Web 
       用于加载直接存入在站点上的AssetBundle资源。  
       Web Site Url 中填入站点Url。  
       Web Site Pattern 中填入Parttern路径。   
-      ![image](assets/img/loader_3.png)
+      ![image](assets/img/loader_3.png)  
     + Streaming Assets 
       用于加载存放在项目StreamingAssets中的AssetBundle资源。  
       Streaming Parttern 中填入相对于StreamingAssets的相对路径。  
-      ![image](assets/img/loader_4.png)
+      ![image](assets/img/loader_4.png)  
     + File Debug 
       用于加载本地文件系统中的AssetBundle资源，多用于调试。  
       File Url 中填入本机文件路径。  
       File Pattern 中填入与File Url相关的相对路径。   
-      ![image](assets/img/loader_9.png) 
+      ![image](assets/img/loader_9.png)   
   + Base Settings    
     主要是关于项目的Bundle目录信息的设置与加载时缓存信息的设置。  
     + Project Base Path 设置项目的Bundle目录路径
@@ -51,9 +51,9 @@ LoaderSettings中共有5个可用配置，一个是Editor模式， 两个是Reso
     可选择None、Time、Counter三种。  
     + None为不选择释放策略，释放Bundle与资产后产生的无效内存占用需要自己调用gc释放，该策略适合自行管理内存与gc时机。
     + Time为计时释放策略，会按照设定的时间周期调用gc。
-      ![image](assets/img/loader_10.png) 
+      ![image](assets/img/loader_10.png)   
     + Counter为计数释放策略， 当bundle加载资源到达设定值及倍数值时调用gc. 
-      ![image](assets/img/loader_11.png) 
+      ![image](assets/img/loader_11.png)   
 
 #### 2.1.3 使用配置初始化加载器
 使用以下API初始化加载器：  
@@ -286,8 +286,8 @@ IEnumerator LoadSubAssetsAsync<T>(string assetPath, AssetBundle buundle, LoaderD
 where T : Object;
 ```
 
-+ 更多用法请参考示例、API或源码
++ 更多用法请参考示例、API或源码。
   
 ### 2.3 示例
 GameDriver/Samples/Loader  
-![image](assets/img/loader_8.png)
+![image](assets/img/loader_8.png)  

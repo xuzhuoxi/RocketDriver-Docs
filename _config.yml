@@ -5,4 +5,5 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
+home: https://www.xuzhuoxi.com/GameDriver-Docs
 show_catalog: true
