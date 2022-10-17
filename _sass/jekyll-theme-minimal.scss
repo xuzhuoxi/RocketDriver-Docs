@@ -187,16 +187,13 @@ strong {
 }
 
 nav {
-//  background-color: #ffffff;
+  background-color: #ffffff;
   width: 270px;
-//  position: fixed;
+  position: fixed;
 //top: 22px;
   left:50%;
   margin-left:-580px;
   text-align: right;
-
-  z-index: 1;
-  position: relative;
 
   ul {
     list-style: none;
@@ -311,7 +308,7 @@ hr {
   }
 }
 
-@media print, screen and (max-width: 1024px) {
+@media print, screen and (max-width: 10240px) {
   body {
     word-wrap:break-word;
   }
