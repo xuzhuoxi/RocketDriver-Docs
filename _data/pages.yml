@@ -1,5 +1,5 @@
 en_pages:
-  - id: 'home'
+  - id: 'main'
     text: 'Home'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs'
   - id: 'readme'
@@ -19,7 +19,7 @@ en_pages:
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-ThirdPartyNotices.html'
  
 cn_pages:
-  - id: 'home'
+  - id: 'main'
     text: '主页'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs'
   - id: 'readme'

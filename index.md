@@ -1,6 +1,7 @@
 ---
 layout: default
-page_id: home
+page_id: main
+group_id: home
 ---
 
 [CHANGELOG](Page-CHANGELOG.html).
