@@ -45,10 +45,11 @@
 		
 	    <nav>
 		{% for p in site.data.pages.cn_pages %}
+		    <a herf="{{ p.url }}">{{ p.text}}</a>
 			{% if p.id == page.page_id %}
-			<ul><li class="active"><a herf="{{ p.url }}">{{ p.text}}</a></li>   <a>888</a>  </ul>
+			<ul><li class="active"><a herf="{{ p.url }}">{{ p.text}}</a></li></ul>
 			{% else %}
-			<ul><li><a herf="{{ p.url }}">{{ p.text}}</a></li>  <a>777</a>  </ul>
+			<ul><li><a herf="{{ p.url }}">{{ p.text}}</a></li></ul>
 			{% endif %}
 		{% endfor %}
         </nav>
