@@ -18,12 +18,6 @@ unity:
 
 home:
   url: https://www.xuzhuoxi.com/GameDriver-Docs
-  readme_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-README.html
-  changelog_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-CHANGELOG.html
-  manual_cn_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-Manual_cn.html
-  manual_en_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-Manual_en.html
-  FAQs_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-FAQs.html
-  third_party_notices_url: https://www.xuzhuoxi.com/GameDriver-Docs/Page-ThirdPartyNotices.html
 
 github:
   issues_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues

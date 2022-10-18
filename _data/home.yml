@@ -3,51 +3,51 @@ pages:
   - id: 'home.main'
     lang: cn
     text: '主页'
-    url: 'index.html'
+    pattern: 'index.html'
   - id: 'home.readme'
     lang: cn
     text: '介绍'
-    url: 'Page-README_cn.html'
+    pattern: 'Page-README_cn.html'
   - id: 'home.changelog'
     lang: cn
     text: '更新日志'
-    url: 'Page-CHANGELOG_cn.html'
+    pattern: 'Page-CHANGELOG_cn.html'
   - id: 'home.manual'
     lang: cn
     text: '用户手册'
-    url: 'Page-Manual_cn.html'
+    pattern: 'Page-Manual_cn.html'
   - id: 'home.faqs'
     lang: cn
     text: '常见问题'
-    url: 'Page-FAQs_cn.html'
+    pattern: 'Page-FAQs_cn.html'
   - id: 'home.3pn'
     lang: cn
     text: '第三方通知'
-    url: 'Page-ThirdPartyNotices_cn.html'
+    pattern: 'Page-ThirdPartyNotices_cn.html'
 
   - id: 'home.main'
     lang: en
     text: 'Home'
-    url: 'index_en.html'
+    pattern: 'index_en.html'
   - id: 'home.readme'
     lang: en
     text: 'Readme'
-    url: 'Page-README_en.html'
+    pattern: 'Page-README_en.html'
   - id: 'home.changelog'
     lang: en
     text: 'Changelog'
-    url: 'Page-CHANGELOG_en.html'
+    pattern: 'Page-CHANGELOG_en.html'
   - id: 'home.manual'
     lang: en
     text: 'Manual'
-    url: 'Page-Manual_en.html'
+    pattern: 'Page-Manual_en.html'
   - id: 'home.faqs'
     lang: en
     text: 'FAQs'
-    url: 'Page-FAQs_en.html'
+    pattern: 'Page-FAQs_en.html'
   - id: 'home.3pn'
     lang: en
     text: 'Third Party Notices'
-    url: 'Page-ThirdPartyNotices_en.html'
+    pattern: 'Page-ThirdPartyNotices_en.html'
 
 

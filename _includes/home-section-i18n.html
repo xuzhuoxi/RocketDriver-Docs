@@ -2,7 +2,7 @@
 {% assign i18n_pages = site.data.home.pages | where: "id", page.page_id %}
 
 {% if page.lang == "cn" %}
-<p>中文 | <a href="{{ site.home.url }}/{{ i18n_pages[1].url}}">English</a></p>
+<p>中文 | <a href="{{ site.home.url }}/{{ i18n_pages[1].pattern}}">English</a></p>
 {% else %}
-<p><a href="{{ site.home.url }}/{{ i18n_pages[0].url}}">中文</a> | English</p>
+<p><a href="{{ site.home.url }}/{{ i18n_pages[0].pattern}}">中文</a> | English</p>
 {% endif %}

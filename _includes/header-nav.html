@@ -5,7 +5,7 @@
   {% if p.id == page.page_id or p.id == page.group_id %}
   <ul><li class="active"><a>{{ p.text}}</a></li></ul>
   {% else %}
-  <ul><li><a href="{{ site.home.url }}/{{ p.url }}">{{ p.text}}</a></li></ul>
+  <ul><li><a href="{{ site.home.url }}/{{ p.pattern }}">{{ p.text}}</a></li></ul>
   {% endif %}
 {% endfor %}
 </nav>
