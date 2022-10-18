@@ -1,11 +1,14 @@
 <!--Manual内部导航-->
 {% assign manual_pages = site.data.manual.pages | where: "lang", page.lang %}
 
-	{% for p in manual_pages %}
-	  {{p.index}} ,{{p.index0}}<br/>
-	{% endfor%}
+{% for p in manual_pages %}
+  {% if p.id == page.page_id %}
+	{% assign idx = forloop.index0 %}
+	{% break %}
+  {% endif%}
+{% endfor%}
 
-
+{{idx}}
 <hr/>
 {% if page.page_id == manual_pages[0].id %}
 <p>{{index}}下一页</p>
