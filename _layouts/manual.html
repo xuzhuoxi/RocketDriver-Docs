@@ -14,6 +14,8 @@
   </head>
   <body>
     <div class="wrapper">
+	  <!--国际化页面-->
+	  {% assign pages = site.data.manual.pages | where: "lang", page.lang %}
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
@@ -57,7 +59,25 @@
       </header>
 
       <section>
+	  <!--国际化切换-->
+	  {% assign i18n_pages = site.data.manual.pages | where: "id", page.page_id %}
 	  
+	  {% if page.lang == "cn" %}
+	  <p>中文 | <a href="{{ i18n_pages[1].url}}">English</a></p>
+	  {% else %}
+	  <p><a href="{{ i18n_pages[0].url}}">中文</a> | English</p>
+	  {% endif %}
+	  
+	  <!--上下页-->
+	  {% if pages[0].id == page.page_id %}
+	  <p>下一页</p>
+	  {% else if pages[-1].id == page.page_id %}
+	  <p>上一页</p>
+	  {% else %}
+	  <p>上一页 | 下一页</p>
+	  {% end if %}
+      
+	  <hr />
       {{ content }}
       
 	  </section>
