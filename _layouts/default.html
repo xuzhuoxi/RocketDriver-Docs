@@ -33,33 +33,17 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a target="_blank" href="{{ site.unity.package_url }}">Download <strong>Package</strong></a></li>
-		  {% if page.lang == "cn" %}
-		  <li><a target="_blank" href="{{ site.downloads.manaual_cn_pdf }}">Download<strong>Manual pdf</strong></a></li>
-		  {% else %}
-		  <li><a target="_blank" href="{{ site.downloads.manaual_en_pdf }}">Download<strong>Manual pdf</strong></a></li>
-		  {% endif %}
-          <li><a target="_blank" href="{{ site.github.issues_new_url }}">File an<strong>Issue</strong></a></li>
-        </ul>
-        {% endif %}
+		<!--下载项-->
+		{% include header-downloads.html %}
 		
 		<!--主页导航-->
 	    {% include header-nav.html %}
 		
       </header>
       <section>
-	  <!--国际化切换-->
-	  {% assign i18n_pages = site.data.home.pages | where: "id", page.page_id %}
-	  
-	  {% if page.lang == "cn" %}
-	  <p>中文 | <a href="{{ site.docs.url }}/{{ i18n_pages[1].url}}">English</a></p>
-	  {% else %}
-	  <p><a href="{{ site.docs.url }}/{{ i18n_pages[0].url}}">中文</a> | English</p>
-	  {% endif %}
-	  
-      <hr />
+	  <!--主页面国际化切换-->
+	  {% include section-i18n-switch-home %}
+      <hr/>
 	  
 	  {{ content }}
 
