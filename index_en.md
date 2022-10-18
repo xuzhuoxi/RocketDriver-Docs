@@ -5,7 +5,7 @@ group_id: home
 lang: en
 ---
 
-[中文](index.html) | English  
+[中文](index.html) \| English  
 
 ---
 
