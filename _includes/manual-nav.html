@@ -3,7 +3,7 @@
 
 {% if page.page_id == manual_pages[0].id %}
 <p>{{page.page_id}} 下一页</p>
-{% else if page.page_id == manual_pages[-1].id %}
+{% elsif page.page_id == manual_pages[-1].id %}
 <p>{{page.page_id}} 上一页</p>
 {% else %}
 <p>{{page.page_id}} 上一页 | 下一页</p>
