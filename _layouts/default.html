@@ -59,10 +59,12 @@
       </header>
       <section>
 	  <!--国际化切换-->
+	  {% assign i18n_pages = site.data.home.pages | where: "id", page.page_id %}
+	  
 	  {% if page.lang == "cn" %}
-	  <p>中文 | <a href="index_en.html">English</a></p>
+	  <p>中文 | <a href="{{ i18n_pages[1].url}}">English</a></p>
 	  {% else %}
-	  <p><a href="index.html">中文</a> | English</p>
+	  <p><a href="{{ i18n_pages[0].url}}">中文</a> | English</p>
 	  {% endif %}
       <hr />
 	  

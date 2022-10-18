@@ -1,3 +1,4 @@
+page_size: 8
 pages:
   - id: 'manual.event'
     lang: 'cn'
