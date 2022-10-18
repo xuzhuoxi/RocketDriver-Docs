@@ -1,18 +1,11 @@
 <!--Manual内部导航-->
 {% assign manual_pages = site.data.manual.pages | where: "lang", page.lang %}
-{% assign max_index = manual_pages.size | plus: -1 %}
-{{max_index}}
-<hr/>
-{% for i in (0..max_index)%}
-  {{ i }}
-{% endfor %}
-<hr/>
-{% for p in manual_pages %}
-  {% if p.id == page.page_id %}
-	{% break %}
-  {% endif%}
-  {% increment index %}
-{% endfor%}
+
+	{% for p in manual_pages %}
+	  {{p.index}} ,{{p.index0}}<br/>
+	{% endfor%}
+
+
 <hr/>
 {% if page.page_id == manual_pages[0].id %}
 <p>{{index}}下一页</p>
