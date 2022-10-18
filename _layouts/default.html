@@ -46,14 +46,7 @@
         {% endif %}
 		
 		<!--国际化导航-->
-	    <nav>
-		{% for p in pages %}
-		  {% if p.id == page.page_id or p.id == page.group_id %}
-		  <ul><li class="active"><a>{{ p.text}}</a></li></ul>
-		  {% else %}
-		  <ul><li><a href="{{ p.url }}">{{ p.text}}</a></li></ul>
-		  {% endif %}
-		{% endfor %}
+	    {% include header-nav.html %}
         </nav>
 		
       </header>
@@ -62,10 +55,11 @@
 	  {% assign i18n_pages = site.data.home.pages | where: "id", page.page_id %}
 	  
 	  {% if page.lang == "cn" %}
-	  <p>中文 | <a href="{{ i18n_pages[1].url}}">English</a></p>
+	  <p>中文 | <a href="{{ site.docs.url }}/{{ i18n_pages[1].url}}">English</a></p>
 	  {% else %}
-	  <p><a href="{{ i18n_pages[0].url}}">中文</a> | English</p>
+	  <p><a href="{{ site.docs.url }}/{{ i18n_pages[0].url}}">中文</a> | English</p>
 	  {% endif %}
+	  
       <hr />
 	  
 	  {{ content }}
