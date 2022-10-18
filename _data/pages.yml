@@ -1,39 +1,50 @@
-en_pages:
+pages:
   - id: 'main'
+    lang: en
     text: 'Home'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs'
   - id: 'readme'
+    lang: en
     text: 'Readme'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-README_en.html'
   - id: 'changelog'
+    lang: en
     text: 'Changelog'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-CHANGELOG_en.html'
   - id: 'manual'
+    lang: en
     text: 'Manual'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-Manual_en.html'
   - id: 'faqs'
+    lang: en
     text: 'FAQs'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-FAQs_en.html'
   - id: '3pn'
+    lang: en
     text: 'Third Party Notices'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-ThirdPartyNotices_en.html'
- 
-cn_pages:
+
   - id: 'main'
+    lang: cn
     text: '主页'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs'
   - id: 'readme'
+    lang: cn
     text: '介绍'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-README_cn.html'
   - id: 'changelog'
+    lang: cn
     text: '更新日志'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-CHANGELOG_cn.html'
   - id: 'manual'
+    lang: cn
     text: '用户手册'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-Manual_cn.html'
   - id: 'faqs'
+    lang: cn
     text: '常见问题'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-FAQs_cn.html'
   - id: '3pn'
+    lang: cn
     text: '第三方通知'
     url: 'https://www.xuzhuoxi.com/GameDriver-Docs/Page-ThirdPartyNotices_cn.html'
