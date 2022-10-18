@@ -43,6 +43,16 @@
         </ul>
         {% endif %}
 		
+	    <nav>
+		{% for p in site.data.pages.list %}
+		  {% if p.id == page.page_id or p.id == page.group_id %}
+		  <ul><li class="active"><a>{{ p.text}}</a></li></ul>
+		  {% else %}
+		  <ul><li><a href="{{ p.url }}">{{ p.text}}</a></li></ul>
+		  {% endif %}
+		{% endfor %}
+        </nav>
+		
       </header>
       <section>
 	   
