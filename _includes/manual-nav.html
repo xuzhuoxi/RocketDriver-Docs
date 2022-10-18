@@ -8,14 +8,17 @@
   {% endif%}
 {% endfor%}
 
+<manual-nav>
 {% if page.page_id == manual_pages[0].id %}
   {% assign nextIdx = idx | plus: 1 %}
-  <p><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}">下一页</a></p>
+  <next><p><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}">下一页</a></p></next>
 {% elsif page.page_id == manual_pages[-1].id %}
   {% assign prevIdx = idx | plus: -1 %}
-  <p><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}">上一页</a></p>
+  <prev><p><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}">上一页</a></p></prev>
 {% else %}
-  {% assign nextIdx = idx | plus: 1 %}
   {% assign prevIdx = idx | plus: -1 %}
-  <p><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}">上一页</a> | <a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}">下一页</a></p>
+  <prev><p><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}">上一页</a></p></prev>
+  {% assign nextIdx = idx | plus: 1 %}
+  <next><p><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}">下一页</a></p></next>
 {% endif %}
+</manual-nav>
