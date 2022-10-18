@@ -1,51 +1,69 @@
-cn_pages:
-  - name: event
+page_size: 8
+
+pages:
+  - id: 'manual.event'
+    lang: 'cn'
     text: '1.事件(Event) - 高效的事件模块，支持Unity多线程'
     pattern: 'manual/Manual-1.Event_cn.html'
-  - name: loader
+  - id: 'manual.loader'
+    lang: 'cn'
     text: '2.加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换'
     pattern: 'manual/Manual-2.Loader_cn.html'
-  - name: i18n
+  - id: 'manual.i18n'
+    lang: 'cn'
     text: '3.国际化(i18n) - 轻量级国际化解决方案'
     pattern: 'manual/Manual-3.i18n_cn.html'
-  - name: net
+  - id: 'manual.net'
+    lang: 'cn'
     text: '4.网络管理扩展模块(NetManager)'
     pattern: 'manual/Manual-4.Net_cn.html'
-  - name: audio
+  - id: 'manual.audio'
+    lang: 'cn'
     text: '5.音频管理模块(AudioManager)'
     pattern: 'manual/Manual-5.Audio_cn.html'
-  - name: panel
+  - id: 'manual.panel'
+    lang: 'cn'
     text: '6.面板管理模块(PanelManager)'
     pattern: 'manual/Manual-6.Panel_cn.html'
-  - name: service
+  - id: 'manual.service'
+    lang: 'cn'
     text: '7.服务框架(Service)'
     pattern: 'manual/Manual-7.Service_cn.html'
-  - name: material
+  - id: 'manual.material'
+    lang: 'cn'
     text: '8.Rpg材料数据系统'
     pattern: 'manual/Manual-8.RpgMaterial_cn.html'
-
-en_pages:
-  - name: event
+  
+  
+  - id: 'manual.event'
+    lang: 'en'
     text: '事件(Event) '
     pattern: 'manual/Manual-1.Event_en.html'
-  - name: loader
+  - id: 'manual.loader'
+    lang: 'en'
     text: '加载管理模块(Loader) '
     pattern: 'manual/Manual-2.Loader_en.html'
-  - name: i18n
+  - id: 'manual.i18n'
+    lang: 'en'
     text: '国际化(i18n)'
     pattern: 'manual/Manual-3.i18n_en.html'
-  - name: net
+  - id: 'manual.net'
+    lang: 'en'
     text: '网络管理扩展模块(NetManager)'
     pattern: 'manual/Manual-4.Net_en.html'
-  - name: audio
+  - id: 'manual.audio'
+    lang: 'en'
     text: '音频管理模块(AudioManager) '
     pattern: 'manual/Manual-5.Audio_en.html'
-  - name: panel
+  - id: 'manual.panel'
+    lang: 'en'
     text: '面板管理模块(PanelManager)'
     pattern: 'manual/Manual-6.Panel_en.html'
-  - name: service
+  - id: 'manual.service'
+    lang: 'en'
     text: '服务框架(Service)'
     pattern: 'manual/Manual-7.Service_en.html'
-  - name: material
+  - id: 'manual.material'
+    lang: 'en'
     text: 'Rpg材料数据系统'
     pattern: 'manual/Manual-8.RpgMaterial_en.html'

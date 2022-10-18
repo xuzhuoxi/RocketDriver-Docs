@@ -44,7 +44,8 @@
         {% endif %}
 		
 	    <nav>
-		{% assign pages = site.data.pages.pages | where "lang" "cn" %}
+		{% assign lang = page.lang %}
+		{% assign pages = site.data.pages.list | where: "lang" "cn" %}
 		
 		{% for p in pages %}
 		  {% if p.id == page.page_id or p.id == page.group_id %}

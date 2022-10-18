@@ -1,8 +1,9 @@
 ---
 layout: manual
 lang: cn
-page_id: event
+page_id: 'manual.event'
 group_id: manual
+page_index: 0
 ---
 ## 1. 事件(Event) - 高效的事件模块，支持Unity多线程
 
