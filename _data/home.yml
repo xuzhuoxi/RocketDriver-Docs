@@ -1,51 +1,51 @@
 page_size: 6
 pages:
-  - id: 'main'
+  - id: 'home.main'
     lang: cn
     text: '主页'
     url: 'index.html'
-  - id: 'readme'
+  - id: 'home.readme'
     lang: cn
     text: '介绍'
     url: 'Page-README_cn.html'
-  - id: 'changelog'
+  - id: 'home.changelog'
     lang: cn
     text: '更新日志'
     url: 'Page-CHANGELOG_cn.html'
-  - id: 'manual'
+  - id: 'home.manual'
     lang: cn
     text: '用户手册'
     url: 'Page-Manual_cn.html'
-  - id: 'faqs'
+  - id: 'home.faqs'
     lang: cn
     text: '常见问题'
     url: 'Page-FAQs_cn.html'
-  - id: '3pn'
+  - id: 'home.3pn'
     lang: cn
     text: '第三方通知'
     url: 'Page-ThirdPartyNotices_cn.html'
 
-  - id: 'main'
+  - id: 'home.main'
     lang: en
     text: 'Home'
     url: 'index_en.html'
-  - id: 'readme'
+  - id: 'home.readme'
     lang: en
     text: 'Readme'
     url: 'Page-README_en.html'
-  - id: 'changelog'
+  - id: 'home.changelog'
     lang: en
     text: 'Changelog'
     url: 'Page-CHANGELOG_en.html'
-  - id: 'manual'
+  - id: 'home.manual'
     lang: en
     text: 'Manual'
     url: 'Page-Manual_en.html'
-  - id: 'faqs'
+  - id: 'home.faqs'
     lang: en
     text: 'FAQs'
     url: 'Page-FAQs_en.html'
-  - id: '3pn'
+  - id: 'home.3pn'
     lang: en
     text: 'Third Party Notices'
     url: 'Page-ThirdPartyNotices_en.html'
