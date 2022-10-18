@@ -1,10 +1,10 @@
-<!--主页面国际化切换-->
+<!--Manual内部导航-->
 {% assign manual_pages = site.data.manual.pages | where: "lang", page.lang %}
 
 {% if page.page_id == manual_pages[0].id %}
-<p>下一页</p>
+<p>{{page.page_id}} 下一页</p>
 {% else if page.page_id == manual_pages[-1].id %}
-<p>上一页</p>
+<p>{{page.page_id}} 上一页</p>
 {% else %}
-<p>上一页 | 下一页</p>
+<p>{{page.page_id}} 上一页 | 下一页</p>
 {% endif %}
