@@ -43,25 +43,12 @@
         </ul>
         {% endif %}
 	    
-	    <nav>
-		{% assign lang = page.lang %}
-		{% assign pages = site.data.pages.list | where: "lang" "cn" %}
-		
-		{% for p in pages %}
-		  {% if p.id == page.page_id or p.id == page.group_id %}
-		  <ul><li class="active"><a>{{ p.text}}</a></li></ul>
-		  {% else %}
-		  <ul><li><a href="{{ p.url }}">{{ p.text}}</a></li></ul>
-		  {% endif %}
-		{% endfor %}
-        </nav>
+
 		
       </header>
 
       <section>
-	    
-	    <p><a href="index.html">中文666</a> | English666</p>
-	    <hr />
+	  
       {{ content }}
       
 	  </section>

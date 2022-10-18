@@ -2,7 +2,7 @@ list:
   - id: 'main'
     lang: en
     text: 'Home'
-    url: 'https://www.xuzhuoxi.com/GameDriver-Docs'
+    url: 'https://www.xuzhuoxi.com/GameDriver-Docs/index_en.html'
   - id: 'readme'
     lang: en
     text: 'Readme'
