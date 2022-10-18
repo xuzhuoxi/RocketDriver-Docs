@@ -1,6 +1,11 @@
 <!--Manual内部导航-->
 {% assign manual_pages = site.data.manual.pages | where: "lang", page.lang %}
-{{ manual_pages.size }}<br/>
+{% assign max_index = manual_pages.size | plus: -1 %}
+
+{% for i in (0..max_index)%}
+  {{ i }}
+{% endfor %}
+
 {% for p in manual_pages %}
   {% if p.id == page.page_id %}
 	{% break %}
