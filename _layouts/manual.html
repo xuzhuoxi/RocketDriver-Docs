@@ -44,13 +44,23 @@
         {% endif %}
 	    
 	    <nav>
-		{% for p in site.data.pages.cn_pages %}
+		{% if page.lang == "cn" %}
+		  {% for p in site.data.pages.cn_pages %}
 			{% if p.id == page.page_id or p.id == page.group_id %}
 			<ul><li class="active"><a>{{ p.text}}</a></li></ul>
 			{% else %}
 			<ul><li><a href="{{ p.url }}">{{ p.text}}</a></li></ul>
 			{% endif %}
-		{% endfor %}
+		  {% endfor %}
+		{% else %}
+		  {% for p in site.data.pages.en_pages %}
+			{% if p.id == page.page_id or p.id == page.group_id %}
+			<ul><li class="active"><a>{{ p.text}}</a></li></ul>
+			{% else %}
+			<ul><li><a href="{{ p.url }}">{{ p.text}}</a></li></ul>
+			{% endif %}
+		  {% endfor %}
+		{% endif%}
         </nav>
 		
       </header>

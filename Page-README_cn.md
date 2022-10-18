@@ -2,6 +2,7 @@
 layout: default
 page_id: readme
 group_id: home
+lang: cn
 ---
 
 # README

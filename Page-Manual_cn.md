@@ -2,6 +2,7 @@
 layout: default
 page_id: manual
 group_id: home
+lang: cn
 ---
 # Getting Started
 
