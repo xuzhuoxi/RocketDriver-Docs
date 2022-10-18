@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-	  <!-->取目录<-->
+	  <!--国际化页面-->
 	  {% assign pages = site.data.home.pages | where: "lang", page.lang %}
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -45,7 +45,7 @@
         </ul>
         {% endif %}
 		
-		<!-->国际化导航<-->
+		<!--国际化导航-->
 	    <nav>
 		{% for p in pages %}
 		  {% if p.id == page.page_id or p.id == page.group_id %}
@@ -58,13 +58,14 @@
 		
       </header>
       <section>
-	  <!-->国际化<-->
+	  <!--国际化切换-->
 	  {% if page.lang == "cn" %}
 	  <p>中文 | <a href="index_en.html">English</a></p>
 	  {% else %}
 	  <p><a href="index.html">中文</a> | English</p>
 	  {% endif %}
-      
+      <hr />
+	  
 	  {{ content }}
 
       </section>
