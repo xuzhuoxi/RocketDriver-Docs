@@ -68,16 +68,8 @@
 	  <p><a href="{{ i18n_pages[0].url}}">中文</a> | English</p>
 	  {% endif %}
 	  
-	  <!--上下页-->
-	  {% if pages[0].id == page.page_id %}
-	  <p>下一页</p>
-	  {% else if pages[-1].id == page.page_id %}
-	  <p>上一页</p>
-	  {% else %}
-	  <p>上一页 | 下一页</p>
-	  {% end if %}
-      
 	  <hr />
+	  
       {{ content }}
       
 	  </section>
