@@ -56,3 +56,15 @@ nav {
     }
   }
 }
+
+manual-nav {
+  position: fixed;
+  font-size: 16px;
+
+  prev{
+    text-align: left;
+  }
+  next{
+    text-align: right;
+  }
+}
