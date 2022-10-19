@@ -61,11 +61,16 @@ manual-nav {
   font-size: 14px;
   weight:100%;
   height:32px;
-
-  prev{
-    text-align: left;
+  div{
+    weight:100%;
+    height:32px;
   }
-  next{
-    text-align: right;
+  .prev{
+    float:left; 
+	text-align:left
+  }
+  .next{
+    float:right; 
+	text-align:right
   }
 }
