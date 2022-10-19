@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: faqs
+page_id: 'home.faqs'
 group_id: home
 lang: en
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: readme
+page_id: 'home.readme'
 group_id: home
 lang: cn
 ---
