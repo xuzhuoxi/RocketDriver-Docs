@@ -2,7 +2,7 @@
 layout: manual
 lang: cn
 page_id: 'manual.panel'
-group_id: manual
+group_id: 'home.manual'
 page_index: 5
 ---
 ## 6. 面板管理模块(PanelManager)

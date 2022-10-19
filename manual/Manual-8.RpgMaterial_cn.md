@@ -2,7 +2,7 @@
 layout: manual
 lang: cn
 page_id: 'manual.material'
-group_id: manual
+group_id: 'home.manual'
 page_index: 7
 ---
 ## 8. Rpg材料数据系统

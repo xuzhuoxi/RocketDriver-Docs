@@ -2,7 +2,7 @@
 layout: manual
 lang: cn
 page_id: 'manual.service'
-group_id: manual
+group_id: 'home.manual'
 page_index: 6
 ---
 ## 7. 服务框架(Service)

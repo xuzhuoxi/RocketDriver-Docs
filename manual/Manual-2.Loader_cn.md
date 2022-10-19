@@ -2,7 +2,7 @@
 layout: manual
 lang: cn
 page_id: 'manual.loader'
-group_id: manual
+group_id: 'home.manual'
 page_index: 1
 ---
 ## 2. 加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换

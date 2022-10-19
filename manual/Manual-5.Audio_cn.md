@@ -2,7 +2,7 @@
 layout: manual
 lang: cn
 page_id: 'manual.audio'
-group_id: manual
+group_id: 'home.manual'
 page_index: 4
 ---
 ## 5. 音频管理模块(AudioManager) 
