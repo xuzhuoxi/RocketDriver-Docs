@@ -68,6 +68,8 @@ manual-nav {
     weight:100%;
     height:32px;
 	display: inline-block;
+	*display: inine;
+    *zoom:1;
   }
   .prev{
     float:left; 
