@@ -7,23 +7,23 @@ pages:
   - id: 'home.readme'
     lang: cn
     text: '介绍'
-    pattern: 'Page-README_cn.html'
+    pattern: 'home/Home-README_cn.html'
   - id: 'home.changelog'
     lang: cn
     text: '更新日志'
-    pattern: 'Page-CHANGELOG_cn.html'
+    pattern: 'home/Home-CHANGELOG_cn.html'
   - id: 'home.manual'
     lang: cn
     text: '用户手册'
-    pattern: 'Page-Manual_cn.html'
+    pattern: 'home/Home-Manual_cn.html'
   - id: 'home.faqs'
     lang: cn
     text: '常见问题'
-    pattern: 'Page-FAQs_cn.html'
+    pattern: 'home/Home-FAQs_cn.html'
   - id: 'home.3pn'
     lang: cn
     text: '第三方通知'
-    pattern: 'Page-ThirdPartyNotices_cn.html'
+    pattern: 'home/Home-ThirdPartyNotices_cn.html'
 
   - id: 'home.main'
     lang: en
@@ -32,22 +32,22 @@ pages:
   - id: 'home.readme'
     lang: en
     text: 'Readme'
-    pattern: 'Page-README_en.html'
+    pattern: 'home/Home-README_en.html'
   - id: 'home.changelog'
     lang: en
     text: 'Changelog'
-    pattern: 'Page-CHANGELOG_en.html'
+    pattern: 'home/Home-CHANGELOG_en.html'
   - id: 'home.manual'
     lang: en
     text: 'Manual'
-    pattern: 'Page-Manual_en.html'
+    pattern: 'home/Home-Manual_en.html'
   - id: 'home.faqs'
     lang: en
     text: 'FAQs'
-    pattern: 'Page-FAQs_en.html'
+    pattern: 'home/Home-FAQs_en.html'
   - id: 'home.3pn'
     lang: en
     text: 'Third Party Notices'
-    pattern: 'Page-ThirdPartyNotices_en.html'
+    pattern: 'home/Home-ThirdPartyNotices_en.html'
 
 

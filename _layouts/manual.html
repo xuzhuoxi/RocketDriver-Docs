@@ -14,8 +14,6 @@
   </head>
   <body>
     <div class="wrapper">
-	  <!--国际化页面-->
-	  {% assign pages = site.data.manual.pages | where: "lang", page.lang %}
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
