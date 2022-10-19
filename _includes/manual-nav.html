@@ -9,7 +9,7 @@
 {% endfor%}
 
 <manual-nav>
-{% assign works = site.data.i18n[page.lang]%}
+{% assign works = site.data.i18n[page.lang] %}
 {% if page.page_id == manual_pages[0].id %}
   {% assign nextIdx = idx | plus: 1 %}
   <div class="next"><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}" title="{{manual_pages[nextIdx].text}}">{{works.next}}</a></div>
