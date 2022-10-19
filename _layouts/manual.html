@@ -15,6 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
+	  	<!--国际化切换-->
+	    {% include manual-i18n.html %}
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
@@ -39,9 +41,6 @@
       </header>
 
       <section>
-	    <!--国际化切换-->
-		{% include manual-i18n.html %}
-	    <hr/>
 	    <!--Manual导航-->
 		{% include manual-nav.html %}
 	    <hr/>

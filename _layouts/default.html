@@ -15,6 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
+	    <!--国际化切换-->
 	    {% include home-i18n.html %}
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
@@ -39,9 +40,6 @@
 		
       </header>
       <section>
-        <!--国际化切换-->
-		{% include home-i18n.html %}
-        <hr/>
 	    {{ content }}
       </section>
       <footer>
