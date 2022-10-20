@@ -6,7 +6,7 @@ pages:
     pattern: 'index.html'
   - id: 'home.readme'
     lang: cn
-    text: '介绍'
+    text: '阅读手册'
     pattern: 'home/Home-README_cn.html'
   - id: 'home.manual'
     lang: cn
@@ -31,7 +31,7 @@ pages:
     pattern: 'index_en.html'
   - id: 'home.readme'
     lang: en
-    text: 'Readme'
+    text: 'README'
     pattern: 'home/Home-README_en.html'
   - id: 'home.manual'
     lang: en
