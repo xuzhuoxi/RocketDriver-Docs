@@ -32,20 +32,25 @@ PC, Mac & Linux Standalone
 Universal Windows Platform  
 iOS、Android、WebGL、tvOS、Steam  
 
-#### 3.4 升级提醒
-升级时请先备份你的项目，删除现有的 GameDriver 文件夹后重新导入。  
+#### 3.4 可编程渲染管线（SRP）兼容性
++ 内置渲染管线：**兼容**
++ 通用渲染管线（URP）：**兼容**
++ 高清渲染管线（HDRP）：**兼容**
+
+### 4 升级提醒
+升级时请先**备份**你的项目，删除现有的 GameDriver 文件夹后重新导入。  
 
 如果更新后出API丢失报错情况，可查看：  
-+ [**更改日志**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html)
-+ [**用户手册**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_cn.html)
-+ [**常见问题**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_cn.html)
++ [更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html)
++ [用户手册](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_cn.html)
++ [常见问题](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_cn.html)
 + [Issues](https://github.com/xuzhuoxi/GameDriver-Docs/issues)
 
 或者：
 + 提交问题:  [提交问题](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new)
 + 联系作者: xuzhuoxi@gmail.com, mailxuzhuoxi@163.com.  
 
-###  4. 支持 
+###  5. 支持 
 + [下载](https://assetstore.unity.com/packages/slug/234202) 
 + [GameDriver Pro 支持主页](https://www.xuzhuoxi.com/GameDriver-Docs/) 
 + [GameDriver Pro 阅读手册](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-README_cn.html) 
