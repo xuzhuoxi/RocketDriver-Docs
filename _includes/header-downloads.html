@@ -1,8 +1,8 @@
 <!--下载项-->
 {% if site.show_downloads %}
-{% assign works = site.data.i18n[page.lang] %}
+{% assign works = site.data.i18n[page.lang].downloads %}
 <ul class="downloads">
-  <li><a target="_blank" href="{{ site.unity.package_url }}">{{works.download}}<strong>Package</strong></a></li>
+  <li><a target="_blank" href="{{ site.unity.package_url }}">{{works.download}}<strong>{{works.package}}</strong></a></li>
   {% if page.lang == "cn" %}
   <li><a target="_blank" href="{{ site.downloads.manaual_cn_pdf }}">{{works.download}}<strong>{{works.manual}}</strong></a></li>
   {% else %}
