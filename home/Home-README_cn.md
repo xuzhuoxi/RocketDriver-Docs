@@ -5,59 +5,54 @@ group_id: home
 lang: cn
 ---
 
-# README
+# 阅读手册
 
-## Package Info
+### 1. 包信息
++ 名称: 
+  **GameDriver Pro**  
++ 类别
+  Tools/Game Toolkits  
 
-+ Name: 
-  
-  **GameDriver Pro**
+### 2. 版本说明
++ 最新发行版本
+  1.0.3  
++ 更新日志
+  [查看更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html).  
 
-+ Category
+### 3. 描述
 
-  Tools/Game Toolkits
+#### 3.1 概述
+提供专业且扩展良好的游戏开发支持，包含： 资源加载、 多线程事件管理、 国际化、 网络管理、 逻辑服务扩展、 音频管理、 UI管理、 本地保存、 游戏物品管理等。  
 
-## Release notes
+#### 3.2 Unity引擎版本要求
+UNITY 2019.4 或更高版本  
 
-+ Release version
+#### 3.3 平台兼容性
+PC, Mac & Linux Standalone  
+Universal Windows Platform  
+iOS、Android、WebGL、tvOS、Steam  
 
-  1.0.3
+#### 3.4 升级提醒
+升级时请先备份你的项目，删除现有的 GameDriver 文件夹后重新导入。  
 
-+ Changelog
+如果更新后出API丢失报错情况，可查看：  
++ [**更改日志**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html)
++ [**用户手册**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_cn.html)
++ [**常见问题**](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_cn.html)
++ [Issues](https://github.com/xuzhuoxi/GameDriver-Docs/issues)
 
-  [View changelog](/CHANGELOG.md).
+或者：
++ 提交问题:  [提交问题](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new)
++ 联系作者: xuzhuoxi@gmail.com, mailxuzhuoxi@163.com.  
 
-## Description(描述)
-
-+ Summary(概要)
-
-  提供专业且扩展良好的游戏开发支持，包含： 资源加载、 多线程事件管理、 国际化、 网络管理、 逻辑服务扩展、 音频管理、 UI管理、 本地保存、 游戏物品管理等。
-
-+ Decription(描述)
-
-## Details
-
-+ Keywords(关键词)
-
-  Tools, Editor
-
-  + Core
-    
-    AStar, Archive, Buffer, Datetime, Event, Math, NetManager, Pool, Service, Utils,
-
-  + Actions
-    
-    Animator, Editor, AudioManager, Datetime, Excel, GraphicsData, i18n, ThreadEvents, LayerManager, Loader, LocalSave, Service, Utils, Wait,
-
-  + Games
-  
-    LocalAccount, NetManager, PanelManager, RpgMaterial, Service
-
-+ Public links(公共链接)
-
-  - https://assetstore.unity.com/packages/slug/234202
-
-  - https://u3d.as/2VKc
-
-+ Technical details(技术细节)
-
+###  4. 支持 
++ [下载](https://assetstore.unity.com/packages/slug/234202) 
++ [GameDriver Pro 支持主页](https://www.xuzhuoxi.com/GameDriver-Docs/) 
++ [GameDriver Pro 阅读手册](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-README_cn.html) 
++ [GameDriver Pro 用户手册](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_cn.html) 
++ [GameDriver Pro 更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html) 
++ [GameDriver Pro 常见问题](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_cn.html) 
++ [GameDriver Pro 第三方说明](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-ThirdPartyNotices_cn.html) 
++ [Github-Issues](https://github.com/xuzhuoxi/GameDriver-Docs/issues) 
++ [提交问题](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new) 
++ [作者主页](https://www.xuzhuoxi.com/) 
