@@ -5,59 +5,40 @@ group_id: home
 lang: cn
 ---
 
-# README
+# 常见问题
 
-## Package Info
+#### 1.使用Event模块时、事件捕捉不到？
+  1. 确认事件的调度和捕捉，必须是同一个对象。
+  2. 确认事件是否真的被调度了。
 
-+ Name: 
-  
-  **GameDriver - Pro**
+#### 2.使用Loader模块时，资源加载不成功或报错？
+  1. 确认配置文件是否生成，并且位于Resources目录下。
+  2. 确认LoaderManger是否进行初始化了，并传入名称与配置名称是否一致。
+  3. 确认配置文件(LoaderSettings.asset)中选择的 **运行模式** 和 **下载模式** 是否正确。
+  4. 确认配置中 "ProjectBasePath" 中的路径是否与项目一致。
+  5. 确认LoaderManager是否对版本进行初始化化了。
+  6. 确认路径、文件名是否正确。
+  7. 确认是否在协程中开启了新的协程。Unity对协程嵌套层次有限制。 
 
-+ Category
+#### 3.使用I18n模块时，国际化文本显示不成功？
+  1. 确认语言是否已经注册。
+  2. 确认文件集是否已经注册。
+  3. 确认默认语言与默认文件集是否正确。
+  4. 确认是否进行了数据的加载。
+  5. 确认是否使用了自定义加载器，并查看加载器逻辑。
 
-  Tools/Game Toolkits
+#### 4.使用Audio模块时，播放不成功？
+  1. 确认配置文件是否生成，并且位于Resources目录下。
+  2. 确认AudioManager.prefab是否放入到场景中。
+  3. 确认注册音频信息时，bundleName, path是否正确。
+  4. 确认播放调用时信息传入是否正确。
+  5. 确认是否使用了自定义加载器，并查看加载器逻辑。
 
-## Release notes
+#### 5.使用Panel模块时，打开面板不成功？
+  1. 确认相关信息是否正确地注册到PanelRegiester中。
+  2. 确认信息关联中键值是否正确。
 
-+ Release version
-
-  1.0.3
-
-+ Changelog
-
-  [View changelog](/CHANGELOG.md).
-
-## Description(描述)
-
-+ Summary(概要)
-
-  提供专业且扩展良好的游戏开发支持，包含： 资源加载、 多线程事件管理、 国际化、 网络管理、 逻辑服务扩展、 音频管理、 UI管理、 本地保存、 游戏物品管理等。
-
-+ Decription(描述)
-
-## Details
-
-+ Keywords(关键词)
-
-  Tools, Editor
-
-  + Core
-    
-    AStar, Archive, Buffer, Datetime, Event, Math, NetManager, Pool, Service, Utils,
-
-  + Actions
-    
-    Animator, Editor, AudioManager, Datetime, Excel, GraphicsData, i18n, ThreadEvents, LayerManager, Loader, LocalSave, Service, Utils, Wait,
-
-  + Games
-  
-    LocalAccount, NetManager, PanelManager, RpgMaterial, Service
-
-+ Public links(公共链接)
-
-  - https://assetstore.unity.com/packages/slug/234202
-
-  - https://u3d.as/2VKc
-
-+ Technical details(技术细节)
-
+#### 6.使用Service模块时，找不到自己的服务？
+  1. 确认服务实例是否为IService的实现类。
+  2. 确认服务实例是否已经注册。
+  2. 确认服务名称是否重名。 

@@ -22,7 +22,7 @@ pages:
     pattern: 'home/Home-FAQs_cn.html'
   - id: 'home.3pn'
     lang: cn
-    text: '第三方通知'
+    text: '第三方说明'
     pattern: 'home/Home-ThirdPartyNotices_cn.html'
 
   - id: 'home.main'

@@ -11,7 +11,6 @@ page_index: 7
 + **JLGames.GameDriver.Games.RpgMaterial** 
   提供了Rpg材料数据系统的功能支持。依赖关系如下：  
   ![image](assets/img/RpgMaterial_1.png)  
-  
   + **JLGames.GameDriver.Games.RpgMaterial.Common**
     系统的基础数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.Material**
@@ -24,10 +23,10 @@ page_index: 7
     系统中针对Unity进行序列化的数据结构。  
 
 ### 8.1 设计思路
-+ 用户数据的元数据(配置数据)以 **KTD(Key-Type-Define)** 形式进行管理。
++ 用户数据的元数据(配置数据)以 **KTD(Key-Type-Define)** 格式进行管理。
 + 元数据(配置数据)的来源可以是数值表导出、服务器获取、资产配置等方式得到。
 + 通过 **KT(Key&Type)** 能得到元数据(配置数据)定义(Define)，并且可以在用户数据设置时进行有效性检查。
-+ 用户数据以 **KTV(Key-Type-Value)** 形式进行保存(内存、本地文件、服务器等)。
++ 用户数据以 **KTV(Key-Type-Value)** 格式进行管理(内存、本地文件、服务器等)。
 + 同一条元数据定义下，如果用户数据要求有多条，则采用 **KTUV(Key-Type-UId-Value)** 形式进行保存，既兼容了普通数据格式，也支持了多条数据的要求。
 + 用户数据(Value)通常情况下使用基础数值类型则满足需求，当然游戏设计者可以扩展数据的存储结构。
 + 通过 **KT(Key&Type)** 或 **KTU(Key&Type&UId)** 能得到玩家的具体数据(Value)，用于运算与展示。
