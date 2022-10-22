@@ -6,7 +6,7 @@ lang: cn
 ---
 # 第三方说明
 
-####  BabelEdit
+###  1. BabelEdit
 **翻译文件编辑器，**  
 轻松地编辑你的json、yaml、php、arb、vue、属性的xliff翻译文件。  
 
@@ -15,7 +15,7 @@ lang: cn
 **软件链接**：
 [https://www.codeandweb.com/babeledit](https://www.codeandweb.com/babeledit)  
 
-####  ExcelExporter
+###  2. ExcelExporter
 **一个用于导出Excel数据的工具**  
 + 支持从Excel表中进行**表头导出**、**数据导出**、**常量表导出**、**Sql导出**
 + 支持自定义编程语言模板

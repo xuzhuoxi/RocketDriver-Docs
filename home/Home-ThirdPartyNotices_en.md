@@ -6,7 +6,7 @@ lang: en
 ---
 # Third Party Notices
 
-####  BabelEdit
+###  1. BabelEdit
 **TRANSLATION FILE EDITOR**  
 Edit your json, yaml, php, arb, vue, properties for xliff translation files with ease.  
 
@@ -15,7 +15,7 @@ The data files used in **the internationalization solution (i18n)** are from the
 **Links**:  
 [https://www.codeandweb.com/babeledit](https://www.codeandweb.com/babeledit)  
 
-####  ExcelExporter
+###  2. ExcelExporter
 **A tool for exporting Excel data**  
 + Support for **Table header export**, **Data export**, **Constant table export**, **Sql export** from Excel tables
 + Support for custom programming language templates
