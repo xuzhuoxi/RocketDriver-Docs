@@ -4,13 +4,16 @@ page_id: 'home.manual'
 group_id: home
 lang: cn
 ---
-# Getting Started
+# 开始
 
 ### 概述
 本用户指南旨在为 GameDriver Pro 用户提供关于工具的基本概述、功能和用法。  
 
 ### 安装
-从Unity的Asset Store下载GameRiver Pro后，请转到：“Assets->Import Package->Custom Package...”。 在“导入资产”窗口中，查找并选择GameDriver Pro UnityPackage文件。 在“导入软件包”窗口中出现Unity之后，请验证所有项目选择导入，然后单击窗口右下方的导入按钮。 GameDriver Pro的全部文件将加入到Assets/GameDriver中。  
+1. 从Unity的Asset Store下载GameRiver Pro后，请转到：“Assets->Import Package->Custom Package...”。 
+2. 在“导入资产”窗口中，查找并选择GameDriver Pro UnityPackage文件。 
+3. 在“导入软件包”窗口中出现Unity之后，请验证所有项目选择导入，然后单击窗口右下方的导入按钮。
+4. GameDriver Pro的全部文件将加入到Assets/GameDriver中。 
 
 您也可以选择所需的部分进行导入。  
 
