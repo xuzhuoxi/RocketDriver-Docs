@@ -3,6 +3,7 @@ layout: default
 page_id: 'home.readme'
 group_id: home
 lang: cn
+title: '阅读手册 | GameDriver Pro'
 ---
 # 阅读手册
 

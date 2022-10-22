@@ -3,6 +3,7 @@ layout: manual
 lang: cn
 page_id: 'manual.service'
 group_id: 'home.manual'
+title: 'User Manual | GameDriver Pro'
 ---
 ## 7. Service Framework (Service)
 + **JLGames.GameDriver.CSharp.Service** provides the basic interface and behavior specification of the service framework.

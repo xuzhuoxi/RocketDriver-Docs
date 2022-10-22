@@ -3,6 +3,7 @@ layout: default
 page_id: 'home.faqs'
 group_id: home
 lang: cn
+title: '常见问题 | GameDriver Pro'
 ---
 # 常见问题
 

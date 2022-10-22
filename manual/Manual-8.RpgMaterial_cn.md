@@ -3,6 +3,7 @@ layout: manual
 lang: cn
 page_id: 'manual.material'
 group_id: 'home.manual'
+title: '用户手册 | GameDriver Pro'
 ---
 ## 8. Rpg材料数据系统
 这是一套通用的用户数据管理系统。  

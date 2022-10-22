@@ -3,6 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.audio'
 group_id: 'home.manual'
+title: 'User Manual | GameDriver Pro'
 ---
 ## 5. Audio Manager (AudioManager)
 The perfect audio management module supports scene and UI music sound effects, and removes the dependency of Assetbundle.  

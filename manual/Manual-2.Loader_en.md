@@ -3,6 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.loader'
 group_id: 'home.manual'
+title: 'User Manual | GameDriver Pro'
 ---
 ## 2. Loading management module (Loader) - supports free switching of three modes: Resources, Editor, Assetbundle
 

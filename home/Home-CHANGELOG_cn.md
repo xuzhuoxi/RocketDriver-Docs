@@ -3,6 +3,7 @@ layout: default
 page_id: 'home.changelog'
 group_id: home
 lang: cn
+title: '更新日志 | GameDriver Pro'
 ---
 # GameDriver Pro 更新日志
 

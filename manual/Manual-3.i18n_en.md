@@ -3,6 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.i18n'
 group_id: 'home.manual'
+title: 'User Manual | GameDriver Pro'
 ---
 ## 3. Internationalization (i18n) - Lightweight Internationalization Solution
 
