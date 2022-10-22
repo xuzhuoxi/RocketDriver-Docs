@@ -3,7 +3,7 @@ layout: default
 page_id: 'home.changelog'
 group_id: home
 lang: en
-title: 'CHANGELOG | GameDriver Pro'
+title: 'CHANGELOG'
 ---
 # GameDriver Pro Changelog
 

@@ -3,7 +3,7 @@ layout: default
 page_id: 'home.readme'
 group_id: home
 lang: en
-title: 'README | GameDriver Pro'
+title: 'README'
 ---
 # README
 

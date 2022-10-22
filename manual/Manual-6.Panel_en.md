@@ -3,7 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.panel'
 group_id: 'home.manual'
-title: 'User Manual | GameDriver Pro'
+title: 'User Manual'
 ---
 ## 6. Panel Manager (PanelManager)
 + **JLGames.GameDriver.Actions.Layer** provides container level management.

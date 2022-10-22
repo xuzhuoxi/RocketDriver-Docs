@@ -3,7 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.net'
 group_id: 'home.manual'
-title: 'User Manual | GameDriver Pro'
+title: 'User Manual'
 ---
 ## 4. Network management extension module (NetManager)
 Easy-to-use network link management module  

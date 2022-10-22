@@ -3,7 +3,7 @@ layout: default
 page_id: 'home.manual'
 group_id: home
 lang: en
-title: 'User Manual | GameDriver Pro'
+title: 'User Manual'
 ---
 # Getting Start
 

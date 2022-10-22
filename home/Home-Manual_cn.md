@@ -3,7 +3,7 @@ layout: default
 page_id: 'home.manual'
 group_id: home
 lang: cn
-title: '用户手册 | GameDriver Pro'
+title: '用户手册'
 ---
 # 开始
 

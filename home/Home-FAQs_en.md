@@ -3,7 +3,7 @@ layout: default
 page_id: 'home.faqs'
 group_id: home
 lang: en
-title: 'FAQS | GameDriver Pro'
+title: 'FAQS'
 ---
 # FAQs
 

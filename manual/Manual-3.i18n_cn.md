@@ -3,7 +3,7 @@ layout: manual
 lang: cn
 page_id: 'manual.i18n'
 group_id: 'home.manual'
-title: '用户手册 | GameDriver Pro'
+title: '用户手册'
 ---
 ## 3. 国际化(i18n) - 轻量级国际化解决方案
 

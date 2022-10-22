@@ -3,7 +3,7 @@ layout: manual
 lang: en
 page_id: 'manual.event'
 group_id: 'home.manual'
-title: 'User Manual | GameDriver Pro'
+title: 'User Manual'
 ---
 ## 1. Event - Efficient event module, supports Unity multithreading
 The event adopts the "**monitoring**-**capture**" mechanism, which supports the settings of the number of captures and capture priority during monitoring.  
