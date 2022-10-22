@@ -4,7 +4,6 @@ page_id: 'home.readme'
 group_id: home
 lang: cn
 ---
-
 # 阅读手册
 
 ### 1. 包信息

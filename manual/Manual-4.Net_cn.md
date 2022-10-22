@@ -3,7 +3,6 @@ layout: manual
 lang: cn
 page_id: 'manual.net'
 group_id: 'home.manual'
-page_index: 3
 ---
 ## 4. 网络管理扩展模块(NetManager)
 简单易用的网络链接管理模块  

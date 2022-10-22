@@ -3,7 +3,6 @@ layout: manual
 lang: cn
 page_id: 'manual.material'
 group_id: 'home.manual'
-page_index: 7
 ---
 ## 8. Rpg材料数据系统
 这是一套通用的用户数据管理系统。  
@@ -12,15 +11,15 @@ page_index: 7
   提供了Rpg材料数据系统的功能支持。依赖关系如下：  
   ![image](assets/img/RpgMaterial_1.png)  
   + **JLGames.GameDriver.Games.RpgMaterial.Common**
-    系统的基础数据结构。  
+  系统的基础数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.Material**
-    系统中关于材料定义的数据结构。  
+  系统中关于材料定义的数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.User**
-    系统中关于用户数据存储的数据结构。  
+  系统中关于用户数据存储的数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.Service**
-    系统中关于对外提供接口支持的数据结构。  
+  系统中关于对外提供接口支持的数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.Asset**
-    系统中针对Unity进行序列化的数据结构。  
+  系统中针对Unity进行序列化的数据结构。  
 
 ### 8.1 设计思路
 + 用户数据的元数据(配置数据)以 **KTD(Key-Type-Define)** 格式进行管理。

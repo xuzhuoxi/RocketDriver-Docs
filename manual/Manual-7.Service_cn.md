@@ -3,7 +3,6 @@ layout: manual
 lang: cn
 page_id: 'manual.service'
 group_id: 'home.manual'
-page_index: 6
 ---
 ## 7. 服务框架(Service)
 + **JLGames.GameDriver.CSharp.Service** 提供了服务框架的基础接口与行为规范。

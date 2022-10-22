@@ -4,60 +4,59 @@ page_id: 'home.readme'
 group_id: home
 lang: en
 ---
-
 # README
 
-## Package Info
+### 1. Package information
++ name:
+  **GameDriver Pro**  
++ category
+  Tools/Game Toolkits  
 
-+ Name: 
-  
-  **GameDriver Pro**
+### 2. Release Notes
++ latest release version
+  1.0.3  
++ changelog
+  [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_en.html).  
 
-+ Category
+### 3. Description
 
-  Tools/Game Toolkits
+#### 3.1 Overview
+Provide professional and well-expanded game development support, including: resource loading, multi-threaded event management, internationalization, network management, logical service extension, audio management, UI management, local saving, game item management, etc.  
 
-## Release notes
+#### 3.2 Unity engine version requirements
+UNITY 2019.4 or higher  
 
-+ Release version
+#### 3.3 Platform Compatibility
+PC, Mac & Linux Standalone  
+Universal Windows Platform  
+iOS, Android, WebGL, tvOS, Steam  
 
-  1.0.3
+#### 3.4 Programmable Render Pipeline (SRP) Compatibility
++ Built-in rendering pipeline: **Compatible**
++ Universal Render Pipeline (URP): **Compatible**
++ High Definition Render Pipeline (HDRP): **Compatible**
 
-+ Changelog
+### 4 Upgrade reminder
+Please **backup** your project when upgrading, delete the existing GameDriver folder and re-import.  
 
-  [View changelog](/CHANGELOG.md).
+If the API is lost after the update and an error is reported, you can view:  
++ [Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_en.html)
++ [User Manual](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_en.html)
++ [FAQs](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_en.html)
++ [Issues](https://github.com/xuzhuoxi/GameDriver-Docs/issues)
 
-## Description(描述)
+or:  
++ File an issue: [File an issue](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new)
++ Contact the author: xuzhuoxi@gmail.com, mailxuzhuoxi@163.com.
 
-+ Summary(概要)
-
-  提供专业且扩展良好的游戏开发支持，包含： 资源加载、 多线程事件管理、 国际化、 网络管理、 逻辑服务扩展、 音频管理、 UI管理、 本地保存、 游戏物品管理等。
-
-+ Decription(描述)
-
-## Details
-
-+ Keywords(关键词)
-
-  Tools, Editor
-
-  + Core
-    
-    AStar, Archive, Buffer, Datetime, Event, Math, NetManager, Pool, Service, Utils,
-
-  + Actions
-    
-    Animator, Editor, AudioManager, Datetime, Excel, GraphicsData, i18n, ThreadEvents, LayerManager, Loader, LocalSave, Service, Utils, Wait,
-
-  + Games
-  
-    LocalAccount, NetManager, PanelManager, RpgMaterial, Service
-
-+ Public links(公共链接)
-
-  - https://assetstore.unity.com/packages/slug/234202
-
-  - https://u3d.as/2VKc
-
-+ Technical details(技术细节)
-
+### 5. Support
++ [Get Package](https://assetstore.unity.com/packages/slug/234202)
++ [GameDriver Pro Support Homepage](https://www.xuzhuoxi.com/GameDriver-Docs/)
++ [GameDriver Pro Read Manual](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-README_en.html)
++ [GameDriver Pro User Manual](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-Manual_en.html)
++ [GameDriver Pro Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_en.html)
++ [GameDriver Pro FAQ](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-FAQs_en.html)
++ [GameDriver Pro Third Party Notices](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-ThirdPartyNotices_en.html)
++ [Github-Issues](https://github.com/xuzhuoxi/GameDriver-Docs/issues)
++ [Submit an issue](https://github.com/xuzhuoxi/GameDriver-Docs/issues/new)
++ [Author's Homepage](https://www.xuzhuoxi.com/)

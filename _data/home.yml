@@ -35,7 +35,7 @@ pages:
     pattern: 'home/Home-README_en.html'
   - id: 'home.manual'
     lang: en
-    text: 'Manual'
+    text: 'User Manual'
     pattern: 'home/Home-Manual_en.html'
   - id: 'home.changelog'
     lang: en

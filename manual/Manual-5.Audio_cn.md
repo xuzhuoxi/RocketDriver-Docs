@@ -3,12 +3,11 @@ layout: manual
 lang: cn
 page_id: 'manual.audio'
 group_id: 'home.manual'
-page_index: 4
 ---
 ## 5. 音频管理模块(AudioManager) 
 完善的音频管理模块，支持场景与UI的音乐音效同时，去除Assetbundle的依赖。  
 
-+ **JLGames.GameDriver.Actions.Audio**提供了音频管理全部的功能支持。
++ **JLGames.GameDriver.Actions.Audio** 提供了音频管理全部的功能支持。
 + 音频的加载使用默认的加载器(Loader)，同时也支持自定义的加载器。
 + 采用Ico方式注入音频资源信息。
 + 无须直接引用音频资源，实现了资源使用与资源打包的分离。  
