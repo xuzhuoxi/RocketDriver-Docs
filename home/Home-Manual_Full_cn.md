@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: logo
 page_id: 'home.manual'
 group_id: home
 lang: cn
