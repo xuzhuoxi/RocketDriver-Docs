@@ -3,6 +3,7 @@ layout: default
 page_id: 'home.manual'
 group_id: home
 lang: cn
+title: '66666666'
 ---
 # 开始
 
@@ -38,4 +39,3 @@ GameDriver Pro中的源代码存放位置是有规律的。
 {% for p in pages %}
   <h4><a href="{{ site.home.url }}/{{ p.pattern }}">{{ p.text }}</a><h4>
 {% endfor %}
-
