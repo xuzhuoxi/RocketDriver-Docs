@@ -75,7 +75,9 @@ InitVersion(LoaderDelegate.OnAssetLoaded<AssetBundleManifest> onVersionAssetBund
 + 函数回调为初始化版本结束后执行，内部可判断初始化结果：成功 或 失败。
 + 函数要求开启协程调用, 可以使用LoaderManager.Mono开启协程：
 ```C#
-LoaderManager.Mono.StartCoroutine(LoaderManager.DefaultLoader.InitVersion(onVersionLoaded));
+LoaderManager.Mono.StartCoroutine(
+  LoaderManager.DefaultLoader.InitVersion(
+    onVersionLoaded));
 ```
 
 ### 2.2 使用
@@ -98,196 +100,15 @@ LoaderManager.Mono.StartCoroutine(LoaderManager.DefaultLoader.LoadBundleAsync(bu
 加载资源资产建议使用同步函数，不建议使用异步。 原因是Unity对于在协程内部开启协程支持得不友好， 层级过多(好像是16层)会出现无法预测的报错。  
 
 IAssetLoader接口函数分四类：  
-+ 单个资源资产加载(同步|异步)  
-
-```C#
-/// <summary>
-/// Load asset from bundle synchronously with relative path
-/// 使用相对路径从Bundle中加载资源
-/// </summary>
-/// <param name="assetPath">资源路径</param>
-/// <param name="bundle">资源包</param>
-/// <typeparam name="T">资源类型</typeparam>
-/// <returns></returns>
-T LoadAssetSync<T>(string assetPath, AssetBundle bundle) where T : Object;
-
-/// <summary>
-/// Load asset from bundle synchronously with full path
-/// 使用完整路径从Bundle中加载资源
-/// The full path：refers to the relative path after removing ProjectBasePath
-/// 完整路径：指的是去除ProjectBasePath后的相对路径
-/// </summary>
-/// <param name="fullPath">完整资源路径,忽略设置的ProjectBasePath</param>
-/// <param name="bundle">资源包</param>
-/// <typeparam name="T">资源类型</typeparam>
-/// <returns></returns>
-T LoadAssetSyncFull<T>(string fullPath, AssetBundle bundle) where T : Object; 
-
-/// <summary>
-/// Asynchronously load resources from bundle
-/// 异步从资源包中加载资源
-/// </summary>
-/// <param name="assetPath">资源路径</param>
-/// <param name="bundle">资源包</param>
-/// <param name="onAssetLoaded">回调</param>
-/// <typeparam name="T">资源类型</typeparam>
-/// <returns></returns>
-IEnumerator LoadAssetAsync<T>(string assetPath, AssetBundle bundle, LoaderDelegate.OnAssetLoaded<T> onAssetLoaded) where T : Object;
-```
-
-+ 批量资源资产加载(同步|异步)  
-
-```C#
-/// <summary>
-/// Synchronized load resources from bundle in batches
-/// 同步批量从资源包中加载资源
-/// </summary>
-/// <param name="assetPaths">资源路径</param>
-/// <param name="bundle">资源包</param>
-/// <typeparam name="T">资源类型</typeparam>
-/// <returns></returns>
-T[] LoadAssetsSync<T>(string[] assetPaths, AssetBundle bundle) where T : Object;
-
-/// <summary>
-/// Synchronized load resources from bundle in batches
-/// 同步批量从资源包中加载资源
-/// </summary>
-/// <param name="fullPaths">完整资源路径,忽略设置的ProjectBasePath</param>
-/// <param name="bundle">资源包</param>
-/// <typeparam name="T">资源类型</typeparam>
-/// <returns></returns>
-T[] LoadAssetsSyncFull<T>(string[] fullPaths, AssetBundle bundle) where T : Object;
-
-/// <summary>
-/// Batch asynchronously load resources from bundle
-/// 异步从资源包中批量加载资源
-/// </summary>
-/// <param name="assetPaths">路径数组</param>
-/// <param name="bundle">资源包</param>
-/// <param name="onMultiAssetLoaded">回调</param>
-/// <typeparam name="T"></typeparam>
-/// <returns></returns>
-IEnumerator LoadMulitAssetAsync<T>(string[] assetPaths, AssetBundle bundle, LoaderDelegate.OnMultiAssetLoaded<T> onMultiAssetLoaded)
-where T : Object;
-```
-
-+ 单个子资源资产加载(同步|异步)  
-
-```C#
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subName"></param>
-/// <param name="ab"></param>
-/// <returns></returns>
-Object LoadSubAssetSync(string path, string subName, AssetBundle ab);
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subName"></param>
-/// <param name="type"></param>
-/// <param name="ab"></param>
-/// <returns></returns>
-Object LoadSubAssetSync(string path, string subName, Type type, AssetBundle ab);
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subName"></param>
-/// <param name="ab"></param>
-/// <returns></returns>
-T LoadSubAssetSync<T>(string path, string subName, AssetBundle ab) where T : Object;
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.) from bundles asynchronously
-/// 异步从资源包中加载加载子资源(子图、预置等)
-/// </summary>
-/// <param name="assetPath">资源路径</param>
-/// <param name="subName"></param>
-/// <param name="bundle">资源包</param>
-/// <param name="onAssetLoaded">Callback(回调)</param>
-/// <typeparam name="T">Resource type(资源类型)</typeparam>
-/// <returns></returns>
-IEnumerator LoadSubAssetAsync<T>(string assetPath, string subName, AssetBundle bundle, LoaderDelegate.OnAssetLoaded<T> onAssetLoaded)
-where T : Object;
-```
-
-+ 批量子资源资产加载(同步|异步)  
-
-```C#
-/// <summary>
-/// Load all sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="type"></param>
-/// <param name="bundle"></param>
-/// <returns></returns>
-Object[] LoadSubAssetsSync(string path, Type type, AssetBundle bundle);
-
-/// <summary>
-/// Load all sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="bundle"></param>
-/// <typeparam name="T"></typeparam>
-/// <returns></returns>
-T[] LoadSubAssetsSync<T>(string path, AssetBundle bundle) where T : Object;
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subNames"></param>
-/// <param name="bundle"></param>
-/// <returns></returns>
-Object[] LoadSubAssetsSync(string path, string[] subNames, AssetBundle bundle);
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subNames"></param>
-/// <param name="type"></param>
-/// <param name="ab"></param>
-/// <returns></returns>
-Object[] LoadSubAssetsSync(string path, string[] subNames, Type type, AssetBundle ab);
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.)
-/// 加载子资源(子图、预置等)
-/// </summary>
-/// <param name="path"></param>
-/// <param name="subNames"></param>
-/// <param name="bundle"></param>
-/// <typeparam name="T"></typeparam>
-/// <returns></returns>
-T[] LoadSubAssetsSync<T>(string path, string[] subNames, AssetBundle bundle) where T : Object;
-
-/// <summary>
-/// Load sub-resources (sprites, prefabs, etc.) from bundles asynchronously
-/// 异步从资源包中加载加载子资源(子图、预置等)
-/// </summary>
-/// <param name="assetPath">资源路径</param>
-/// <param name="buundle">资源包</param>
-/// <param name="onAssetsLoaded">Callback(回调)</param>
-/// <typeparam name="T">Resource type(资源类型)</typeparam>
-/// <returns></returns>
-IEnumerator LoadSubAssetsAsync<T>(string assetPath, AssetBundle buundle, LoaderDelegate.OnMultiAssetLoaded<T> onAssetsLoaded)
-where T : Object;
-```
-
-+ 更多用法请参考示例、API或源码。 
+  + 单个资源资产加载(同步|异步)  
+  ![image](assets/img/loader_12.png)  
+  + 批量资源资产加载(同步|异步)  
+  ![image](assets/img/loader_13.png)   
+  + 单个子资源资产加载(同步|异步)  
+  ![image](assets/img/loader_14.png)   
+  + 批量子资源资产加载(同步|异步)  
+  ![image](assets/img/loader_15.png)   
+  + 更多用法请参考示例、API或源码。   
   
 ### 2.3 示例
 GameDriver/Samples/Loader  
