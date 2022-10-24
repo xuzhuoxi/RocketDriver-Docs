@@ -24,6 +24,10 @@ pages:
     lang: cn
     text: '第三方说明'
     pattern: 'home/Home-ThirdPartyNotices_cn.html'
+  - id: 'home.about'
+    lang: cn
+    text: '关于'
+    pattern: 'home/Home-About_cn.html'
 
   - id: 'home.main'
     lang: en
@@ -49,5 +53,8 @@ pages:
     lang: en
     text: 'Third Party Notices'
     pattern: 'home/Home-ThirdPartyNotices_en.html'
-
+  - id: 'home.about'
+    lang: en
+    text: 'About'
+    pattern: 'home/Home-About_en.html'
 

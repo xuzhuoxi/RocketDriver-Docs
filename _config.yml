@@ -7,6 +7,9 @@ theme: jekyll-theme-minimal
 i18n_cn: 0
 i18n_en: 1
 
+version: '1.0.3'
+build: '2022.10.24'
+
 author:
   name: XUZHUOXI
   home_page_url: https://www.xuzhuoxi.com/
