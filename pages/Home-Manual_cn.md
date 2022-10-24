@@ -2,12 +2,12 @@
 layout: default
 page_id: 'home.manual'
 group_id: home
-lang: en
-title: 'User Manual'
+lang: cn
+title: '用户手册'
 ---
-{% include manual/Manual_Head_en.md %}
+{% include_relative ManualInclude_Head_cn.md %}
 
-**Table of contents**:  
+**目录**：  
 
 {% assign pages = site.data.manual.pages | where: "lang", page.lang %}
 {% for p in pages %}
