@@ -5,7 +5,7 @@ group_id: home
 lang: en
 title: 'User Manual'
 ---
-{% include manual/Manual_cn.md %}
+{% include_relative Manual_cn.md %}
 
 **Table of contents**:  
 
