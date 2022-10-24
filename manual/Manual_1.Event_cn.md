@@ -1,10 +1,3 @@
----
-layout: manual
-lang: cn
-page_id: 'manual.event'
-group_id: 'home.manual'
-title: '用户手册'
----
 ## 1. 事件(Event) - 高效的事件模块，支持Unity多线程
 事件采用“**监听**-**捕获**”机制，监听时支持捕获次数、 捕获优先级的设置。  
 + **JLGames.GameDriver.CSharp.Event** 负责事件系统的核心逻辑实现。
