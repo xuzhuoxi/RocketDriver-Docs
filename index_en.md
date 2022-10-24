@@ -6,18 +6,28 @@ lang: en
 ---
 
 # GameDriver Pro
+This is a game development framework to assist in the development of game applications in the Unity engine.  
+You can purchase it in the [Unity Asset Store](https://assetstore.unity.com/packages/slug/234202) and download the plugin package in the Unity Package Manager and use it in Unity.  
 
-Simple and modern design for publishing blog posts, documentation and many more things about your project. You can now clone and start to create a website for your project like this one.  
-[Learn More]()  
+If you are a student, educator or open source contributor, we can provide you with a free beta version, **This version is not commercially available**.  
+If necessary, please contact **xuzhuoxi@gmail.com** or **mailxuzhuoxi@163.com**  
 
-## What is GameDriver Pro
-Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.  
+[Learn more](home/Home-README_en.html)  
 
-### Easy to install and publish
-Get started by cloning source into GitHub account of your project. Thanks to GitHub Pages, it will be automatically compiled and published under your account's (or organisation's) subdomain under github.io.  
+## What is GameDriver Pro？
+GameDriver Pro is a powerful game development framework under the Unity engine. Others include a lot of functional support that must be used in the game development process, such as "event management", "asset loading management", "internationalization support" and so on.  
+Using GameDriver Pro can help developers save a lot of basic function development time, and can focus more on game content.   
 
-### Modular Styling and Templating
-This template uses bootstrap-sass along with Bootwatch themes. You can change the theme or write your custom one by overwriting bootstrap sass variables for a different color set, font options, etc.  
+### Easy to install and configure
+The installation process completely follows the installation process of the Unity plug-in package, which is very simple.  
+Provides direct menu options for the configuration of related modules, and supports Chinese and English Tips for configuration files, effectively helping developers understand the configuration content.  
 
-### Git-based source control
-Leverage from Git version control system by maintaining your documentation along with the source code; publish the page when you merge to the master branch.  
+### Provides source code and supports multiple platforms
+With the purchase of GameDriver Pro, you will get the full source code of the plugin package.  
+The code has good platform compatibility, no need to worry about compatibility whether it is released for stand-alone or Mobile.  
+
+### Compatible with common rendering pipelines
+GameDriver Pro supports **Built-in Render Pipeline**, **Universal Render Pipeline (URP)**, **High Definition Render Pipeline (HDRP)**.   
+
+### Long-team upgrade support
+Also as a game developer, GameDriver Pro will receive long-term maintenance support.   
