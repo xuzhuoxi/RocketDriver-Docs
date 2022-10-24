@@ -5,7 +5,7 @@ group_id: home
 lang: cn
 title: '用户手册'
 ---
-{% include Manual_Head_cn.md %}
+{% include manual/Manual_Head_cn.md %}
 
 {% include_relative ManualInclude_1_Event_cn.md %}
 

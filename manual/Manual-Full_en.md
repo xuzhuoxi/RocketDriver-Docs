@@ -5,7 +5,7 @@ group_id: home
 lang: en
 title: 'User Manual'
 ---
-{% include Manual_Head_en.md %}
+{% include manual/Manual_Head_en.md %}
 
 {% include_relative ManualInclude_1_Event_en.md %}
 
