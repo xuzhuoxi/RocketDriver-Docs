@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.panel'
+group_id: 'home.manual'
+title: '用户手册'
+---
 ## 6. 面板管理模块(PanelManager)
 + **JLGames.GameDriver.Actions.Layer** 提供了容器层级管理功能。
 + **JLGames.GameDriver.Games.PanelManager** 提供了面板管理功能。

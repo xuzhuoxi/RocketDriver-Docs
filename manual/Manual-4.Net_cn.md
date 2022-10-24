@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.net'
+group_id: 'home.manual'
+title: '用户手册'
+---
 ## 4. 网络管理扩展模块(NetManager)
 简单易用的网络链接管理模块  
 + **JLGames.GameDriver.CSharp.Net** 提供了C# 针对 Socket API 的一个封装， 使开发者可以对TCP、UDP、 HTTP(HTTPS)、WebSocket(WebSockets)等协议在同一套API上进行开发。

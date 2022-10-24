@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: en
+page_id: 'manual.i18n'
+group_id: 'home.manual'
+title: 'User Manual'
+---
 ## 3. Internationalization (i18n) - Lightweight Internationalization Solution
 
 + **JLGames.GameDriver.Actions.i18n** provides full functional support for the internationalization module.

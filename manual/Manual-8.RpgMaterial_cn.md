@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.material'
+group_id: 'home.manual'
+title: '用户手册'
+---
 ## 8. Rpg材料数据系统
 这是一套通用的用户数据管理系统。  
 针对玩家的数值型数据，以KTV(Key-Type-Value)形式进行管理。  

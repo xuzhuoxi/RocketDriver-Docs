@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.i18n'
+group_id: 'home.manual'
+title: '用户手册'
+---
 ## 3. 国际化(i18n) - 轻量级国际化解决方案
 
 + **JLGames.GameDriver.Actions.i18n** 提供了国际化模块全部的功能支持。

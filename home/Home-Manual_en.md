@@ -1,3 +1,10 @@
+---
+layout: default
+page_id: 'home.manual'
+group_id: home
+lang: en
+title: 'User Manual'
+---
 # Getting Start
 
 ### Overview
@@ -26,3 +33,11 @@ Source code storage locations in GameDriver Pro are regular.
 + The source code in **GameDriver/Runtime/CSharp** only depends on the C# standard library, ** does not depend on the Unity standard library. It is an extension to C#.
 + The source code in **GameDriver/Runtime/Actions** depends on CSharp and the Unity standard library. It is a functional extension to the Unity engine.
 + The source code in **GameDriver/Runtime/Games** depends on CSharp and Actions. It is a general implementation of system functions commonly used in the game development process.
+
+
+**Table of contents**:  
+
+{% assign pages = site.data.manual.pages | where: "lang", page.lang %}
+{% for p in pages %}
+  <h4><a href="{{ site.home.url }}/{{ p.pattern }}">{{ p.text }}</a><h4>
+{% endfor %}

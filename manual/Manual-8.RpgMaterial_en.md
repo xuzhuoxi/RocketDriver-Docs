@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.material'
+group_id: 'home.manual'
+title: 'User Manual'
+---
 ## 8. Rpg Material Data System
 This is a general user data management system.  
 The player's numerical data is managed in the form of KTV (Key-Type-Value).  

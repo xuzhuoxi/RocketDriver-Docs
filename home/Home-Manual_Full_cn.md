@@ -1,3 +1,10 @@
+---
+layout: print
+page_id: 'home.manual'
+group_id: home
+lang: cn
+title: '用户手册'
+---
 # 开始
 
 ### 概述
@@ -25,3 +32,5 @@ GameDriver Pro中的源代码存放位置是有规律的。
 + **GameDriver/Runtime/CSharp** 中的源码**只依赖**于C#标准库，**不依赖**Unity标准库。 是对C#的功能扩展。
 + **GameDriver/Runtime/Actions** 中的源码**依赖**于CSharp和Unity标准库。 是对Unity引擎的功能扩展。
 + **GameDriver/Runtime/Games** 中的源码依赖于CSharp与Actions。 是游戏开发过程常用的系统功能的通用实现。
+
+**目录**：  

@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: cn
+page_id: 'manual.service'
+group_id: 'home.manual'
+title: '用户手册'
+---
 ## 7. 服务框架(Service)
 + **JLGames.GameDriver.CSharp.Service** 提供了服务框架的基础接口与行为规范。
 + **JLGames.GameDriver.Actions.Service** 提供了针对Unity的服务配置资产(**未启用**)。

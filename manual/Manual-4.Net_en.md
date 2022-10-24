@@ -1,3 +1,10 @@
+---
+layout: manual
+lang: en
+page_id: 'manual.net'
+group_id: 'home.manual'
+title: 'User Manual'
+---
 ## 4. Network management extension module (NetManager)
 Easy-to-use network link management module  
 + **JLGames.GameDriver.CSharp.Net** provides a C# package for Socket API, which enables developers to develop protocols such as TCP, UDP, HTTP(HTTPS), WebSocket(WebSockets) on the same set of APIs.
