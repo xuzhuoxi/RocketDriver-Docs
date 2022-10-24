@@ -7,16 +7,16 @@ nav {
   position: fixed;
   text-align: right;
 
-//top: 22px;
-//left:50%;
-//margin-left:-580px;
-//bottom:100px;
-  
+  //top: 22px;
+  //left:50%;
+  //margin-left:-580px;
+  //bottom:100px;
+
   ul {
     list-style: none;
-    list-style-image:none;
+    list-style-image: none;
     font-size: 16px;
-    line-height:24px;
+    line-height: 24px;
 
     li {
       padding: 5px 0px;
@@ -41,42 +41,68 @@ nav {
       &.tag-h2 {
 
         + .tag-h1 {
-          margin-top:10px;
+          margin-top: 10px;
         }
       }
-	  
-	  a {
+
+      a {
         font-weight: bold;
         color: #333;
       }
     }
     .active {
-      border-right:solid 4px #39C;
-      padding-right:13px;
+      border-right: solid 4px #39C;
+      padding-right: 13px;
     }
   }
 }
 
 manual-nav {
-  position:relative;
-  weight:100%;
-  height:32px;
+  position: relative;
+  weight: 100%;
+  height: 32px;
   font-size: 14px;
   display: block;
-  
-  div{
-    weight:100%;
-    height:32px;
-	display: inline-block;
-	*display: inine;
-    *zoom:1;
+
+  div {
+    weight: 100%;
+    height: 32px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
   }
-  .prev{
-    float:left; 
-	text-align:left
+  .prev {
+    float: left;
+    text-align: left
   }
-  .next{
-    float:right; 
-	text-align:right
+  .next {
+    float: right;
+    text-align: right
   }
 }
+
+.header-container {
+  background-color: black;
+  background: url('../img/bg.jpg') no-repeat 50% 0;
+  color: #fff;
+
+  h1 {
+    color: #fff;
+  }
+  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center 36%;
+  margin-top: -37px;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
