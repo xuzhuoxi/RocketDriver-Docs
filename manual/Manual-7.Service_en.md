@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: cn
-page_id: 'manual.material'
+page_id: 'manual.service'
 group_id: 'home.manual'
 title: 'User Manual'
 ---
-{% include_relative Manual-8.RpgMaterial_cn.md %}
+{% include manual/Manual-7.Service_cn.md %}

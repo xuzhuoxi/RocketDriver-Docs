@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: cn
-page_id: 'manual.service'
+page_id: 'manual.audio'
 group_id: 'home.manual'
 title: '用户手册'
 ---
-{% include_relative Manual-7.Service_cn.md %}
+{% include manual/Manual-5.Audio_cn.md %}

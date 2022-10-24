@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: en
-page_id: 'manual.audio'
+page_id: 'manual.net'
 group_id: 'home.manual'
 title: 'User Manual'
 ---
-{% include_relative Manual-5.Audio_cn.md %}
+{% include manual/Manual-4.Net_cn.md %}

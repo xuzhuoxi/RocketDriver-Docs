@@ -3,6 +3,6 @@ layout: manual
 lang: cn
 page_id: 'manual.service'
 group_id: 'home.manual'
-title: 'User Manual'
+title: '用户手册'
 ---
-{% include_relative Manual-7.Service_cn.md %}
+{% include manual/Manual-7.Service_cn.md %}

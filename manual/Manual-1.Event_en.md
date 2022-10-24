@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: en
-page_id: 'manual.panel'
+page_id: 'manual.event'
 group_id: 'home.manual'
 title: 'User Manual'
 ---
-{% include_relative Manual-6.Panel_cn.md %}
+{% include manual/Manual-1.Event_en.md %}

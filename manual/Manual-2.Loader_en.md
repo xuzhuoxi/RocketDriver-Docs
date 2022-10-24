@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: en
-page_id: 'manual.net'
+page_id: 'manual.loader'
 group_id: 'home.manual'
 title: 'User Manual'
 ---
-{% include_relative Manual-4.Net_cn.md %}
+{% include manual/Manual-2.Loader_cn.md %}

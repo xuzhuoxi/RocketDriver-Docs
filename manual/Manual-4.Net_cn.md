@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: cn
-page_id: 'manual.panel'
+page_id: 'manual.net'
 group_id: 'home.manual'
 title: '用户手册'
 ---
-{% include_relative Manual-6.Panel_cn.md %}
+{% include manual/Manual-4.Net_cn.md %}

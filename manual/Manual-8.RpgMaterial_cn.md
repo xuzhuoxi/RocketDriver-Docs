@@ -1,8 +1,8 @@
 ---
 layout: manual
 lang: cn
-page_id: 'manual.i18n'
+page_id: 'manual.material'
 group_id: 'home.manual'
 title: '用户手册'
 ---
-{% include_relative Manual-3.i18n_cn.md %}
+{% include manual/Manual-8.RpgMaterial_cn.md %}
