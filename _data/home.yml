@@ -1,6 +1,6 @@
 page_size: 6
 pages:
-  - id: 'home.main'
+  - id: 'home.index'
     lang: cn
     text: '主页'
     pattern: 'index.html'
@@ -29,7 +29,7 @@ pages:
     text: '关于'
     pattern: 'home/Home-About_cn.html'
 
-  - id: 'home.main'
+  - id: 'home.index'
     lang: en
     text: 'Home'
     pattern: 'index_en.html'
