@@ -98,7 +98,7 @@ LoaderManager.Mono.StartCoroutine(LoaderManager.DefaultLoader.LoadBundleAsync(bu
 加载资源资产建议使用同步函数，不建议使用异步。 原因是Unity对于在协程内部开启协程支持得不友好， 层级过多(好像是16层)会出现无法预测的报错。  
 
 IAssetLoader接口函数分四类：  
-+ 单个资源资产加载(同步|异步)
++ 单个资源资产加载(同步|异步)  
 ```C#
 /// <summary>
 /// Load asset from bundle synchronously with relative path
@@ -134,7 +134,7 @@ T LoadAssetSyncFull<T>(string fullPath, AssetBundle bundle) where T : Object;
 IEnumerator LoadAssetAsync<T>(string assetPath, AssetBundle bundle, LoaderDelegate.OnAssetLoaded<T> onAssetLoaded) where T : Object;
 ```
 
-+ 批量资源资产加载(同步|异步)
++ 批量资源资产加载(同步|异步)  
 ```C#
 /// <summary>
 /// Synchronized load resources from bundle in batches
@@ -169,7 +169,7 @@ IEnumerator LoadMulitAssetAsync<T>(string[] assetPaths, AssetBundle bundle, Load
 where T : Object;
 ```
 
-+ 单个子资源资产加载(同步|异步)
++ 单个子资源资产加载(同步|异步)  
 ```C#
 /// <summary>
 /// Load sub-resources (sprites, prefabs, etc.)
@@ -216,7 +216,7 @@ IEnumerator LoadSubAssetAsync<T>(string assetPath, string subName, AssetBundle b
 where T : Object;
 ```
 
-+ 批量子资源资产加载(同步|异步)
++ 批量子资源资产加载(同步|异步)  
 ```C#
 /// <summary>
 /// Load all sub-resources (sprites, prefabs, etc.)
@@ -283,7 +283,7 @@ IEnumerator LoadSubAssetsAsync<T>(string assetPath, AssetBundle buundle, LoaderD
 where T : Object;
 ```
 
-+ 更多用法请参考示例、API或源码。
++ 更多用法请参考示例、API或源码。 
   
 ### 2.3 示例
 GameDriver/Samples/Loader  
