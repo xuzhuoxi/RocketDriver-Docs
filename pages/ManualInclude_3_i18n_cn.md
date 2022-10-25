@@ -55,6 +55,11 @@
 `I18NManagerShared.Manager.GetValue(id, fileKey, lang);`  
 ![image](assets/img/i18n_10.png)  
 
+#### 3.2.4 在代码中把文本内容进行国际化。
+在文件内容中支持脚本格式： `{{id}}`  
+`I18NManagerShared.Manager.GetContent(content, fileKey, lang);`  
+![image](assets/img/i18n_12.png)  
+
 ### 3.3 示例
 GameDriver/Samples/i18n  
 ![image](assets/img/i18n_4.png)  
