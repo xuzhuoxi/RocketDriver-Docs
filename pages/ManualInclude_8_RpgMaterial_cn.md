@@ -30,8 +30,8 @@
 + 提供最基础的配置数据接口定义和相关的数据结构实现。
 + 提供最基础的用户数据接口定义和相关的数据结构实现。
 + 提供可选的扩展接口定义。
-+ 提供用于基础计算的数据结构实现。
-+ ![image](assets/img/RpgMaterial_Common.png)
++ 提供用于基础计算的数据结构实现。  
+![image](assets/img/RpgMaterial_Common.png)  
 
 ##### 8.1.1.1 Common接口设计
 + IElement
@@ -107,8 +107,8 @@
 
 #### 8.1.2 Material模块设计说明
 + 提供配置数据的常用接口定义和相关实现。
-+ 使用Common中的接口和数据结构进行组合使用。
-+ ![image](assets/img/RpgMaterial_Material.png)
++ 使用Common中的接口和数据结构进行组合使用。  
+![image](assets/img/RpgMaterial_Material.png)  
 
 ##### 8.1.2.1 Material接口设计
 + IMaterial
@@ -138,8 +138,8 @@
 #### 8.1.3 User模块设计说明
 + 提供了普通用户数据功能。
 + 提供了带唯一Id的用户数据功能。
-+ 提供了用于管理用户数据集合功能。
-+ ![image](assets/img/RpgMaterial_User.png)
++ 提供了用于管理用户数据集合功能。  
+![image](assets/img/RpgMaterial_User.png)  
 
 ##### 8.1.3.1 User接口设计
 + IUserMaterial 和 IUserMaterial1
@@ -230,7 +230,7 @@
   材料用户数据的序列化结构，用于Unity面板。  
 + MaterialAssetData1
   带唯一Id的材料用户数据的序列化结构，用于Unity面板。  
-+ ![image](assets/img/RpgMaterial_Asset.png)
+![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 使用
 依赖于服务框架，具体使用流程与一般服务一致。  

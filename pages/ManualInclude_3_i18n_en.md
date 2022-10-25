@@ -34,7 +34,7 @@ Call the LoadData function in the II18NManager instance:
 ![image](assets/img/i18n_8.png)  
 
 **NOTE**: If you have performed load data in the past, you should clear the old data first:  
-`I18NManagerShared.Manager.ClearData();`
+`I18NManagerShared.Manager.ClearData();`  
 ![image](assets/img/i18n_9.png)  
 
 ### 3.2 Use

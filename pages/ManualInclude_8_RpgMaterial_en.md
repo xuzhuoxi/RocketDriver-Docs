@@ -30,8 +30,8 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
 + Provide the most basic configuration data interface definition and related data structure implementation.
 + Provide the most basic user data interface definition and related data structure implementation.
 + Provides optional extension interface definition.
-+ Provides data structure implementations for basic computations.
-+ ![image](assets/img/RpgMaterial_Common.png)
++ Provides data structure implementations for basic computations.  
+![image](assets/img/RpgMaterial_Common.png)  
 
 ##### 8.1.1.1 Common interface design
 + IElement
@@ -107,8 +107,8 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
 
 #### 8.1.2 Material Module Design Instructions
 + Provides common interface definitions and related implementations for configuration data.
-+ Combination of interfaces and data structures in Common.
-+ ![image](assets/img/RpgMaterial_Material.png)
++ Combination of interfaces and data structures in Common.  
+![image](assets/img/RpgMaterial_Material.png)  
 
 ##### 8.1.2.1 Material interface design
 + IMaterial
@@ -138,8 +138,8 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
 #### 8.1.3 User module design description
 + Provides normal user data functions.
 + Provides user data function with unique Id.
-+ Provides functionality for managing user data collections.
-+ ![image](assets/img/RpgMaterial_User.png)
++ Provides functionality for managing user data collections.  
+![image](assets/img/RpgMaterial_User.png)  
 
 ##### 8.1.3.1 User interface design
 + IUserMaterial and IUserMaterial1
@@ -203,8 +203,8 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
 + The classification of the material Service should correspond to the type (referring to the type in the configuration data) one-to-one, that is, a type creates a Service.
 + Provides the basic interface definition of Material Service.
 + Provides basic interface definitions for displayable materials, actionable materials, and valuable materials.
-+ Provides a default implementation class of material service, which can be used as needed. Direct modification and inheritance are not recommended.
-+ ![image](assets/img/RpgMaterial_Service.png)
++ Provides a default implementation class of material service, which can be used as needed. Direct modification and inheritance are not recommended.  
+![image](assets/img/RpgMaterial_Service.png)  
 
 ##### 8.1.4.1 Service interface design
 + IMaterialService
@@ -230,7 +230,7 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Serialized structure of material user data, used in Unity panels.  
 + MaterialAssetData1
   Serialized structure of material user data with unique Id for use in Unity panels.  
-+ ![image](assets/img/RpgMaterial_Asset.png)
+![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 Use
 Depends on the service framework, and the specific usage process is consistent with the general service.  
