@@ -1,9 +1,9 @@
 ## 4. Network management extension module (NetManager)
 Easy-to-use network link management module  
-+ **JLGames.GameDriver.CSharp.Net** provides a C# package for Socket API, which enables developers to develop protocols such as TCP, UDP, HTTP(HTTPS), WebSocket(WebSockets) on the same set of APIs.
-+ **JLGames.GameDriver.CSharp.Net** also provides support and extension for data packing and unpacking.
-+ Management of link references is available in **JLGames.GameDriver.Games.NetManager**.
-+ Extended support for stand-alone servers in **JLGames.GameDriver.Games.NetManager.Virtual**, which can simulate the behavior of server protocol capture and logic processing without an actual network connection.
++ **JLGames.GameDriver.CSharp.Net** provides a C# package for Socket API, which enables developers to develop protocols such as TCP, UDP, HTTP(HTTPS), WebSocket(WebSockets) on the same set of APIs.  
++ **JLGames.GameDriver.CSharp.Net** also provides support and extension for data packing and unpacking.  
++ Management of link references is available in **JLGames.GameDriver.Games.NetManager**.  
++ Extended support for stand-alone servers in **JLGames.GameDriver.Games.NetManager.Virtual**, which can simulate the behavior of server protocol capture and logic processing without an actual network connection.  
 
 ### 4.1 Use of VirtualServer
 
@@ -34,9 +34,9 @@ Response delegate declaration: `VirtualServerDelegate.OnProtoRequestHandler`
 #### 4.1.4 Message Push
 + The INotifyServer interface contains function declarations for message push.
 ![image](assets/img/net_10.png)  
-+ The IMaterialNotifyServer interface contains function declarations for pushing messages related to material data.
++ The IMaterialNotifyServer interface contains function declarations for pushing messages related to material data.  
 ![image](assets/img/net_11.png)  
-+ The server instance in the response delegate `VirtualServerDelegate.OnProtoRequestHandler` has implemented the INotifyServer and IMaterialNotifyServer interfaces, and realizes the data broadcasting function by calling the message push function.
++ The server instance in the response delegate `VirtualServerDelegate.OnProtoRequestHandler` has implemented the INotifyServer and IMaterialNotifyServer interfaces, and realizes the data broadcasting function by calling the message push function.  
 
 ### 4.2 Use of VirtualClient
 
