@@ -8,7 +8,8 @@
 
 #### 6.1.1 注册层容器信息
 ```C#
-PanelManagerShared.Manager.Register.RegisterLayer(containerName, tranContainer, isDefault);
+PanelManagerShared.Manager.Register.RegisterLayer(containerName, 
+  tranContainer, isDefault);
 ```
 ![image](assets/img/panel_3.png)  
 + layerName: 为注册的层信息指定一个名称，与layer的name属性无关。
@@ -17,7 +18,8 @@ PanelManagerShared.Manager.Register.RegisterLayer(containerName, tranContainer, 
 
 #### 6.1.2 注册背景处理信息
 ```C#
-PanelManagerShared.Manager.Register.RegisterBackground(backgroundKey, backgroundOrigin, backgroundScript);
+PanelManagerShared.Manager.Register.RegisterBackground(backgroundKey, 
+  backgroundOrigin, backgroundScript);
 ```
 ![image](assets/img/panel_4.png)  
 + key: 为注册的背景信息指定一个key， 用于标识信息的唯一性。
@@ -41,7 +43,8 @@ PanelManagerShared.Manager.Register.RegisterPanelContainer(container);
 
 #### 6.1.5 注册面板信息
 ```C#
-PanelManagerShared.Manager.Register.RegisterPanelInfo(panelId, settings, maxDisplayNum, extendType);
+PanelManagerShared.Manager.Register.RegisterPanelInfo(panelId,
+  settings, maxDisplayNum, extendType);
 ```
 ![image](assets/img/panel_7.png)  
 + 面板信息最终以IPanelInfo的实例保存起来用于查找与展示。

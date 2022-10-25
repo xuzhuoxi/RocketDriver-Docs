@@ -8,7 +8,8 @@
 
 #### 6.1.1 Registration layer container information
 ````C#
-PanelManagerShared.Manager.Register.RegisterLayer(containerName, tranContainer, isDefault);
+PanelManagerShared.Manager.Register.RegisterLayer(containerName, 
+  tranContainer, isDefault);
 ````
 ![image](assets/img/panel_3.png)  
 + layerName: Specify a name for the registered layer information, regardless of the layer's name attribute.
@@ -17,7 +18,8 @@ PanelManagerShared.Manager.Register.RegisterLayer(containerName, tranContainer, 
 
 #### 6.1.2 Registering background processing information
 ````C#
-PanelManagerShared.Manager.Register.RegisterBackground(backgroundKey, backgroundOrigin, backgroundScript);
+PanelManagerShared.Manager.Register.RegisterBackground(backgroundKey, 
+  backgroundOrigin, backgroundScript);
 ````
 ![image](assets/img/panel_4.png)  
 + key: Specify a key for the registered background information to identify the uniqueness of the information.
@@ -41,7 +43,8 @@ PanelManagerShared.Manager.Register.RegisterPanelContainer(container);
 
 #### 6.1.5 Registration panel information
 ````C#
-PanelManagerShared.Manager.Register.RegisterPanelInfo(panelId, settings, maxDisplayNum, extendType);
+PanelManagerShared.Manager.Register.RegisterPanelInfo(panelId,
+  settings, maxDisplayNum, extendType);
 ````
 ![image](assets/img/panel_7.png)  
 + Panel information is finally saved as an instance of IPanelInfo for search and display.
@@ -99,7 +102,7 @@ Main configuration properties: BundleName, AssetPath, MainScriptName, MainScript
 + MainScriptName
   If the panel has a main script, the full class name (including namespace) of the main script is returned.
   Returns null or an empty string without a main script.
-+MainScriptParams
+  +MainScriptParams
   It takes effect when MainScriptName exists and implements the IParamsPanel interface, and is the incoming parameter of the function SetPanelStringParams.
 
 ##### 6.3.4.2 Background configuration
@@ -155,7 +158,7 @@ IInitPanel, IParamsPanel, IRefreshPanel, IDisposePanel
 + IInitPanel
   Used for panel initialization, the call timing is after OnEnable  
   ![image](assets/img/panel_9.png)  
-+IParamsPanel
+  +IParamsPanel
   Used for panel injection parameters.  
   ![image](assets/img/panel_10.png)  
   
