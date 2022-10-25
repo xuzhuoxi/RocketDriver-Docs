@@ -17,7 +17,8 @@ Objects added to NetManager can be obtained by name.
 
 #### 4.1.2 Registering extensions
 ````C#
-server.RegisterExtension(VirtualReqIds.Id0, OnRequestHandler);
+server.RegisterExtension(VirtualReqIds.Id0, 
+  OnRequestHandler);
 ````
 ![image](assets/img/net_8.png)  
 + protoId: Protocol ID, defined by the developer.
@@ -49,7 +50,8 @@ Objects added to NetManager can be obtained by name.
 
 #### 4.2.2 Connecting to the server
 ````C#
-var serverProxy = NetManager.Shared.GetServer<IVirtualServer>("server") as IVirtualServerProxy;
+var serverProxy = NetManager.Shared.
+  GetServer<IVirtualServer>("server") as IVirtualServerProxy;
 client.Connect(serverProxy);
 ````
 ![image](assets/img/net_12.png)  
@@ -60,15 +62,18 @@ client.Connect(serverProxy);
 #### 4.2.3 Monitor request response, monitor message push
 The monitoring function is built under the event mechanism:  
 ````C#
-client.AddEventListener(VirtualClientEvents.EventResponse, OnClientResponse);
-client.AddEventListener(VirtualClientEvents.EventNotify, OnClientNotify);
+client.AddEventListener(VirtualClientEvents.EventResponse,
+  OnClientResponse);
+client.AddEventListener(VirtualClientEvents.EventNotify,
+  OnClientNotify);
 ````
 ![image](assets/img/net_13.png)  
 
 #### 4.2.4 Send message request
 Use the Request function under the interface IVirtualClient to send a message request to the server.  
 ````C#
-NetManager.Shared.GetClient<IVirtualClient>("client").Request(protoId, m_InputRequestData.text.Trim());
+NetManager.Shared.GetClient<IVirtualClient>("client")
+  .Request(protoId, m_InputRequestData.text.Trim());
 ````
 ![image](assets/img/net_14.png)  
 

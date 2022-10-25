@@ -17,7 +17,8 @@ NetManager.Shared.Register(server, true);
 
 #### 4.1.2 注册扩展
 ```C#
-server.RegisterExtension(VirtualReqIds.Id0, OnRequestHandler);
+server.RegisterExtension(VirtualReqIds.Id0, 
+  OnRequestHandler);
 ```
 ![image](assets/img/net_8.png)  
 + protoId: 协议号，由开发者定义。
@@ -49,7 +50,8 @@ NetManager.Shared.Register(client, true);
 
 #### 4.2.2 连接服务器
 ```C#
-var serverProxy = NetManager.Shared.GetServer<IVirtualServer>("server") as IVirtualServerProxy;
+var serverProxy = NetManager.Shared.
+  GetServer<IVirtualServer>("server") as IVirtualServerProxy;
 client.Connect(serverProxy);
 ```
 ![image](assets/img/net_12.png)  
@@ -60,15 +62,18 @@ client.Connect(serverProxy);
 #### 4.2.3 监听请求响应、监听消息推送
 监听功能建立在事件机制下：  
 ```C#
-client.AddEventListener(VirtualClientEvents.EventResponse, OnClientResponse);
-client.AddEventListener(VirtualClientEvents.EventNotify, OnClientNotify);
+client.AddEventListener(VirtualClientEvents.EventResponse,
+  OnClientResponse);
+client.AddEventListener(VirtualClientEvents.EventNotify,
+  OnClientNotify);
 ```
 ![image](assets/img/net_13.png)  
 
 #### 4.2.4 发送消息请求
 使用接口IVirtualClient下的Request函数可以向服务器发送消息请求。
 ```C#
-NetManager.Shared.GetClient<IVirtualClient>("client").Request(protoId, m_InputRequestData.text.Trim());
+NetManager.Shared.GetClient<IVirtualClient>("client")
+  .Request(protoId, m_InputRequestData.text.Trim());
 ```
 ![image](assets/img/net_14.png)  
 

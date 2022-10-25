@@ -55,30 +55,19 @@ LoaderSettings中共有5个可用配置，一个Editor模式， 两个Resource�
 #### 2.1.3 使用配置初始化加载器
 使用以下API初始化加载器：  
 + 使用由[第一点]()生成的配置文件名称进行初始化。
-```C#
-LoaderManager.InitLoader(string loaderName, string settingsName);
-```
+![image](assets/img/loader_16.png)  
 + 使用配置实例进行初始化。
-```C#
-LoaderManager.InitLoader(string loaderName, LoaderSettings settings);
-```
+![image](assets/img/loader_17.png)  
 + 使用Loader静态类中有快捷初始化函数：
-```C#
-Loader.InitLoader(string settingsName);
-```
+![image](assets/img/loader_18.png)  
 
 #### 2.1.4 初始化Bundle版本信息
 调用加载器实例中函数：  
-```C#
-InitVersion(LoaderDelegate.OnAssetLoaded<AssetBundleManifest> onVersionAssetBundleLoaded);
-```
+![image](assets/img/loader_19.png)  
+
 + 函数回调为初始化版本结束后执行，内部可判断初始化结果：成功 或 失败。
 + 函数要求开启协程调用, 可以使用LoaderManager.Mono开启协程：
-```C#
-LoaderManager.Mono.StartCoroutine(
-  LoaderManager.DefaultLoader.InitVersion(
-    onVersionLoaded));
-```
+![image](assets/img/loader_20.png)  
 
 ### 2.2 使用
 
@@ -86,9 +75,8 @@ LoaderManager.Mono.StartCoroutine(
 在Bundle版本信息初始化完成后，才可以加载Bundle资产。  
 加载器实现了IBundleLoader接口, 包含的函数与加载Bundle资产相关。  
 加载Bundle资产要求使用协程，可以使用LoaderManager.Mono实例启用协程加载Bundle.  
-```C#
-LoaderManager.Mono.StartCoroutine(LoaderManager.DefaultLoader.LoadBundleAsync(bundleName, onBundleLoaded, autoRelease, unloadAllLoadedObjects))
-```
+![image](assets/img/loader_21.png)  
+
 + bundleName: bundle资产名称。
 + onBundleLoaded: 执行结果回调, 内部可判断成功与否。
 + autoRelease: 指明在onBundleLoaded执行结束后是否释放bundle实例
@@ -101,15 +89,15 @@ LoaderManager.Mono.StartCoroutine(LoaderManager.DefaultLoader.LoadBundleAsync(bu
 
 IAssetLoader接口函数分四类：  
   + 单个资源资产加载(同步|异步)  
-  ![image](assets/img/loader_12.png)  
+    ![image](assets/img/loader_12.png)  
   + 批量资源资产加载(同步|异步)  
-  ![image](assets/img/loader_13.png)   
+    ![image](assets/img/loader_13.png)   
   + 单个子资源资产加载(同步|异步)  
-  ![image](assets/img/loader_14.png)   
+    ![image](assets/img/loader_14.png)   
   + 批量子资源资产加载(同步|异步)  
-  ![image](assets/img/loader_15.png)   
+    ![image](assets/img/loader_15.png)   
   + 更多用法请参考示例、API或源码。   
-  
+
 ### 2.3 示例
 GameDriver/Samples/Loader  
 ![image](assets/img/loader_8.png)  
