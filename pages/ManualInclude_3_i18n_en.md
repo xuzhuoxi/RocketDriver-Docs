@@ -30,7 +30,7 @@ Call the RegisterFile function in the I18NRegister instance:
 
 #### 3.1.5 According to the registry, load data into the manager
 Call the LoadData function in the II18NManager instance:  
-`I18NManagerShared.Manager.LoadData();`
+`I18NManagerShared.Manager.LoadData();`  
 ![image](assets/img/i18n_8.png)  
 
 **NOTE**: If you have performed load data in the past, you should clear the old data first:  
