@@ -65,4 +65,4 @@ pages:
   - id: 'manual.material'
     lang: 'en'
     text: '8.RPG Material Data System(RpgMaterial)'
-    pattern: 'pages/Manual-8.RpgMaterial_en.html'
+    pattern: 'pages/Manual_8.RpgMaterial_en.html'
