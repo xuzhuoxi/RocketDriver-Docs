@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.about'
-group_id: home
-lang: en
-title: 'About GameDriver Pro'
----
 # About GameDriver Pro
 
 ###  GameDriver Pro {{ site.version }}

@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.changelog'
-group_id: home
-lang: cn
-title: '更新日志'
----
 # GameDriver Pro 更新日志
 
 ## v1.0.3(时间未确定)

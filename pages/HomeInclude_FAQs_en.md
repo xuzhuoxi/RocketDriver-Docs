@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.faqs'
-group_id: home
-lang: en
-title: 'FAQS'
----
 # FAQs
 
 #### 1. When using the Event module, the event cannot be captured?

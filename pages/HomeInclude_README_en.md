@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.readme'
-group_id: home
-lang: en
-title: 'README'
----
 # README
 
 ### 1. Package information

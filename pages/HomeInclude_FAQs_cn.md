@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.faqs'
-group_id: home
-lang: cn
-title: '常见问题'
----
 # 常见问题
 
 #### 1.使用Event模块时、事件捕捉不到？

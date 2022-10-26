@@ -7,27 +7,27 @@ pages:
   - id: 'home.readme'
     lang: cn
     text: '阅读手册'
-    pattern: 'pages/Home-README_cn.html'
+    pattern: 'pages/Home_README_cn.html'
   - id: 'home.manual'
     lang: cn
     text: '用户手册'
-    pattern: 'pages/Home-Manual_cn.html'
+    pattern: 'pages/Home_Manual_cn.html'
   - id: 'home.changelog'
     lang: cn
     text: '更新日志'
-    pattern: 'pages/Home-CHANGELOG_cn.html'
+    pattern: 'pages/Home_CHANGELOG_cn.html'
   - id: 'home.faqs'
     lang: cn
     text: '常见问题'
-    pattern: 'pages/Home-FAQs_cn.html'
+    pattern: 'pages/Home_FAQs_cn.html'
   - id: 'home.3pn'
     lang: cn
     text: '第三方说明'
-    pattern: 'pages/Home-ThirdPartyNotices_cn.html'
+    pattern: 'pages/Home_ThirdPartyNotices_cn.html'
   - id: 'home.about'
     lang: cn
     text: '关于'
-    pattern: 'pages/Home-About_cn.html'
+    pattern: 'pages/Home_About_cn.html'
 
   - id: 'home.index'
     lang: en
@@ -36,25 +36,25 @@ pages:
   - id: 'home.readme'
     lang: en
     text: 'README'
-    pattern: 'pages/Home-README_en.html'
+    pattern: 'pages/Home_README_en.html'
   - id: 'home.manual'
     lang: en
     text: 'User Manual'
-    pattern: 'pages/Home-Manual_en.html'
+    pattern: 'pages/Home_Manual_en.html'
   - id: 'home.changelog'
     lang: en
     text: 'Changelog'
-    pattern: 'pages/Home-CHANGELOG_en.html'
+    pattern: 'pages/Home_CHANGELOG_en.html'
   - id: 'home.faqs'
     lang: en
     text: 'FAQs'
-    pattern: 'pages/Home-FAQs_en.html'
+    pattern: 'pages/Home_FAQs_en.html'
   - id: 'home.3pn'
     lang: en
     text: 'Third Party Notices'
-    pattern: 'pages/Home-ThirdPartyNotices_en.html'
+    pattern: 'pages/Home_ThirdPartyNotices_en.html'
   - id: 'home.about'
     lang: en
     text: 'About'
-    pattern: 'pages/Home-About_en.html'
+    pattern: 'pages/Home_About_en.html'
 

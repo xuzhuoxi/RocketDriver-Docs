@@ -1,10 +1,3 @@
----
-layout: default
-page_id: 'home.changelog'
-group_id: home
-lang: en
-title: 'CHANGELOG'
----
 # GameDriver Pro Changelog
 
 ## v1.0.3 (time undetermined)
