@@ -1,5 +1,5 @@
 ## 8. Rpg材料数据系统
-这是一套通用的用户数据管理系统。  
+这是一套通用的游戏数据管理系统。  
 针对玩家的数值型数据，以KTV(Key-Type-Value)形式进行管理。  
 + **JLGames.GameDriver.Games.RpgMaterial** 
   提供了Rpg材料数据系统的功能支持。依赖关系如下：  
@@ -230,7 +230,7 @@
   材料用户数据的序列化结构，用于Unity面板。  
 + MaterialAssetData1
   带唯一Id的材料用户数据的序列化结构，用于Unity面板。  
-![image](assets/img/RpgMaterial_Asset.png)  
+  ![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 使用
 依赖于服务框架，具体使用流程与一般服务一致。  

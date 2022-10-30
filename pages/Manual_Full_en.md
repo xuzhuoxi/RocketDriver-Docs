@@ -22,3 +22,5 @@ title: 'User Manual'
 {% include_relative ManualInclude_7_Service_en.md %}
 
 {% include_relative ManualInclude_8_RpgMaterial_en.md %}
+
+{% include_relative ManualInclude_9_Others_en.md %}

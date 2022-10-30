@@ -22,3 +22,5 @@ title: '用户手册'
 {% include_relative ManualInclude_7_Service_cn.md %}
 
 {% include_relative ManualInclude_8_RpgMaterial_cn.md %}
+
+{% include_relative ManualInclude_9_Others_cn.md %}

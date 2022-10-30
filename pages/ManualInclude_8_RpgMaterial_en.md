@@ -1,5 +1,5 @@
 ## 8. Rpg Material Data System
-This is a general user data management system.  
+This is a general game data management system.  
 The player's numerical data is managed in the form of KTV (Key-Type-Value).  
 + **JLGames.GameDriver.Games.RpgMaterial**
   Provides functional support for the Rpg material data system. The dependencies are as follows:  
@@ -230,7 +230,7 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Serialized structure of material user data, used in Unity panels.  
 + MaterialAssetData1
   Serialized structure of material user data with unique Id for use in Unity panels.  
-![image](assets/img/RpgMaterial_Asset.png)  
+  ![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 Use
 Depends on the service framework, and the specific usage process is consistent with the general service.  
