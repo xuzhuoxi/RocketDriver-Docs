@@ -4,6 +4,11 @@
 + **JLGames.GameDriver.Games.Service** provides common service functions.
 
 ### 7.1 Design Purpose
+Game projects have some obvious characteristics: high degree of data coupling and strong system dependence.  
+So the entire game project can easily evolve into a **monolithic software**.  
+As there are more modules in the system, the monolithic architecture becomes more complex. In addition, the interleaving of new functions and modification of old functions affects each other and is ultimately difficult to manage.  
+In order to solve or reduce the impact of the above problems, combined with the idea of **service-oriented architecture(SOA)**, here is a solution and solve the following problems::  
+
 + Realize logical separation of business modules
   + Logical separation between different businesses
   + Logical separation of data and display under the same business
@@ -11,8 +16,16 @@
 + Unify the specification of cross-business behavior calls
 
 ### 7.2 Design Ideas
-+ According to the idea of IOC, extended business services are added to the framework management in the form of injection.
-+ According to the design idea of the game engine, an interface function called at a fixed timing is added to the extended business service, which is used for initializing data, releasing data or special logic implementation inside the service.
++ How to divide the service and how to grasp the granularity
+  1. All businesses in the range from "game login complete" to "game logout start" are regarded as service division objects.
+  2. Divide service units on a regular basis. The division rules are as follows:
+     + Priority is given to dividing the game business and obtaining a functional system.
+     + The functional system is further divided according to data, display and management to obtain service units.
+     + Data reading and writing are isolated through the interface.
+  3. Design a functional open interface (read-only interface) for each service unit.
+  4. The communication between service units adopts the event mechanism.
++ According to the idea of ​​IOC, extended business services are added to the service framework management in the form of injection.
++ According to the design idea of ​​the game engine, an interface function called at a fixed timing is added to the extended business service, which is used for initializing data, releasing data or special logic implementation inside the service.
 + All extension services are managed by the framework, which is convenient for unified processing of initialization, update and release.
 
 ### 7.3 Interface description
