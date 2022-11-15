@@ -2,7 +2,7 @@
 layout: default
 page_id: 'home.index'
 group_id: home
-lang: en
+lang: en-US
 ---
 
 # GameDriver Pro
