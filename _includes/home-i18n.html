@@ -1,8 +1,9 @@
 <!--主页面国际化切换-->
 {%- include i18ntext.html -%}
-{%- assign otherlink = i18ntext.i18n.link -%}
+{%- assign otherlink = i18ntext.i18n.link | append: "" -%}
 {{otherlink}}
 {%- assign otheri18ntext = site.data[otherlink] -%}
+{{otheri18ntext.home.description}}
 
 {%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
 

@@ -9,7 +9,6 @@ home:
       https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro
       Manaual_cn.pdf
     package: 包
-  lang: 中文
   nav:
     - id: home.index
       pattern: index.html
