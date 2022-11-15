@@ -1,6 +1,6 @@
 ---
 layout: manual
-lang: en
+lang: 'en-US'
 page_id: 'manual.service'
 group_id: 'home.manual'
 title: 'User Manual'

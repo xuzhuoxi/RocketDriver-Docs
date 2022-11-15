@@ -1,6 +1,6 @@
 ---
 layout: manual
-lang: cn
+lang: zh-CN
 page_id: 'manual.i18n'
 group_id: 'home.manual'
 title: '用户手册'

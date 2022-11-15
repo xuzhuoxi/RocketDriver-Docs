@@ -2,7 +2,7 @@
 layout: default
 page_id: 'home.manual'
 group_id: home
-lang: cn
+lang: zh-CN
 title: '用户手册'
 ---
 {% include_relative ManualInclude_Head_cn.md %}

@@ -2,7 +2,7 @@
 layout: default
 page_id: 'home.manual'
 group_id: home
-lang: en
+lang: 'en-US'
 title: 'User Manual'
 ---
 {% include_relative ManualInclude_Head_en.md %}
