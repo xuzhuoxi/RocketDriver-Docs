@@ -3,6 +3,8 @@
 {%- assign otherlink =  "i18n" | append: i18ntext.i18n.link -%}
 {%- assign otheri18ntext = site.data[otherlink] -%}
 
+{{otheri18ntext.home.description}}
+
 {%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
 
 {% if page.lang == "zh-CN" %}
