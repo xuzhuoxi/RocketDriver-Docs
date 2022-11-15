@@ -1,3 +1,16 @@
+contact:
+  email: 电子邮箱*
+  email-validation: 请输入您的电子邮件地址。
+  message: 信息*
+  message-validation: 请输入消息。
+  name: 姓名*
+  name-validation: 请输入你的名字。
+  phone: 电话号码
+  phone-validation: 请输入您的电话号码。
+  subject: 联系表格提交
+  submit: 发送消息
+  text: '有想法？可以联系我哦! '
+  title: 联系我
 home:
   description: GameDriver Pro 是一款基于Unity引擎的游戏开发框架
   downloads:
@@ -38,6 +51,10 @@ home:
       pattern: pages/Home_About_cn.html
       show: 'yes'
       text: 关于
+    - id: home.contact
+      pattern: pages/Home_Contact_cn.html
+      show: 'yes'
+      text: 联系作者
 i18n:
   link: en-US
 manual:

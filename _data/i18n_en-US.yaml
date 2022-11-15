@@ -1,3 +1,16 @@
+contact:
+  email: Email*
+  email-validation: Please enter your email address.
+  message: Message*
+  message-validation: Please enter a message.
+  name: Name*
+  name-validation: Please enter your name.
+  phone: Phone Number
+  phone-validation: Please enter your phone number.
+  subject: Contact Form Submission
+  submit: Send Message
+  text: Have a thought? You can contact me!
+  title: Contact
 home:
   description: GameDriver Pro is a game framework for Unity engine
   downloads:
@@ -38,6 +51,10 @@ home:
       pattern: pages/Home_About_en.html
       show: 'yes'
       text: About
+    - id: home.contact
+      pattern: pages/Home_Contact_en.html
+      show: 'yes'
+      text: Contact Author
 i18n:
   link: zh-CN
 manual:
