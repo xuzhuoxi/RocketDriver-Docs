@@ -6,8 +6,8 @@
 {{otheri18ntext.home.description}}<br/>
 {{page.page_id}}<br/>
 {{otheri18ntext.home.nav.size}}<br/>
-
-{%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
+{%- assign thisid = page.page_id | append: "" -%}
+{%- assign pageother = otheri18ntext.home.nav | where: "id", thisid -%}
 555:{{otheri18ntext.home.nav[0].text}}
 666:{{pageother.text}}  <br/>
 
