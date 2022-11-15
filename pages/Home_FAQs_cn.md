@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: 'home.faqs'
+page_id: home.faqs
 group_id: home
 lang: zh-CN
 title: '常见问题'

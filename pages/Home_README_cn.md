@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: 'home.readme'
+page_id: home.readme
 group_id: home
 lang: zh-CN
 title: '阅读手册'

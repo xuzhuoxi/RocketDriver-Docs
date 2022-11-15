@@ -8,7 +8,7 @@
 {{otheri18ntext.home.nav.size}}<br/>
 
 {%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
-666:{{pageother.text}}<br/>
+666:{{pageother.text}}  <br/>
 
 {% if page.lang == "zh-CN" %}
 <p>中文 | <a href="{{ site.home.url }}/{{ pageother.pattern}}">English</a></p>

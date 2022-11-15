@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: 'home.changelog'
+page_id: home.changelog
 group_id: home
 lang: zh-CN
 title: '更新日志'

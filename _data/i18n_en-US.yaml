@@ -10,7 +10,7 @@ home:
       Manaual_en.pdf
     package: Package
   nav:
-    - id: home.index
+    - id: home.index66
       pattern: index_en.html
       show: 'yes'
       text: Home

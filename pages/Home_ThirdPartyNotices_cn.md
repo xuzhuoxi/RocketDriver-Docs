@@ -1,6 +1,6 @@
 ---
 layout: default
-page_id: 'home.3pn'
+page_id: home.3pn
 group_id: home
 lang: zh-CN
 title: '第三方说明'
