@@ -1,6 +1,6 @@
 <!--主页面国际化切换-->
 {%- include i18ntext.html -%}
-{%- assign otherlink =  "i18n" | append: i18ntext.i18n.link -%}
+{%- assign otherlink =  "i18n_" | append: i18ntext.i18n.link -%}
 {%- assign otheri18ntext = site.data[otherlink] -%}
 
 {{otheri18ntext.home.description}}
