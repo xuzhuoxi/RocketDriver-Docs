@@ -1,0 +1,97 @@
+main:
+  description: GameDriver Pro 是一款基于Unity引擎的游戏开发框架
+  downloads:
+    download: 下载
+    file_an: 提交
+    issue: 问题
+    manual: 用户手册
+    manual_pdf: >-
+      https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro
+      Manaual_cn.pdf
+    package: 包
+  lang: 中文
+  nav:
+    - id: home.index
+      lang: cn
+      pattern: index.html
+      show: 'yes'
+      text: 主页
+    - id: home.readme
+      lang: cn
+      pattern: pages/Home_README_cn.html
+      show: 'yes'
+      text: 阅读手册
+    - id: home.manual
+      lang: cn
+      pattern: pages/Home_Manual_cn.html
+      show: 'yes'
+      text: 用户手册
+    - id: home.changelog
+      lang: cn
+      pattern: pages/Home_CHANGELOG_cn.html
+      show: 'yes'
+      text: 更新日志
+    - id: home.faqs
+      lang: cn
+      pattern: pages/Home_FAQs_cn.html
+      show: 'yes'
+      text: 常见问题
+    - id: home.3pn
+      lang: cn
+      pattern: pages/Home_ThirdPartyNotices_cn.html
+      show: 'yes'
+      text: 第三方说明
+    - id: home.about
+      lang: cn
+      pattern: pages/Home_About_cn.html
+      show: 'yes'
+      text: 关于
+manual:
+  nav:
+    - id: manual.event
+      lang: cn
+      pattern: pages/Manual_1.Event_cn.html
+      show: 'yes'
+      text: 1.事件(Event) - 高效的事件模块，支持Unity多线程
+    - id: manual.loader
+      lang: cn
+      pattern: pages/Manual_2.Loader_cn.html
+      show: 'yes'
+      text: 2.加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换
+    - id: manual.i18n
+      lang: cn
+      pattern: pages/Manual_3.i18n_cn.html
+      show: 'yes'
+      text: 3.国际化(i18n) - 轻量级国际化解决方案
+    - id: manual.net
+      lang: cn
+      pattern: pages/Manual_4.Net_cn.html
+      show: 'yes'
+      text: 4.网络管理扩展模块(NetManager)
+    - id: manual.audio
+      lang: cn
+      pattern: pages/Manual_5.Audio_cn.html
+      show: 'yes'
+      text: 5.音频管理模块(AudioManager)
+    - id: manual.panel
+      lang: cn
+      pattern: pages/Manual_6.Panel_cn.html
+      show: 'yes'
+      text: 6.面板管理模块(PanelManager)
+    - id: manual.service
+      lang: cn
+      pattern: pages/Manual_7.Service_cn.html
+      show: 'yes'
+      text: 7.服务框架(Service Framework)
+    - id: manual.material
+      lang: cn
+      pattern: pages/Manual_8.RpgMaterial_cn.html
+      show: 'yes'
+      text: 8.Rpg材料数据系统(RpgMaterial)
+    - id: manual.others
+      lang: cn
+      pattern: pages/Manual_9.Others_cn.html
+      show: 'no'
+      text: 9.其它
+  next: 下一节
+  prev: 上一节

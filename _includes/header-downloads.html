@@ -1,13 +1,13 @@
 <!--下载项-->
 {% if site.show_downloads %}
-{% assign works = site.data.i18n[page.lang].downloads %}
+{% assign downloads = i18ntext.main.downloads %}
 <ul class="downloads">
-  <li><a target="_blank" href="{{ site.unity.package_url }}">{{works.download}}<strong>{{works.package}}</strong></a></li>
+  <li><a target="_blank" href="{{ site.unity.package_url }}">{{downloads.download}}<strong>{{downloads.package}}</strong></a></li>
   {% if page.lang == "cn" %}
-  <li><a target="_blank" href="{{ site.downloads.manaual_cn_pdf }}">{{works.download}}<strong>{{works.manual}}</strong></a></li>
+  <li><a target="_blank" href="{{ downloads.manual_pdf }}">{{downloads.download}}<strong>{{downloads.manual}}</strong></a></li>
   {% else %}
-  <li><a target="_blank" href="{{ site.downloads.manaual_en_pdf }}">{{works.download}}<strong>{{works.manual}}</strong></a></li>
+  <li><a target="_blank" href="{{ downloads.manual_pdf }}">{{downloads.download}}<strong>{{downloads.manual}}</strong></a></li>
   {% endif %}
-  <li><a target="_blank" href="{{ site.github.issues_new_url }}">{{works.file_an}}<strong>{{works.issue}}</strong></a></li>
+  <li><a target="_blank" href="{{ site.github.issues_new_url }}">{{downloads.file_an}}<strong>{{downloads.issue}}</strong></a></li>
 </ul>
 {% endif %}

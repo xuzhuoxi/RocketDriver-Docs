@@ -4,9 +4,6 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
-i18n_cn: 0
-i18n_en: 1
-
 version: '1.0.3'
 build: '2022.10.24'
 
@@ -24,7 +21,3 @@ home:
 github:
   issues_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues
   issues_new_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues/new
-
-downloads:
-  manaual_cn_pdf: 'https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro Manaual_cn.pdf'
-  manaual_en_pdf: 'https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro Manaual_en.pdf' 

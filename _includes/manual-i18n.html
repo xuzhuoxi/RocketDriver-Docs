@@ -1,7 +1,7 @@
 <!--主页面国际化切换-->
-{% assign i18n_pages = site.data.manual.pages | where: "id", page.page_id %}
+{%- assign i18n_pages = i18ntext.manual.nav | where: "show", "yes" -%}
 
-{% if page.lang == "cn" %}
+{% if page.lang == "zh-CN" %}
 <p>中文 | <a href="{{ site.home.url }}/{{ i18n_pages[1].pattern}}">English</a></p>
 {% else %}
 <p><a href="{{ site.home.url }}/{{ i18n_pages[0].pattern}}">中文</a> | English</p>

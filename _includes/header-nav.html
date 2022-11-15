@@ -1,6 +1,7 @@
 <!--主页导航-->
 <nav>
-{% assign pages = site.data.home.pages | where: "lang", page.lang %}
+{%- assign pages = i18ntext.main.nav | where: "show", "yes" -%}
+
 {% for p in pages %}
   {% if p.id == page.page_id or p.id == page.group_id %}
   <ul><li class="active"><a>{{ p.text}}</a></li></ul>
