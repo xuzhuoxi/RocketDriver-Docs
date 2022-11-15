@@ -1,9 +1,13 @@
 <!--主页面国际化切换-->
 {%- include i18ntext.html -%}
-{%- assign i18n_pages = i18ntext.main.nav | where: "show", "yes" -%}
+{%- assign otherlink = i18ntext.i18n.link -%}
+{%- assign otheri18ntext = site.data[otherlink] -%}
+
+{%- assign pagenow = i18ntext.main.nav | where: "id", page_page_id -%}
+{%- assign pageother = otheri18ntext.main.nav | where: "id", page_page_id -%}
 
 {% if page.lang == "zh-CN" %}
-<p>中文 | <a href="{{ site.home.url }}/{{ i18n_pages[1].pattern}}">English</a></p>
+<p>{{i18ntext.i18n.title}} | <a href="{{ site.home.url }}/{{ pageother.pattern}}">{{i18ntext.i18n.title}}</a></p>
 {% else %}
-<p><a href="{{ site.home.url }}/{{ i18n_pages[0].pattern}}">中文</a> | English</p>
+<p><a href="{{ site.home.url }}/{{ pageother.pattern}}">{{i18ntext.i18n.title}}</a> | {{i18ntext.i18n.title}}</p>
 {% endif %}

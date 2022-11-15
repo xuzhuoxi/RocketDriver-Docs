@@ -1,3 +1,6 @@
+i18n:
+  link: i18n_zh-CN
+  title: English
 main:
   description: GameDriver Pro is a game framework for Unity engine
   downloads:
@@ -12,84 +15,68 @@ main:
   lang: English
   nav:
     - id: home.index
-      lang: en
       pattern: index_en.html
       show: 'yes'
       text: Home
     - id: home.readme
-      lang: en
       pattern: pages/Home_README_en.html
       show: 'yes'
       text: README
     - id: home.manual
-      lang: en
       pattern: pages/Home_Manual_en.html
       show: 'yes'
       text: User Manual
     - id: home.changelog
-      lang: en
       pattern: pages/Home_CHANGELOG_en.html
       show: 'yes'
       text: Changelog
     - id: home.faqs
-      lang: en
       pattern: pages/Home_FAQs_en.html
       show: 'yes'
       text: FAQs
     - id: home.3pn
-      lang: en
       pattern: pages/Home_ThirdPartyNotices_en.html
       show: 'yes'
       text: Third Party Notices
     - id: home.about
-      lang: en
       pattern: pages/Home_About_en.html
       show: 'yes'
       text: About
 manual:
   nav:
     - id: manual.event
-      lang: en
       pattern: pages/Manual_1.Event_en.html
       show: 'yes'
       text: '1.Event System(Event) '
     - id: manual.loader
-      lang: en
       pattern: pages/Manual_2.Loader_en.html
       show: 'yes'
       text: '2.Loader System(Loader) '
     - id: manual.i18n
-      lang: en
       pattern: pages/Manual_3.i18n_en.html
       show: 'yes'
       text: 3.Internationalization System(i18n)
     - id: manual.net
-      lang: en
       pattern: pages/Manual_4.Net_en.html
       show: 'yes'
       text: 4.Net Manager(NetManager)
     - id: manual.audio
-      lang: en
       pattern: pages/Manual_5.Audio_en.html
       show: 'yes'
       text: '5.Audio Manager(AudioManager) '
     - id: manual.panel
-      lang: en
       pattern: pages/Manual_6.Panel_en.html
       show: 'yes'
       text: 6.Panel Manager(PanelManager)
     - id: manual.service
-      lang: en
       pattern: pages/Manual_7.Service_en.html
       show: 'yes'
       text: 7.Service Framework(Service Framework)
     - id: manual.material
-      lang: en
       pattern: pages/Manual_8.RpgMaterial_en.html
       show: 'yes'
       text: 8.RPG Material Data System(RpgMaterial)
     - id: manual.others
-      lang: en
       pattern: pages/Manual_9.Others_en.html
       show: 'no'
       text: 9.Others

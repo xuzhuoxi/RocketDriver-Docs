@@ -20,6 +20,43 @@
 				<name>main</name>
 				<children>
 					<folder_node>
+						<name>i18n</name>
+						<children>
+							<concept_node>
+								<name>link</name>
+								<description/>
+								<comment/>
+								<default_text/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>zh-CN</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>title</name>
+								<description/>
+								<comment/>
+								<default_text/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>zh-CN</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+						</children>
+					</folder_node>
+					<folder_node>
 						<name>main</name>
 						<children>
 							<concept_node>
@@ -178,22 +215,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -248,22 +269,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -348,22 +353,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -418,22 +407,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -518,22 +491,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -603,22 +560,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -673,22 +614,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -783,22 +708,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -853,22 +762,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -953,22 +846,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -1023,22 +900,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -1123,22 +984,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -1193,22 +1038,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
@@ -1293,22 +1122,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -1378,22 +1191,6 @@
 												</translations>
 											</concept_node>
 											<concept_node>
-												<name>lang</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
 												<name>pattern</name>
 												<description/>
 												<comment/>
@@ -1448,22 +1245,6 @@
 										<children>
 											<concept_node>
 												<name>id</name>
-												<description/>
-												<comment/>
-												<default_text/>
-												<translations>
-													<translation>
-														<language>en-US</language>
-														<approved>false</approved>
-													</translation>
-													<translation>
-														<language>zh-CN</language>
-														<approved>false</approved>
-													</translation>
-												</translations>
-											</concept_node>
-											<concept_node>
-												<name>lang</name>
 												<description/>
 												<comment/>
 												<default_text/>
