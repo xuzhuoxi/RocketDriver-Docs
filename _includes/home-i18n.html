@@ -1,11 +1,9 @@
 <!--主页面国际化切换-->
 {%- include i18ntext.html -%}
 {%- assign otherlink = i18ntext.i18n.link -%}
-{{i18ntext.i18n.link}}<br/>
-{{otherlink}}
 {%- assign otheri18ntext = site.data[otherlink] -%}
 
-{%- assign pageother = otheri18ntext.main.nav | where: "id", page_page_id -%}
+{%- assign pageother = otheri18ntext.main.nav | where: "id", page.page_id -%}
 
 {% if page.lang == "zh-CN" %}
 <p>中文 | <a href="{{ site.home.url }}/{{ pageother.pattern}}">English</a></p>
