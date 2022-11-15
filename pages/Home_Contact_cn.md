@@ -5,4 +5,4 @@ group_id: home
 lang: zh-CN
 title: '联系作者'
 ---
-{% include home-contact.md %}
+{% include home-contact.html %}

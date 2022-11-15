@@ -5,4 +5,4 @@ group_id: home
 lang: 'en-US'
 title: 'Contact Author'
 ---
-{% include home-contact.md %}
+{% include home-contact.html %}
