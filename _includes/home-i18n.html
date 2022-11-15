@@ -5,7 +5,7 @@
 
 {{otheri18ntext.home.description}}
 
-{%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
+{%- assign pageother = otheri18ntext.home.nav | where: "id", page.id -%}
 
 {% if page.lang == "zh-CN" %}
 <p>中文 | <a href="{{ site.home.url }}/{{ pageother.pattern}}">English</a></p>
