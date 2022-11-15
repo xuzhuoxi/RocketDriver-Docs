@@ -39,7 +39,7 @@ home:
       show: 'yes'
       text: 关于
 i18n:
-  link: i18n_en-US
+  link: en-US
 manual:
   nav:
     - id: manual.event
