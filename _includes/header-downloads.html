@@ -1,6 +1,10 @@
 <!--下载项-->
+
+{% if i18ntext %}
+8888888
+{% endif%}
+
 {% if site.show_downloads %}
-{{i18ntext.main.description}}
 {% assign downloads = i18ntext.main.downloads %}
 <ul class="downloads">
   <li><a target="_blank" href="{{ site.unity.package_url }}">{{downloads.download}}<strong>{{downloads.package}}</strong></a></li>
