@@ -3,9 +3,11 @@
 {%- assign otherlink =  "i18n_" | append: i18ntext.i18n.link -%}
 {%- assign otheri18ntext = site.data[otherlink] -%}
 
-{{otheri18ntext.home.description}}
+{{otheri18ntext.home.description}}<br/>
+{{page.page_id}}<br/>
+{{otheri18ntext.home.nav.size}}
 
-{%- assign pageother = otheri18ntext.home.nav | where: "id", page.id -%}
+{%- assign pageother = otheri18ntext.home.nav | where: "id", page.page_id -%}
 
 {% if page.lang == "zh-CN" %}
 <p>中文 | <a href="{{ site.home.url }}/{{ pageother.pattern}}">English</a></p>
