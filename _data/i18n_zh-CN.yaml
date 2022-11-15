@@ -1,6 +1,4 @@
-i18n:
-  link: i18n_en-US
-main:
+home:
   description: GameDriver Pro 是一款基于Unity引擎的游戏开发框架
   downloads:
     download: 下载
@@ -41,6 +39,8 @@ main:
       pattern: pages/Home_About_cn.html
       show: 'yes'
       text: 关于
+i18n:
+  link: i18n_en-US
 manual:
   nav:
     - id: manual.event

@@ -1,6 +1,4 @@
-i18n:
-  link: i18n_zh-CN
-main:
+home:
   description: GameDriver Pro is a game framework for Unity engine
   downloads:
     download: Download
@@ -41,6 +39,8 @@ main:
       pattern: pages/Home_About_en.html
       show: 'yes'
       text: About
+i18n:
+  link: i18n_zh-CN
 manual:
   nav:
     - id: manual.event

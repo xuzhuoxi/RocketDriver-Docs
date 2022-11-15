@@ -1,7 +1,7 @@
 <!--主页导航-->
 {%- include i18ntext.html -%}
 <nav>
-{%- assign pages = i18ntext.main.nav | where: "show", "yes" -%}
+{%- assign pages = i18ntext.home.nav | where: "show", "yes" -%}
 
 {% for p in pages %}
   {% if p.id == page.page_id or p.id == page.group_id %}

@@ -1,7 +1,7 @@
 <!--下载项-->
 {% if site.show_downloads %}
 {%- include i18ntext.html -%}
-{% assign downloads = i18ntext.main.downloads %}
+{% assign downloads = i18ntext.home.downloads %}
 <ul class="downloads">
   <li><a target="_blank" href="{{ site.unity.package_url }}">{{downloads.download}}<strong>{{downloads.package}}</strong></a></li>
   {% if page.lang == "cn" %}
