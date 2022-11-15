@@ -7,7 +7,7 @@
 {%- assign pageother = otheri18ntext.main.nav | where: "id", page_page_id -%}
 
 {% if page.lang == "zh-CN" %}
-<p>{{i18ntext.i18n.title}} | <a href="{{ site.home.url }}/{{ pageother.pattern}}">{{i18ntext.i18n.title}}</a></p>
+<p>{{i18ntext.i18n.title}} | <a href="{{ site.home.url }}/{{ pageother.pattern}}">{{otheri18ntext.i18n.title}}</a></p>
 {% else %}
-<p><a href="{{ site.home.url }}/{{ pageother.pattern}}">{{i18ntext.i18n.title}}</a> | {{i18ntext.i18n.title}}</p>
+<p><a href="{{ site.home.url }}/{{ pageother.pattern}}">{{otheri18ntext.i18n.title}}</a> | {{i18ntext.i18n.title}}</p>
 {% endif %}
