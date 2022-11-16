@@ -9,8 +9,8 @@ contact:
   phone-validation: Please enter your phone number.
   subject: Contact Form Submission
   submit: Send Message
-  text: Have a thought? You can contact me!
-  title: Contact
+  text: Have a thought? You can contact author!
+  title: Contact Author
 home:
   description: GameDriver Pro is a game framework for Unity engine
   downloads:

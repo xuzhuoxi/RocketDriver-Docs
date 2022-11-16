@@ -9,8 +9,8 @@ contact:
   phone-validation: 请输入您的电话号码。
   subject: 联系表格提交
   submit: 发送消息
-  text: '有想法？可以联系我哦! '
-  title: 联系我
+  text: '有想法？可以联系作者哦! '
+  title: 联系作者
 home:
   description: GameDriver Pro 是一款基于Unity引擎的游戏开发框架
   downloads:
