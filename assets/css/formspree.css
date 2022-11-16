@@ -76,7 +76,7 @@
     margin: -10px -30px 30px -30px;
     color: #888;
 }
-.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm input[type="tel"] .bootstrap-frm textarea {
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm input[type="tel"], .bootstrap-frm textarea {
     border: 1px solid #CCC;
     color: #888;
     width: 100%;
