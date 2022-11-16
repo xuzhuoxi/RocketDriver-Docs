@@ -1,87 +1,69 @@
 /* basic-gre */
 .basic-grey {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 560px;
     background: #F7F7F7;
     padding: 20px;
     font: 12px Georgia, "Times New Roman", Times, serif;
     color: #888;
     text-shadow: 1px 1px 1px #FFF;
-    border:1px solid #E4E4E4;
+    border: 1px solid #E4E4E4;
 }
 .basic-grey h1 {
     font-size: 25px;
     padding: 5px;
     display: block;
-    border-bottom:1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
     margin: -10px;
     color: #888;
 }
-.basic-grey h1>span {
-display: block;
-font-size: 11px;
-}
 .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea, .basic-grey select {
-border: 1px solid #DADADA;
-color: #888;
-height: 30px;
- margin-bottom: 16px;
- margin-right: 6px;
- margin-top: 2px;
- outline: 0 none;
- padding: 2px 2px 2px 2px;
- width: 100%;
- font-size: 12px;
- line-height:15px;
- box-shadow: inset 0px 1px 4px #ECECEC;
- -moz-box-shadow: inset 0px 1px 4px #ECECEC;
- -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 2px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
 }
-.basic-grey textarea{
- padding: 2px 2px 2px 2px;
- }
-.basic-grey select {
-background: #FFF url('down-arrow.png') no-repeat right;
-background: #FFF url('down-arrow.png') no-repeat right);
-appearance:none;
--webkit-appearance:none;
--moz-appearance: none;
- text-indent: 0.01px;
- text-overflow: '';
- width: 100%;
- height: 35px;
- line-height: 25px;
- }
- .basic-grey textarea{
- width:100%;
- height:200px;
- }
- .basic-grey .button {
- background: #E27575;
- border: none;
- padding: 10px 10px 10px 10px;
-olor: #FFF;
- box-shadow: 1px 1px 5px #B6B6B6;
- border-radius: 3px;
- text-shadow: 1px 1px 1px #9E3F3F;
- cursor: pointer;
- }
- .basic-grey .button:hover {
- background: #CF7A7A
- }
+.basic-grey textarea {
+    padding: 2px;
+    width: 100%;
+    height: 200px;
+}
+.basic-grey .button {
+    background: #E27575;
+    border: none;
+    padding: 10px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
 
 /* bootstrap-frm */
 .bootstrap-frm {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 560px;
     background: #FFF;
     padding: 20px 30px 20px 30px;
     font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #888;
     text-shadow: 1px 1px 1px #FFF;
-    border:1px solid #DDD;
+    border: 1px solid #DDD;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -94,15 +76,11 @@ olor: #FFF;
     margin: -10px -30px 30px -30px;
     color: #888;
 }
-.bootstrap-frm h1>span {
-    display: block;
-    font-size: 11px;
-}
-.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm textarea, .bootstrap-frm select{
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm textarea, .bootstrap-frm select {
     border: 1px solid #CCC;
     color: #888;
     height: 20px;
-    line-height:15px;
+    line-height: 15px;
     margin-bottom: 16px;
     margin-right: 6px;
     margin-top: 2px;
@@ -116,20 +94,8 @@ olor: #FFF;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.bootstrap-frm select {
-    background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right;
-    appearance:none;
-    -webkit-appearance:none;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 100%;
-    height: 35px;
-    line-height:15px;
-}
-.bootstrap-frm textarea{
-    height:100px;
+.bootstrap-frm textarea {
+    height: 100px;
     padding: 5px 0px 0px 5px;
     width: 100%;
 }
@@ -148,8 +114,8 @@ olor: #FFF;
 
 /* white-pink */
 .white-pink {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 560px;
     background: #FFF;
     padding: 30px 30px 20px 30px;
@@ -168,12 +134,7 @@ olor: #FFF;
     margin: -10px -30px 10px -30px;
     color: #969696;
 }
-.white-pink h1>span {
-    display: block;
-    font-size: 11px;
-    color: #C4C2C2;
-}
-.white-pink input[type="text"], .white-pink input[type="email"], .white-pink textarea,.white-pink select{
+.white-pink input[type="text"], .white-pink input[type="email"], .white-pink textarea, .white-pink select {
     color: #555;
     width: 100%;
     padding: 3px 0px 3px 5px;
@@ -183,60 +144,48 @@ olor: #FFF;
     border: 1px solid #e5e5e5;
     background: #fbfbfb;
     height: 25px;
-    line-height:15px;
+    line-height: 15px;
     outline: 0;
-    -webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
-    box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
 }
-.white-pink textarea{
-    height:100px;
+.white-pink textarea {
+    height: 100px;
     padding: 5px 0px 0px 5px;
     width: 100%;
 }
 .white-pink .button {
-    -moz-box-shadow:inset 0px 1px 0px 0px #fbafe3;
-    -webkit-box-shadow:inset 0px 1px 0px 0px #fbafe3;
-    box-shadow:inset 0px 1px 0px 0px #fbafe3;
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05,     #ff5bb0), color-stop(1, #ef027d) );
-    background:-moz-linear-gradient( center top, #ff5bb0 5%, #ef027d 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0',     endColorstr='#ef027d');
-    background-color:#ff5bb0;
-    border-radius:9px;
-    -webkit-border-radius:9px;
-    -moz-border-border-radius:9px;
-    border:1px solid #ee1eb5;
-    display:inline-block;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    font-style:normal;
+    -moz-box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d));
+    background: -moz-linear-gradient(center top, #ff5bb0 5%, #ef027d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d');
+    background-color: #ff5bb0;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-border-radius: 9px;
+    border: 1px solid #ee1eb5;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
     height: 40px;
     line-height: 30px;
-    width:100px;
-    text-decoration:none;
-    text-align:center;
-    text-shadow:1px 1px 0px #c70067;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #c70067;
 }
 .white-pink .button:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05,     #ef027d), color-stop(1, #ff5bb0) );
-    background:-moz-linear-gradient( center top, #ef027d 5%, #ff5bb0 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d',     endColorstr='#ff5bb0');
-    background-color:#ef027d;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
+    background: -moz-linear-gradient(center top, #ef027d 5%, #ff5bb0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0');
+    background-color: #ef027d;
 }
 .white-pink .button:active {
-    position:relative;
-    top:1px;
-}
-.white-pink select {
-    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top,     #FBFBFB 0%, #E9E9E9 100%);
-    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left     top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
-    appearance:none;
-    -webkit-appearance:none;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 100%;
-    line-height: 15px;
-    height: 30px;
+    position: relative;
+    top: 1px;
 }
