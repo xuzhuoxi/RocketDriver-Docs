@@ -26,7 +26,7 @@ Universal Windows Platform
 iOS, Android, WebGL, tvOS, Steam  
 
 #### 3.4 Programmable Render Pipeline (SRP) Compatibility
-+ Built-in rendering pipeline: **Compatible**
++ Built-in rendering pipeline (Built-in): **Compatible**
 + Universal Render Pipeline (URP): **Compatible**
 + High Definition Render Pipeline (HDRP): **Compatible**
 
