@@ -18,13 +18,12 @@
     margin: -10px;
     color: #888;
 }
-
 .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea {
     border: 1px solid #DADADA;
     color: #888;
     width: 100%;
     height: 30px;
-    padding: 50px 0px;
+    padding: 5px 0px;
 	padding-left: 4px;
 	padding-right: 4px;
 	outline: 0 none;
@@ -79,7 +78,11 @@
 .bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm input[type="tel"], .bootstrap-frm textarea {
     border: 1px solid #CCC;
     color: #888;
+	/*
     width: 100%;
+	*/
+	margin-left: 10px;
+    margin-right: 10px;
     height: 30px;
     padding: 5px 0px;
 	padding-left: 4px;
