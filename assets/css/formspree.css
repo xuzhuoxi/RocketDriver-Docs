@@ -22,7 +22,7 @@
 .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea {
     border: 1px solid #DADADA;
     color: #888;
-    width: 100%;
+    width: 98%;
     height: 30px;
     padding: 2px;
 	outline: 0 none;
@@ -34,7 +34,7 @@
 }
 .basic-grey textarea {
     padding: 2px;
-    width: 100%;
+    width: 98%;
     height: 200px;
 }
 .basic-grey .button {
@@ -93,7 +93,7 @@
 }
 .bootstrap-frm textarea {
     padding: 2px;
-    width: 100%;
+    width: 98%;
     height: 200px;
 }
 .bootstrap-frm .button {
