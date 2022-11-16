@@ -2,9 +2,9 @@
 {% include i18ntext.html %}
 <section class="{{include.class}}" id="{{ include.section | default: " contact" }}">
 <!--
-<link rel="stylesheet" href="{{ "/assets/css/formspree.css?v=" | append: site.github.build_revision | relative_url }}">
--->
 <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css?v=" | append: site.github.build_revision | relative_url }}">
+-->
+<link rel="stylesheet" href="{{ "/assets/css/formspree.css?v=" | append: site.github.build_revision | relative_url }}">
 
 <div class="container">
     <div class="row">
@@ -39,7 +39,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-							<textarea name="message" class="form-control" id="message" rows="8"
+							<textarea name="message" class="form-control" id="message" rows="12"
 								placeholder="{{ i18ntext.contact.message | default: " Message*" }}"
 								required="required" data-validation-required-message="{{ i18ntext.contact.message-validation | default: "Please enter a message." }}" ></textarea>
                             <p class="help-block text-danger"></p>
