@@ -8,14 +8,14 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 text-center">
+			<div class="text-center">
 				<h2 class="section-heading text-uppercase">
 					{{ i18ntext.contact.title | markdownify | default: Contact }}</h2>
 				<h3 class="section-subheading text-muted">{{ i18ntext.contact.text | default: "" }}</h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-12 basic-grey">
+			<div class="basic-grey">
 				<form id="contactForm" accept-charset="utf-8" novalidate="novalidate" method="POST"
 					  action="https://formspree.io/{{ site.formspree_form_path }}">
 					<div class="row">
