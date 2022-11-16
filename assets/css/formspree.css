@@ -22,6 +22,15 @@
     margin: -10px;
     color: #888;
 }
+
+.basic-grey {
+	.text-danger {
+		height: 30px;
+		padding: 2px;
+		line-height: 15px;
+	}
+}
+
 .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea {
     border: 1px solid #DADADA;
     color: #888;
