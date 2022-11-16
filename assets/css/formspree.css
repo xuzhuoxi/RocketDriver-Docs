@@ -1,4 +1,8 @@
-/* basic-gre */
+/* basic */
+.basic {
+}
+
+/* basic-grey */
 .basic-grey {
     margin-left: auto;
     margin-right: auto;
@@ -18,16 +22,10 @@
     margin: -10px;
     color: #888;
 }
-.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea, .basic-grey select {
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey input[type="tel"], .basic-grey textarea {
     border: 1px solid #DADADA;
     color: #888;
     height: 30px;
-	/*
-    margin-bottom: 16px;
-    margin-right: 6px;
-	margin-left: 6px;
-    margin-top: 2px;
-    */
 	outline: 0 none;
     padding: 2px;
     width: 100%;
@@ -44,6 +42,8 @@
 }
 .basic-grey .button {
     background: #E27575;
+	width: 100px;
+	height: 40px;
     border: none;
     padding: 10px;
     color: #FFF;
@@ -141,9 +141,6 @@
     color: #555;
     width: 100%;
     padding: 3px 0px 3px 5px;
-    margin-top: 2px;
-    margin-right: 6px;
-    margin-bottom: 16px;
     border: 1px solid #e5e5e5;
     background: #fbfbfb;
     height: 25px;
