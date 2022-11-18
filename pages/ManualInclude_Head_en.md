@@ -148,6 +148,8 @@ Editor function. It is an extension to the UIElements functionality in Unity.
   Common public behavior under the **UnityEngine.Tilemaps** component.  
   + TransformUtil  
   **UnityEngine.Transform** component related extension functions.  
+  + UnityPathUtil  
+  Untiy-related path handling functions.
 + Wait  
 Unity coroutine related functions.  
 

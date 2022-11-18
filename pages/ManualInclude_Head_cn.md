@@ -145,6 +145,8 @@ Editor功能。是对Untiy中UIElements功能的扩展。
   **UnityEngine.Tilemaps** 组件下的常用公共行为。  
   + TransformUtil  
   **UnityEngine.Transform** 组件相关的扩展功能。  
+  + UnityPathUtil  
+  与Untiy相关的路径处理功能。  
 + Wait  
 Unity协程相关功能。  
 
