@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!--国际化数据-->
+{%- include i18ntext.html -%}
+<html lang="{{ page.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,27 +17,8 @@
   <body>
     <div class="wrapper">
       <header>
-	  	<!--国际化-->
-		{%- include i18ntext.html -%}
-	  
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <p>{{ i18ntext.home.description }}</p>
-			
-		<!-- 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-		-->
-		
+		<!--标题&Logo&描述-->
+		{% include header-title.html %}
       </header>
       <section>
         {{ content }}
