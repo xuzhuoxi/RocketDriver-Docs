@@ -1,7 +1,7 @@
 title: GameDriver Pro
-logo: /assets/img/logo.png
+logo: true
 show_downloads: true
-google_analytics:
+google_analytics: true
 theme: jekyll-theme-minimal
 
 version: '1.0.3'
@@ -14,9 +14,6 @@ author:
 unity:
   package_url: https://assetstore.unity.com/packages/slug/234202
   publisher_url: https://assetstore.unity.com/publishers/74539
-
-home:
-  url: https://www.xuzhuoxi.com/GameDriver-Docs
 
 github:
   issues_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues
