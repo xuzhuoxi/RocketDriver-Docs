@@ -22,6 +22,7 @@ home:
       https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro
       Manaual_en.pdf
     package: Package
+  logo: /assets/img/logo.png
   nav:
     - id: home.index
       pattern: index_en.html
@@ -55,6 +56,8 @@ home:
       pattern: pages/Home_Contact_en.html
       show: 'yes'
       text: Contact Author
+  page: /index_en.html
+  title: GameDriver Pro
 i18n:
   link: zh-CN
 manual:
