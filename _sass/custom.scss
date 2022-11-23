@@ -58,7 +58,7 @@ nav {
 }
 
 manual-nav {
-  weight: 100%;
+  weight: 710px;
   height: 32px;
   font-size: 14px;
   display: -webkit-flex;
@@ -72,15 +72,15 @@ manual-nav {
     height: 32px;
   }
   .prev {
-    weight: 40%;
+    weight: 30%;
     text-align: left;
   }
   .next {
-    weight: 40%;
+    weight: 30%;
     text-align: right;
   }
   .catalog {
-    weight: 20%;
+    weight: 30%;
     text-align: center;
   }
 }
