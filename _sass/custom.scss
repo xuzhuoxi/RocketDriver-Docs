@@ -69,18 +69,16 @@ manual-nav {
   align-items: flex-start;
 
   div {
+	weight: 30%;
     height: 32px;
   }
   .prev {
-    weight: 30%;
     text-align: left;
   }
   .next {
-    weight: 30%;
     text-align: right;
   }
   .catalog {
-    weight: 30%;
     text-align: center;
   }
 }
