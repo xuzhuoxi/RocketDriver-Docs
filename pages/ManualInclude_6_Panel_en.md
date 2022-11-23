@@ -70,17 +70,31 @@ PanelManagerShared.Manager.ShowPanel(panelId, panelParams);
 ````
 ![image](assets/img/panel_16.png)  
 
-### 6.3 Advanced Applications
+### 6.3 Close Panel
 
-#### 6.3.1 Custom Registrar
+#### 6.3.1 Close the panel by the panel id. 
+You can choose to close the default, close the first display, and close the last display through the panel id:  
+![image](assets/img/panel_21.png)  
+
+#### 6.3.2 Close the panel through instance information. 
+Close the panel accurately by providing the panel instance Id (instanceId), display view (view), and panel instance (IPanelInstance).  
+![image](assets/img/panel_22.png)  
+
+#### 6.3.3 Close panels in batches. 
+You can choose to close all displayed panels, close all panels with a specified panel id, or close panels that match the matching function.  
+![image](assets/img/panel_23.png)  
+
+### 6.4 Advanced Applications
+
+#### 6.4.1 Custom Registrar
 The registrar in IPanelManager can be customized, as long as the IPanelRegister interface is implemented.  
 ![image](assets/img/panel_13.png)  
 
-#### 6.3.2 Custom Loaders
+#### 6.4.2 Custom Loaders
 The loader in IPanelManager can be customized, as long as the IIPanelLoaderAdapter interface is implemented.  
 ![image](assets/img/panel_14.png)  
 
-#### 6.3.3 Set panel display timing
+#### 6.4.3 Set panel display timing
 SetShowMoment in IPanelManger can set the panel display timing (immediate display | frame end display)  
 ![image](assets/img/panel_15.png)  
 + show immediately
@@ -88,10 +102,10 @@ SetShowMoment in IPanelManger can set the panel display timing (immediate displa
 + end of frame display
   When the code is executed, the loading process is performed immediately. When the resource preparation is complete, start the coroutine, wait for WaitForEndOfFrame, and add the panel to the display node.
 
-#### 6.3.4 IPanelSettings Description
+#### 6.4.4 IPanelSettings Description
 The IPanelSettings instance is the interface of the panel configuration information saved when the panel is registered, including resource configuration, background configuration and animation configuration.  
 
-##### 6.3.4.1 Resource Configuration
+##### 6.4.4.1 Resource Configuration
 IPanelAssetSettings instance  
 Main configuration properties: BundleName, AssetPath, MainScriptName, MainScriptParams  
 ![image](assets/img/panel_17.png)  
@@ -105,7 +119,7 @@ Main configuration properties: BundleName, AssetPath, MainScriptName, MainScript
   +MainScriptParams
   It takes effect when MainScriptName exists and implements the IParamsPanel interface, and is the incoming parameter of the function SetPanelStringParams.
 
-##### 6.3.4.2 Background configuration
+##### 6.4.4.2 Background configuration
 IPanelBackgroundSettings instance  
 
 + basic parameters
@@ -139,7 +153,7 @@ IPanelBackgroundSettings instance
   + ScreenshotFactor [Valid when Mode=Screenshot]
     Screenshot image blur factor  
 
-##### 6.3.4.3 Animation Configuration
+##### 6.4.4.3 Animation Configuration
 IPanelAnimSettings instance  
 ![image](assets/img/panel_19.png)  
 + OpenKey
@@ -151,7 +165,7 @@ IPanelAnimSettings instance
 + CloseState
   The state name in the animation Animator, used to play the specified animation  
 
-#### 6.3.5 Panel function extension
+#### 6.4.5 Panel function extension
 At this stage, there are 4 interfaces related to panel function expansion:  
 IInitPanel, IParamsPanel, IRefreshPanel, IDisposePanel  
 **NOTE**: IShowPanel, IClosePanel are **deprecated**.  
@@ -176,6 +190,6 @@ IInitPanel, IParamsPanel, IRefreshPanel, IDisposePanel
   Called when the panel is about to be destroyed to perform the release behavior.  
   ![image](assets/img/panel_12.png)  
 
-### 6.4 Example
+### 6.5 Example
 GameDriver/Samples/Panel  
 ![image](assets/img/panel_20.png)  

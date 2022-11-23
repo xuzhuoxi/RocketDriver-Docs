@@ -70,17 +70,31 @@ PanelManagerShared.Manager.ShowPanel(panelId, panelParams);
 ```
 ![image](assets/img/panel_16.png)  
 
-### 6.3 高级应用
+### 6.3 关闭面板
 
-#### 6.3.1 自定义注册器
+#### 6.3.1 通过面板id关闭面板。 
+可通过面板id，选择关闭默认的、关闭最先展示的、关闭最后展示的：  
+![image](assets/img/panel_21.png)   
+
+#### 6.3.2 通过实例信息关闭面板。
+通过提供面板实例Id(instanceId)、显示视图(view)、面板实例(IPanelInstance)，精确关闭面板。  
+![image](assets/img/panel_22.png)   
+
+#### 6.3.3 批量关闭面板。
+可选择关闭全部展示中的面板、关闭指定面板id的全部面板、关闭符合匹配函数的面板。  
+![image](assets/img/panel_23.png)   
+
+### 6.4 高级应用
+
+#### 6.4.1 自定义注册器
 IPanelManager中的注册器可自定义，只要实现IPanelRegiester接口即可。  
 ![image](assets/img/panel_13.png)  
 
-#### 6.3.2 自定义加载器
+#### 6.4.2 自定义加载器
 IPanelManager中的加载器可自定义，只要实现IIPanelLoaderAdapter接口即可。  
 ![image](assets/img/panel_14.png)  
 
-#### 6.3.3 设置面板展示时机
+#### 6.4.3 设置面板展示时机
 IPanelManger中的SetShowMoment可以设置面板展示时机(立即展示|帧结束展示)  
 ![image](assets/img/panel_15.png)  
 + 立即展示
@@ -88,10 +102,10 @@ IPanelManger中的SetShowMoment可以设置面板展示时机(立即展示|帧�
 + 帧结束展示
   代码执行时，马上进行加载处理。当资源准备完成后，开启协程，等待WaitForEndOfFrame后添加面板到显示节点。  
 
-#### 6.3.4 IPanelSettings说明
+#### 6.4.4 IPanelSettings说明
 IPanelSettings实例为面板注册时保存的面板配置信息接口，包含资源配置、背景配置和动画配置。  
 
-##### 6.3.4.1 资源配置
+##### 6.4.4.1 资源配置
 IPanelAssetSettings实例  
 主要配置属性：BundleName、AssetPath、MainScriptName、MainScriptParams  
 ![image](assets/img/panel_17.png)  
@@ -105,7 +119,7 @@ IPanelAssetSettings实例
 + MainScriptParams
   当MainScriptName存在实现IParamsPanel接口时生效，为函数SetPanelStringParams的传入参数。  
 
-##### 6.3.4.2 背景配置
+##### 6.4.4.2 背景配置
 IPanelBackgroundSettings实例  
 
 + 基础参数
@@ -139,7 +153,7 @@ IPanelBackgroundSettings实例
   + ScreenshotFactor [Mode=Screenshot时生效]
     截屏图像模糊系数  
 
-##### 6.3.4.3 动画配置
+##### 6.4.4.3 动画配置
 IPanelAnimSettings实例  
 ![image](assets/img/panel_19.png)  
 + OpenKey
@@ -151,7 +165,7 @@ IPanelAnimSettings实例
 + CloseState
   动画Animator中的状态名称，用于播放指定动画  
 
-#### 6.3.5 面板功能扩展
+#### 6.4.5 面板功能扩展
 现阶段有4个接口与面板功能扩展相关：  
 IInitPanel、IParamsPanel、IRefreshPanel、IDisposePanel  
 **注意**：IShowPanel、IClosePanel已**弃用**。  
@@ -176,6 +190,6 @@ IInitPanel、IParamsPanel、IRefreshPanel、IDisposePanel
   当面板即将被销毁前调用，用于执行释放行为。  
   ![image](assets/img/panel_12.png)  
 
-### 6.4 示例
+### 6.5 示例
 GameDriver/Samples/Panel  
 ![image](assets/img/panel_20.png)  
