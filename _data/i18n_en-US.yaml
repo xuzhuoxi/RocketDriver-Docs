@@ -62,6 +62,7 @@ i18n:
   link: zh-CN
 manual:
   catalog: Catalog
+  catalog_pattern: pages/Home_Manual_en.html
   nav:
     - id: manual.event
       pattern: pages/Manual_1.Event_en.html

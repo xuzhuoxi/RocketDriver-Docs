@@ -62,6 +62,7 @@ i18n:
   link: en-US
 manual:
   catalog: 目录
+  catalog_pattern: pages/Home_Manual_cn.html
   nav:
     - id: manual.event
       pattern: pages/Manual_1.Event_cn.html

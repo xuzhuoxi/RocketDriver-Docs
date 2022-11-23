@@ -15,7 +15,7 @@
   <div class="prev"><a href="{{ manual_pages[prevIdx].pattern | relative_url }}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
 {% endunless  %}
 
-  <div class="catalog"><a href="{{ i18ntext.manual.catalog_pattern | relative_url}}" title="{{i18ntext.manual.catalog}}">{{i18ntext.manual.catalog}}</a></div>
+  <div class="catalog"><a href="{{ site.home.url }}/{{ i18ntext.manual.catalog_pattern }}" title="{{i18ntext.manual.catalog}}">{{i18ntext.manual.catalog}}</a></div>
 
 {% unless  page.page_id == manual_pages[-1].id %}
   {% assign nextIdx = idx | plus: 1 %}
