@@ -12,7 +12,7 @@
 <manual-nav>
 
 {% if  page.page_id == manual_pages[0].id %}
-  <div></div>
+  <div>   </div>
 {% else %}
   {% assign prevIdx = idx | plus: -1 %}
   <div class="prev"><a href="{{ manual_pages[prevIdx].pattern | relative_url }}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
@@ -21,7 +21,7 @@
   <div class="catalog"><a href="{{ site.home.url }}/{{ i18ntext.manual.catalog_pattern }}" title="{{i18ntext.manual.catalog}}">{{i18ntext.manual.catalog}}</a></div>
 
 {% if  page.page_id == manual_pages[-1].id %}
-  <div></div>
+  <div>   </div>
 {% else %}
   {% assign nextIdx = idx | plus: 1 %}
   <div class="next"><a href="{{ manual_pages[nextIdx].pattern | relative_url }}" title="{{manual_pages[nextIdx].text}}">{{i18ntext.manual.next}}</a></div>
