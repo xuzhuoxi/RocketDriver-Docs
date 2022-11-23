@@ -10,16 +10,15 @@
 {% endfor%}
 
 <manual-nav>
-{% if page.page_id == manual_pages[0].id %}
-  {% assign nextIdx = idx | plus: 1 %}
-  <div class="next"><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}" title="{{manual_pages[nextIdx].text}}">{{i18ntext.manual.next}}</a></div>
-{% elsif page.page_id == manual_pages[-1].id %}
+{% unless  page.page_id == manual_pages[0].id %}
   {% assign prevIdx = idx | plus: -1 %}
-  <div class="prev"><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
-{% else %}
-  {% assign prevIdx = idx | plus: -1 %}
-  <div class="prev"><a href="{{ site.home.url }}/{{ manual_pages[prevIdx].pattern}}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
+  <div class="prev"><a href="{{ manual_pages[prevIdx].pattern | relative_url }}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
+{% endunless  %}
+
+  <div class="catalog"><a href="{{ i18ntext.manual.catalog_pattern | relative_url}}" title="{{i18ntext.manual.catalog}}">{{i18ntext.manual.catalog}}</a></div>
+
+{% unless  page.page_id == manual_pages[-1].id %}
   {% assign nextIdx = idx | plus: 1 %}
-  <div class="next"><a href="{{ site.home.url }}/{{ manual_pages[nextIdx].pattern}}" title="{{manual_pages[nextIdx].text}}">{{i18ntext.manual.next}}</a></div>
-{% endif %}
+  <div class="next"><a href="{{ manual_pages[nextIdx].pattern | relative_url }}" title="{{manual_pages[nextIdx].text}}">{{i18ntext.manual.next}}</a></div>
+{% endunless  %}
 </manual-nav>
