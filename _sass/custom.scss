@@ -61,30 +61,26 @@ manual-nav {
   weight: 100%;
   height: 32px;
   font-size: 14px;
-  display: block;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
 
   div {
     height: 32px;
-   // display: flex;
-   // *zoom: 1;
-    display: inline-block;
   }
   .prev {
     weight: 40%;
-    //justify-content: flex-start;
-	float: left;
     text-align: left;
   }
   .next {
     weight: 40%;
-    //justify-content: flex-end;
-	float: left;
     text-align: right;
   }
   .catalog {
     weight: 20%;
-	float: left;
-    //justify-content: center;
     text-align: center;
   }
 }
