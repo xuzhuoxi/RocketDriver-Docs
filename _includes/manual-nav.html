@@ -9,7 +9,7 @@
   {% endif%}
 {% endfor%}
 
-<manual-nav>
+<manual-nav class="wrapper">
 {% unless  page.page_id == manual_pages[0].id %}
   {% assign prevIdx = idx | plus: -1 %}
   <div class="prev"><a href="{{ manual_pages[prevIdx].pattern | relative_url }}" title="{{manual_pages[prevIdx].text}}">{{i18ntext.manual.prev}}</a></div>
