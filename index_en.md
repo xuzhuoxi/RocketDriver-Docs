@@ -27,7 +27,7 @@ With the purchase of GameDriver Pro, you will get the full source code of the pl
 The code has good platform compatibility, no need to worry about compatibility whether it is released for stand-alone or Mobile.  
 
 ### Compatible with common rendering pipelines
-GameDriver Pro supports **Built-in Render Pipeline**, **Universal Render Pipeline (URP)**, **High Definition Render Pipeline (HDRP)**.   
+GameDriver Pro supports **Built-in Render Pipeline (Built-in)**, **Universal Render Pipeline (URP)**, **High Definition Render Pipeline (HDRP)**.   
 
 ### Long-team upgrade support
 Also as a game developer, GameDriver Pro will receive long-term maintenance support.   

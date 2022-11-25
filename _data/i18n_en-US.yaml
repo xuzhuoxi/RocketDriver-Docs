@@ -22,7 +22,7 @@ home:
       https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro
       Manaual_en.pdf
     package: Package
-  logo: /assets/img/logo.png
+  logo: /assets/img/logo.webp
   nav:
     - id: home.index
       pattern: index_en.html
@@ -91,7 +91,7 @@ manual:
     - id: manual.service
       pattern: pages/Manual_7.Service_en.html
       show: 'yes'
-      text: 7.Service Framework(Service Framework)
+      text: 7.Service Framework(Service)
     - id: manual.material
       pattern: pages/Manual_8.RpgMaterial_en.html
       show: 'yes'

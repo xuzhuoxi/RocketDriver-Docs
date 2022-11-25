@@ -27,7 +27,7 @@ GameDriver Pro 是Unity引擎下的一个功能强大的游戏开发框架。其
 代码具备良好的平台兼容性，无论发布单机或是Mobile，无需担心兼容性。
 
 ### 兼容常用渲染管线
-GameDriver Pro 支持**内置渲染管线**、**通用渲染管线（URP）**、**高清渲染管线（HDRP）**。  
+GameDriver Pro 支持**内置渲染管线（Built-in）**、**通用渲染管线（URP）**、**高清渲染管线（HDRP）**。  
 
 ### 持续的更新维护
 同样作为游戏开发者，GameDriver Pro 将会得到长期的维护支持。
