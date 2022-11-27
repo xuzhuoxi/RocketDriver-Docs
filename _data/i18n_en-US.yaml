@@ -18,9 +18,7 @@ home:
     file_an: File an
     issue: Issue
     manual: Manual
-    manual_pdf: >-
-      https://www.xuzhuoxi.com/GameDriver-Docs/downloads/GameDriver Pro
-      Manaual_en.pdf
+    manual_pdf: downloads/GameDriverPro-Manual_en.pdf
     package: Package
   logo: /assets/img/logo.webp
   nav:

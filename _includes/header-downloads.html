@@ -3,12 +3,8 @@
 {%- include i18ntext.html -%}
 {% assign downloads = i18ntext.home.downloads %}
 <ul class="downloads">
-  <li><a target="_blank" href="{{ site.unity.package_url }}">{{downloads.download}}<strong>{{downloads.package}}</strong></a></li>
-  {% if page.lang == "cn" %}
-  <li><a target="_blank" href="{{ downloads.manual_pdf }}">{{downloads.download}}<strong>{{downloads.manual}}</strong></a></li>
-  {% else %}
-  <li><a target="_blank" href="{{ downloads.manual_pdf }}">{{downloads.download}}<strong>{{downloads.manual}}</strong></a></li>
-  {% endif %}
-  <li><a target="_blank" href="{{ site.github.issues_new_url }}">{{downloads.file_an}}<strong>{{downloads.issue}}</strong></a></li>
+  <li><a target="_blank" href="{{site.unity.package_url}}">{{downloads.download}}<strong>{{downloads.package}}</strong></a></li>
+  <li><a target="_blank" href="{{site.home.url}}/{{downloads.manual_pdf}}">{{downloads.download}}<strong>{{downloads.manual}}</strong></a></li>
+  <li><a target="_blank" href="{{site.github.issues_new_url}}">{{downloads.file_an}}<strong>{{downloads.issue}}</strong></a></li>
 </ul>
 {% endif %}
