@@ -57,6 +57,8 @@ Socket API definition, message encapsulation and unpacking functions, etc.
 Object pool related functions. Contains Key-Value object pool, metadata object pool, reuse object pool, etc.  
 + Service  
 Service framework basic support. For details, see [7. Service Framework(Service)](Manual_7.Service_en.html)  
++ TinyJson  
+Simple Json reading and writing library. Open source from Github: [https://github.com/zanders3/json](https://github.com/zanders3/json) .  
 + Utils  
   Common tool functions based on CSharp  
   + Encrypt  

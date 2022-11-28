@@ -54,6 +54,8 @@ Socket API定义、消息的封包与解包功能等。
 对象池相关功能。包含 Key-Value对象池、元数据对象池、重用对象池等。  
 + Service  
 服务框架基础支持。详细可查看[7.服务框架(Service)](Manual_7.Service_cn.html)  
++ TinyJson  
+简单的Json读写库。来自Github开源：[https://github.com/zanders3/json](https://github.com/zanders3/json) .  
 + Utils  
   基于CSharp的常用工具函数  
   + Encrypt  
