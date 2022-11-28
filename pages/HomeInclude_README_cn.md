@@ -26,7 +26,7 @@ Universal Windows Platform
 iOS、Android、WebGL、tvOS、Steam  
 
 #### 3.4 可编程渲染管线（SRP）兼容性
-+ 内置渲染管线 (Built-in)：**兼容**
++ 内置渲染管线（Built-in）：**兼容**
 + 通用渲染管线（URP）：**兼容**
 + 高清渲染管线（HDRP）：**兼容**
 
