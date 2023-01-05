@@ -1,6 +1,6 @@
 # GameDriver Pro Changelog
 
-## v1.0.3 (time undetermined)
+## v1.0.3 (2023.01.05)
 initial version.  
 
 + New feature: Event Module.
