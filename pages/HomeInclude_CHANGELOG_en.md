@@ -1,6 +1,33 @@
 # GameDriver Pro Changelog
 
-## v1.0.3 (2023.01.05)
+## Version v1.0.4
+
+### Features
+
++ Games.RpgMaterial: Add default data update logic.
+   + The data update function logic is encapsulated in the MaterialServiceProxy implementation.
+   + MaterialService implements data update through MaterialServiceProxy.
++ Games.RpgMaterial: Add support for common events.
+   + MaterialServiceProxy implements event throwing when data is updated.
++ Games.RpgMaterial: Add data change trigger function.
+   + MaterialServiceProxy implements the trigger registration logic.
+   + MaterialServiceProxy implements the trigger call when the data is updated.
++ Games.RpgMaterial: Add the corresponding sample “Samples/RpgMaterial”.
+
+### Updates
+
++ Games.RpgMaterial: Added IMaterialSetMod interface, MaterialSet implements this interface.
++ Games.RpgMaterial: Define the unique Id generation function interface IUniqueIdGenerator, and implement UniqueIdGenerator accordingly.
++ Games.RpgMaterial: Added a reusable proxy MaterialServiceProxy to implement throwing events and executing triggers when user data is updated.
++ Games.RpgMaterial: Modify IMaterialServicel, inherit IEventDispatcher by default.
++ Games.RpgMaterial: Modify the MaterialService implementation to support data update, event management and data triggers.
+
+### Fixes
+
++ Games.RpgMaterial: Fix IMaterialSet, MaterialSet namespace errors.  
+
+## Version v1.0.3 (2023.01.05)
+
 initial version.  
 
 + New feature: Event Module.

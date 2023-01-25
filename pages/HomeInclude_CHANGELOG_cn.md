@@ -1,6 +1,33 @@
 # GameDriver Pro 更新日志
 
-## v1.0.3(2023.01.05)
+## 版本 v1.0.4
+
+### 新功能
+
++ Games.RpgMaterial： 增加默认的数据更新逻辑。
+  + 数据更新功能逻辑封装在MaterialServiceProxy实现中。
+  + MaterialService通过MaterialServiceProxy实现数据更新。
++ Games.RpgMaterial： 增加常用事件支持。
+  + MaterialServiceProxy在数据更新时，实现事件的抛出。
++ Games.RpgMaterial： 增加数据变更触发器功能。  
+  + MaterialServiceProxy实现了触发器的注册逻辑。
+  + MaterialServiceProxy在数据更新时，实现触发器的调用。
++ Games.RpgMaterial： 增加加相应示例 “Samples/RpgMaterial”。  
+
+### 更新
+
++ Games.RpgMaterial：新增IMaterialSetMod接口，MaterialSet实现了该接口。  
++ Games.RpgMaterial：定义唯一Id的生成功能接口IUniqueIdGenerator，和相应实现UniqueIdGenerator。  
++ Games.RpgMaterial：新增可复用代理MaterialServiceProxy，实现用户数据更新时抛出事件与执行触发器。  
++ Games.RpgMaterial：修改IMaterialServicel，默认继承IEventDispatcher.  
++ Games.RpgMaterial：修改MaterialService实现，支持数据更新、事件管理和数据触发器。  
+
+### 修复问题
+
++ Games.RpgMaterial: 修复IMaterialSet、MaterialSet命名空间错误。  
+
+## 版本 v1.0.3(2023.01.05)
+
 初始版本。  
 
 + 新功能：事件模块。
