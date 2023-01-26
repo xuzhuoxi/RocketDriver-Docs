@@ -3,7 +3,7 @@
 针对玩家的数值型数据，以KTV(Key-Type-Value)形式进行管理。  
 + **JLGames.GameDriver.Games.RpgMaterial** 
   提供了Rpg材料数据系统的功能支持。依赖关系如下：  
-  ![image](assets/img/RpgMaterial_1.png)  
+  ![image](assets/img/RpgMaterial_Dependencies.png)  
   + **JLGames.GameDriver.Games.RpgMaterial.Common**
   系统的基础数据结构。  
   + **JLGames.GameDriver.Games.RpgMaterial.Material**
@@ -233,7 +233,7 @@
   ![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 使用
-依赖于服务框架，具体使用流程与一般服务一致。  
+依赖于服务框架(JLGames.GameDriver.Games.Service)，具体使用流程与一般服务一致。  
 
 #### 8.2.1 材料数据分类
 按照业务需求，把材料配置表数据进行分类  
@@ -258,6 +258,9 @@
 按照[服务框架说明](Manual-7.Service_cn.md#7.4)，注册、初始化、调用。  
 
 ### 8.3 示例
-GameDriver/Samples/Service  
-具体示例服务实现类为ResourceService, 服务名称定义为"ServiceName.Material_1"  
-![image](assets/img/service_18.png)  
+GameDriver/Samples/RpgMaterial   
+![image](assets/img/RpgMaterial_1.jpg)   
++ 示例说明  
+  1. 提供了Resource，Item，Giftbag三种材料类型的示例。  
+  2. 提供了材料兑换功能示例。  
+  3. 提供了礼包(Giftbag)开启功能示例。  

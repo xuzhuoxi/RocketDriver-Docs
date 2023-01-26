@@ -3,7 +3,7 @@ This is a general game data management system.
 The player's numerical data is managed in the form of KTV (Key-Type-Value).  
 + **JLGames.GameDriver.Games.RpgMaterial**
   Provides functional support for the Rpg material data system. The dependencies are as follows:  
-  ![image](assets/img/RpgMaterial_1.png)  
+  ![image](assets/img/RpgMaterial_Dependencies.png)  
   + **JLGames.GameDriver.Games.RpgMaterial.Common**
   The basic data structure of the system.  
   + **JLGames.GameDriver.Games.RpgMaterial.Material**
@@ -233,7 +233,7 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   ![image](assets/img/RpgMaterial_Asset.png)  
 
 ### 8.2 Use
-Depends on the service framework, and the specific usage process is consistent with the general service.  
+Depends on the service framework(JLGames.GameDriver.Games.Services), and the specific usage process is consistent with the general service.  
 
 #### 8.2.1 Classification of material data
 Classify material configuration table data according to business needs  
@@ -258,6 +258,9 @@ Implement the interface created in the previous step.
 According to the [Service Framework Description] (Manual-7.Service_cn.md#7.4), register, initialize, and call.  
 
 ### 8.3 Example
-GameDriver/Samples/Service  
-The specific example service implementation class is ResourceService, and the service name is defined as "ServiceName.Material_1"  
-![image](assets/img/service_18.png)  
+GameDriver/Samples/RpgMaterial  
+![image](assets/img/RpgMaterial_1.jpg)  
++ Example Explanation
+   1. Provides examples of three material types: Resource, Item, and Giftbag.
+   2. An example of the material exchange function is provided.
+   3. Provided an example of opening function of gift bag (Giftbag).
