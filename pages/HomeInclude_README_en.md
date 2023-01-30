@@ -1,15 +1,13 @@
 # README
 
 ### 1. Package information
-+ name:
-  **GameDriver Pro**  
-+ category
-  Tools/Game Toolkits  
++ name: **GameDriver Pro**  
++ category: Tools/Game Toolkits  
 
 ### 2. Release Notes
-+ latest release version
-  1.0.3  
-+ changelog
++ latest release version  
+  v1.0.4  
++ changelog  
   [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_en.html).  
 
 ### 3. Description

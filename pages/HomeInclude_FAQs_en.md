@@ -35,3 +35,10 @@
   1. Check whether the service instance is the implementation class of IService.
   2. Check whether the service instance has been registered.
   3. Check whether the service names are the same.
+
+#### 7. When using the RpgMaterial module, how to generate the data definition structure from the Excel table
+   1. The default Excel export tool supported by RpgMaterial is ExcelExporter, which supports exporting Excel numerical tables and constant tables to various data files and structure definitions in multiple programming languages. And supports custom extensions.  
+   2. ExcelExporter is an open source project located at  
+   [https://github.com/xuzhuoxi/ExcelExporter](https://github.com/xuzhuoxi/ExcelExporter).  
+   3. To achieve synchronization after export, it is recommended to use FileSync. FileSync is also an open source project located at  
+   [https://github.com/xuzhuoxi/FileSync](https://github.com/xuzhuoxi/FileSync).  

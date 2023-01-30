@@ -155,7 +155,7 @@ Dispatching order: OnServiceInitStart > OnServiceInited > OnServiceAllInited > O
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to SaveServicesData, after all the services that implement ISaveDataService are processed.
 
-### 7.4 How to use the framework
+### <span id="7.4">7.4 How to use the framework
 Before getting the service to use, it must be registered to the framework management, and then can be used after initialization. This is to ensure that the data has been processed completely.  
 
 #### 7.4.1 Register the service to the framework management

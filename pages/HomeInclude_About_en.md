@@ -6,7 +6,7 @@ Built on：{{site.build}}
 ### License Agreement
 Standard Unity Asset Store EULA
 
-### License type
+### License Type
 Seat
 
-### Copyright © 2022-2022 xuzhuoxi.
+### Copyright © 2022-2023 xuzhuoxi.

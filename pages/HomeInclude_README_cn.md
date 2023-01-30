@@ -1,15 +1,13 @@
 # 阅读手册
 
 ### 1. 包信息
-+ 名称: 
-  **GameDriver Pro**  
-+ 类别
-  Tools/Game Toolkits  
++ 名称: **GameDriver Pro**  
++ 类别: Tools/Game Toolkits  
 
 ### 2. 版本说明
-+ 最新发行版本
-  1.0.3  
-+ 更新日志
++ 最新发行版本  
+  v1.0.4  
++ 更新日志  
   [查看更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html).  
 
 ### 3. 描述

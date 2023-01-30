@@ -35,3 +35,10 @@
   1. 确认服务实例是否为IService的实现类。
   2. 确认服务实例是否已经注册。
   3. 确认服务名称是否重名。 
+
+#### 7.使用RpgMaterial模块时，怎样从Excel表格中生成数据各定义结构
+  1. RpgMaterial中默认支持的Excel导表工具是 ExcelExporter， 支持把Excel数值表和常量表导出为多种数据文件和多种编程语言的结构定义。并支持自定义扩展。  
+  2. ExcelExporter是一个开源项目，位于  
+  [https://github.com/xuzhuoxi/ExcelExporter](https://github.com/xuzhuoxi/ExcelExporter)。  
+  3. 要实现导出后的同步处理，建议使用 FileSync. FileSync同样是一个开源项目，位于  
+  [https://github.com/xuzhuoxi/FileSync](https://github.com/xuzhuoxi/FileSync)。  

@@ -254,8 +254,12 @@ Create a service interface for each type of material, at least inherit IInitServ
 #### 8.2.3 Implementing the interface
 Implement the interface created in the previous step.  
 
-#### 8.2.4 Use according to the service framework process
-According to the [Service Framework Description] (Manual-7.Service_cn.md#7.4), register, initialize, and call.  
+#### 8.2.4 Configure and initialize according to the service framework process
+According to the [Service Framework Description] (Manual_7.Service_en.html#7.4), register, initialize, and call.  
+
+#### 8.2.5 Other functions
++ By default, an event is thrown when the user data changes. Perform logic processing after data change by listening to corresponding events.
++ Supports trigger function by default, and supports trigger execution when user data changes.
 
 ### 8.3 Example
 GameDriver/Samples/RpgMaterial  
