@@ -1,6 +1,6 @@
 # GameDriver Pro Changelog
 
-## Version v1.0.4
+## Version v1.0.4(2023.01.31)
 
 ### Features
 
