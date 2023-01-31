@@ -31,14 +31,14 @@ In order to solve or reduce the impact of the above problems, combined with the 
 ### 7.3 Interface description
 
 #### 7.3.1 Service Basics
-+ IService
++ **IService**
   Only the class that implements the IService interface can be identified as a service and added to the framework management.  
   The ServiceName property returns the service name, which is required to be **unique**.  
-+ IEventDispatcher
++ **IEventDispatcher**
   The timing management of the service depends on the [event module](), so the service implementation class is required to implement the IEventDispatcher interface.  
-+ ServiceBase
++ **ServiceBase**
   Implement some necessary functions of the service class, which can be used for inheritance.  
-  + IPProgressingService
++ **IProgressingService**
   Provides a service interface for **progress update**.  
   Triggers a progress update when the service instance throws the **ServiceEvents.OnServiceProcessing** event.  
   The service instance requires the attribute functions of **total progress** and **current progress**.  
@@ -46,34 +46,34 @@ In order to solve or reduce the impact of the above problems, combined with the 
 
 #### 7.3.2 Service initialization related
 Execution timing: IArgumentService -> IAWakableService -> IInitService  
-+ IArgumentService
++ **IArgumentService**
   Provides a service interface for parameter injection  
   The completion of the function execution represents the end of the process of **injecting parameters**.  
   ![image](assets/img/service_1.png)  
-+ IAWakableService
++ **IAWakableService**
   A service interface that provides **activation** logic.  
   The completion of the function execution represents the end of the **activation** process.  
   ![image](assets/img/service_2.png)  
-+ IInitService
++ **IInitService**
   A service interface that provides **initialization** logic.  
   When the service instance throws the **ServiceEvents.OnServiceInited** event, it means the **initialization** process ends.  
   ![image](assets/img/service_3.png)  
-+ IInitDataService
++ **IInitDataService**
   A service interface that provides **data initialization** logic.  
   When the service instance throws the **ServiceEvents.OnServiceDataInited** event, it means the **data initialization** process ends.  
   ![image](assets/img/service_4.png)  
 
 #### 7.3.3 Management scheduling related
-+ IClearService
++ **IClearService**
   A service interface that provides **cleanup** logic.  
   Mostly used for data reset, event removal and other logic.  
   The completion of the function execution means the end of the cleanup process.  
   ![image](assets/img/service_5.png)  
-+ ILoadDataService
++ **ILoadDataService**
   Provides a service interface for data loading logic.  
   When the service instance throws the **ServiceEvents.OnServiceLoaded** event, it means the **data loading** process ends.  
   ![image](assets/img/service_6.png)  
-+ ISaveDataService
++ **ISaveDataService**
   Provides a service interface for **data storage** logic.  
   When the service instance throws the **ServiceEvents.OnServiceSaved** event, it means the **data saving** process ends.  
   ![image](assets/img/service_7.png)  
@@ -82,29 +82,29 @@ Execution timing: IArgumentService -> IAWakableService -> IInitService
 
 ##### 7.3.4.1 Progress update related events
 ![image](assets/img/service_8.png)  
-+ ServiceEvents.OnServiceProcessing
++ **ServiceEvents.OnServiceProcessing**
   + Scheduling body: a service instance that implements the IProgressingService interface
   + Scheduling timing: when it is necessary to inform the listener of the update progress.
-+ ServiceEvents.OnInitializationProcessing
++ **ServiceEvents.OnInitializationProcessing**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the initial execution period from StartInitalization to endCall, it is scheduled when three events of OnServiceProcessing, OnServiceInited, and OnServiceDataInited are captured.
-+ ServiceEvents.OnInitializationFinish
++ **ServiceEvents.OnInitializationFinish**
   + Scheduling subject: ServiceManager
   + Scheduling timing: when the call to StartInitalization ends, after the execution of endCall.
 
 ##### 7.3.4.2 Service preparation related events
 ![image](assets/img/service_9.png)  
 Dispatching order: OnServiceInjected > OnServiceAllInjected > OnServiceAwaked > OnServiceAllAwaked  
-+ ServiceEvents.OnServiceInjected
++ **ServiceEvents.OnServiceInjected**
   + Scheduling subject: ServiceManager
   + Scheduling timing: during the call to StartInitalization
-+ ServiceEvents.OnServiceAllInjected
++ **ServiceEvents.OnServiceAllInjected**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, all services that implement IArgumentService are processed.
-+ ServiceEvents.OnServiceAwaked
++ **ServiceEvents.OnServiceAwaked**
   + Scheduling subject: ServiceManager
   + Scheduling timing: during the call to StartInitalization
-+ ServiceEvents.OnServiceAllAwaked
++ **ServiceEvents.OnServiceAllAwaked**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, after all the services that implement IAWakableService are processed.
 
@@ -112,46 +112,46 @@ Dispatching order: OnServiceInjected > OnServiceAllInjected > OnServiceAwaked > 
 ![image](assets/img/service_10.png)  
 ![image](assets/img/service_11.png)  
 Dispatching order: OnServiceInitStart > OnServiceInited > OnServiceAllInited > OnServiceDataInitStart > OnServiceDataInited > OnServiceDataAllInited  
-+ ServiceEvents.OnServiceInitStart
++ **ServiceEvents.OnServiceInitStart**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, process each service before the behavior of the IInitService interface.
-+ ServiceEvents.OnServiceInited
++ **ServiceEvents.OnServiceInited**
   + Scheduling subject: service instance, ServiceManager that implements IInitService
   + Scheduling timing: After the service instance that implements IInitService handles the Init behavior; ServiceManager captures the former event and reschedules it.
-+ ServiceEvents.OnServiceAllInited
++ **ServiceEvents.OnServiceAllInited**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, after all the services that implement IInitService are processed.
-+ ServiceEvents.OnServiceDataInitStart
++ **ServiceEvents.OnServiceDataInitStart**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, process each service before the behavior of the IInitDataService interface.
-+ ServiceEvents.OnServiceDataInited
++ **ServiceEvents.OnServiceDataInited**
   + Scheduling subject: service instance, ServiceManager that implements IInitDataService
   + Scheduling timing: After the service instance that implements IInitDataService handles the InitData behavior; ServiceManager captures the former event and reschedules it.
-+ ServiceEvents.OnServiceDataAllInited
++ **ServiceEvents.OnServiceDataAllInited**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to StartInitalization, after all the services that implement IInitDataService are processed.
 
 ##### 7.3.4.4 Data loading related events
 ![image](assets/img/service_12.png)  
-+ ServiceEvents.OnServiceDataLoadStart
++ **ServiceEvents.OnServiceDataLoadStart**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to LoadServicesData, process each service before the behavior of the ILoadDataService interface.
-+ ServiceEvents.OnServiceDataLoaded
++ **ServiceEvents.OnServiceDataLoaded**
   + Scheduling subject: service instance, ServiceManager that implements ILoadDataService
   + Scheduling timing: After the service instance that implements ILoadDataService handles the LoadData behavior; ServiceManager catches the former event and reschedules it.
-+ ServiceEvents.OnServiceDataAllLoaded
++ **ServiceEvents.OnServiceDataAllLoaded**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to LoadServicesData, all services that implement ILoadDataService are processed.
 
 ##### 7.3.4.5 Data save related events
 ![image](assets/img/service_13.png)  
-+ ServiceEvents.OnServiceDataSaveStart
++ **ServiceEvents.OnServiceDataSaveStart**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to SaveServicesData, process each service before the behavior of the ISaveDataService interface.
-+ ServiceEvents.OnServiceDataSaved
++ **ServiceEvents.OnServiceDataSaved**
   + Scheduling subject: service instance, ServiceManager that implements ISaveDataService
   + Scheduling timing: After the service instance that implements ISaveDataService handles the SaveData behavior; ServiceManager captures the former event and reschedules it.
-+ ServiceEvents.OnServiceDataAllSaved
++ **ServiceEvents.OnServiceDataAllSaved**
   + Scheduling subject: ServiceManager
   + Scheduling timing: During the call to SaveServicesData, after all the services that implement ISaveDataService are processed.
 
@@ -167,24 +167,26 @@ By calling the AddConfig function in the ServiceConfig instance, the service can
 2. Registration logic calls should be guaranteed to be unique.
 
 #### 7.4.2 Service initialization
-Start initialization by calling the StartInitalization function in the ServiceManager instance.  
+Start initialization by calling the **StartInitalization** function in the **ServiceManager** instance.  
 **Note**: It should not be called repeatedly after initialization has started.  
 ![image](assets/img/service_15.png)  
 
 #### 7.4.3 Service call
-After the initial completion of all services, the service instance can be obtained by calling the GetService function in ServiceConfig.  
+After the initial completion of all services, the service instance can be obtained by calling the **GetService** function in **ServiceConfig**.  
 There are multiple functions for obtaining service instances in ServiceConfig, but the GetService function is ultimately called.  
 ![image](assets/img/service_16.png)  
 **Suggest**:  
+
 1. Manage the acquisition logic using a class that specifically manages acquiring service instances. Such as ServiceCenter in the example.
 
 #### 7.4.4 Service cleanup
 When the game is to achieve a soft restart, it is necessary to reset all services and then reinitialize.  
-All services can be reset by calling ClearServices in ServiceManager.  
+All services can be reset by calling **ClearServices** in **ServiceManager**.  
 Only services that implement the IClearService interface will perform reset logic.  
 ![image](assets/img/service_17.png)  
 ![image](assets/img/service_5.png)  
 **Suggest**:  
+
 1. Each service is recommended to implement the IClearService interface.
 2. In the Clear function in the IClearService interface, also clear all event listeners.
 
