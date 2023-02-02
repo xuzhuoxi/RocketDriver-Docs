@@ -19,7 +19,7 @@ home:
     issue: 问题
     manual: 用户手册
     manual_pdf: downloads/GameDriverPro-Manual_cn.pdf
-    package: 包
+    package: 软件包
   logo: /assets/img/logo.webp
   nav:
     - id: home.index
