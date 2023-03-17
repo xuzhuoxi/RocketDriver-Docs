@@ -94,8 +94,12 @@ manual:
       pattern: pages/Manual_8.RpgMaterial_en.html
       show: 'yes'
       text: 8.RPG Material Data System(RpgMaterial)
-    - id: manual.others
+    - id: manual.lua
       pattern: pages/Manual_9.Others_en.html
+      show: 'yes'
+      text: 9. Lua Interpreter
+    - id: manual.others
+      pattern: pages/Manual_99.Others_en.html
       show: 'no'
       text: 9.Others
   next: Next
