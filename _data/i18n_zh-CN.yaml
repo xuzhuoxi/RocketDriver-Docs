@@ -95,7 +95,7 @@ manual:
       show: 'yes'
       text: 8.Rpg材料数据系统(RpgMaterial)
     - id: manual.lua
-      pattern: pages/Manual_9.Others_cn.html
+      pattern: pages/Manual_9.Lua_cn.html
       show: 'yes'
       text: 9. Lua解释器
     - id: manual.others

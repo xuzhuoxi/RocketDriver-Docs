@@ -95,11 +95,11 @@ manual:
       show: 'yes'
       text: 8.RPG Material Data System(RpgMaterial)
     - id: manual.lua
-      pattern: pages/Manual_9.Others_en.html
+      pattern: pages/Manual_9.Lua_en.html
       show: 'yes'
       text: 9. Lua Interpreter
     - id: manual.others
-      pattern: pages/Manual_99.Others_en.html
+      pattern: pages/Manual_10.Others_en.html
       show: 'no'
       text: 9.Others
   next: Next
