@@ -40,4 +40,4 @@
 
 ### 9.3 示例
 GameDriver/Samples/LuaDemo   
-![image](assets/img/Lua_1.jpg)  
+![image](assets/img/Lua_1.png)  
