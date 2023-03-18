@@ -1,6 +1,8 @@
 # GameDriver Pro Changelog
 
-## Version v1.1.0() 
+
+
+## Version v1.1.0(2023.03.18) 
 
 ### New Features  
 + **Runtime**: Add Lua interpreter: LuaInterpreter.  
@@ -13,6 +15,12 @@
 
 ### Fixes  
 + **RPG Material Data System**: Solve the abnormal display of the example RpgMaterialDemo, adjust the design resolution to 1024x768.  
+
+
+
+------
+
+
 
 ## Version v1.0.4(2023.01.31)  
 
@@ -36,6 +44,12 @@
 
 ### Fixes  
 + Games.RpgMaterial: Fix IMaterialSet, MaterialSet namespace errors.  
+
+
+
+------
+
+
 
 ## Version v1.0.3 (2023.01.05)
 initial version.  

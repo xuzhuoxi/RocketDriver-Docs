@@ -8,7 +8,7 @@
 + 最新发行版本  
   v1.1.0  
 + 更新日志  
-  [查看更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_cn.html).  
+  [查看更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_README_cn.html).  
 
 ### 3. 描述
 
