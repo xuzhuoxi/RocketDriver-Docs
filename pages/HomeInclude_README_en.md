@@ -6,14 +6,14 @@
 
 ### 2. Release Notes
 + latest release version  
-  v1.0.4  
+  v1.1.0  
 + changelog  
   [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/home/Home-CHANGELOG_en.html).  
 
 ### 3. Description
 
 #### 3.1 Overview
-Provide professional and well-expanded game development support, including: resource loading, multi-threaded event management, internationalization, network management, logical service extension, audio management, UI management, local saving, game item management, etc.  
+Provide professional and well-expanded game development support, including: resource loading, multi-threaded event management, internationalization, network management, logical service extension, audio management, UI management, Lua interpreter, local saving, game item management, etc.  
 
 #### 3.2 Unity engine version requirements
 UNITY 2019.4 or higher  

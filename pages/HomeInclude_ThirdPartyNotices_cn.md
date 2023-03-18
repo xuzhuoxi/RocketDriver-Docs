@@ -30,3 +30,11 @@
 **软件链接**:    
 [https://github.com/xuzhuoxi/FileSync](https://github.com/xuzhuoxi/FileSync)    
 [https://github.com/xuzhuoxi/FileSync/releases](https://github.com/xuzhuoxi/FileSync/releases)    
+
+### 4. Lua Interpreter 
+Runtime中使用到一个第三方Lua解释器。  
+
+库名称: **Lua Interpreter**  
+作者: **Liu Junfeng**  
+URL: http://www.codeproject.com/Articles/228212/Lua-Interpreter  
+License: **MIT** (http://opensource.org/licenses/mit-license.php)   

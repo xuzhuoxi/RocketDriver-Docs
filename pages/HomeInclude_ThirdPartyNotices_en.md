@@ -30,3 +30,11 @@ The data files used in **the internationalization solution (i18n)** are from the
 **Links**:  
 [https://github.com/xuzhuoxi/FileSync](https://github.com/xuzhuoxi/FileSync)  
 [https://github.com/xuzhuoxi/FileSync/releases](https://github.com/xuzhuoxi/FileSync/releases)  
+
+### 4. Lua Interpreter 
+A third-party Lua interpreter is used in the Runtime.  
+
+Name: **Lua Interpreter**  
+Author: **Liu Junfeng**  
+URL: http://www.codeproject.com/Articles/228212/Lua-Interpreter  
+License: **MIT** (http://opensource.org/licenses/mit-license.php)  
