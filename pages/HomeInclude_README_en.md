@@ -8,7 +8,7 @@
 + latest release version  
   v1.1.0  
 + changelog  
-  [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_README_en.html).  
+  [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_CHANGELOG_en.html).  
 
 ### 3. Description
 
