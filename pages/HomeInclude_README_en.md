@@ -6,7 +6,7 @@
 
 ### 2. Release Notes
 + latest release version  
-  v1.1.0  
+  v{{site.version}} built on {{site.build}}.  
 + changelog  
   [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_CHANGELOG_en.html).  
 

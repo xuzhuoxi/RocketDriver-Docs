@@ -2,7 +2,7 @@
 
 ###  1. BabelEdit
 **TRANSLATION FILE EDITOR**  
-Edit your json, yaml, php, arb, vue, properties for xliff translation files with ease.  
+BabelEdit is a multi-language editor that supports various file formats, including JSON, YAML, XML, INI, CSV, PO, XLIFF, and more. It helps developers easily manage and translate multi-language projects, improving development efficiency.  
 
 The data files used in **the internationalization solution (i18n)** are from the EabelEdit editor.  
 

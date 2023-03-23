@@ -2,7 +2,7 @@
 
 ###  1. BabelEdit
 **翻译文件编辑器，**  
-轻松地编辑你的json、yaml、php、arb、vue、属性的xliff翻译文件。  
+BabelEdit是一款多语言编辑器，它支持多种文件格式，包括JSON、YAML、XML、INI、CSV、PO、XLIFF等。它可以帮助开发人员轻松地管理和翻译多语言项目，提高开发效率。  
 
 **国际化解决方案(i18n)**中使用的数据文件来自于EabelEdit编辑。   
 

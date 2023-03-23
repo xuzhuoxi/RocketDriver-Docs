@@ -63,42 +63,52 @@ manual:
   catalog_pattern: pages/Home_Manual_cn.html
   nav:
     - id: manual.event
+      include: ManualInclude_1_Event_cn.md
       pattern: pages/Manual_1.Event_cn.html
       show: 'yes'
       text: 1.事件(Event) - 高效的事件模块，支持Unity多线程
     - id: manual.loader
+      include: ManualInclude_2_Loader_cn.md
       pattern: pages/Manual_2.Loader_cn.html
       show: 'yes'
       text: 2.加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换
     - id: manual.i18n
+      include: ManualInclude_3_i18n_cn.md
       pattern: pages/Manual_3.i18n_cn.html
       show: 'yes'
       text: 3.国际化(i18n) - 轻量级国际化解决方案
     - id: manual.net
+      include: ManualInclude_4_Net_cn.md
       pattern: pages/Manual_4.Net_cn.html
       show: 'yes'
       text: 4.网络管理扩展模块(NetManager)
     - id: manual.audio
+      include: ManualInclude_5_Audio_cn.md
       pattern: pages/Manual_5.Audio_cn.html
       show: 'yes'
       text: 5.音频管理模块(AudioManager)
     - id: manual.panel
+      include: ManualInclude_6_Panel_cn.md
       pattern: pages/Manual_6.Panel_cn.html
       show: 'yes'
       text: 6.面板管理模块(PanelManager)
     - id: manual.service
+      include: ManualInclude_7_Service_cn.md
       pattern: pages/Manual_7.Service_cn.html
       show: 'yes'
       text: 7.服务框架(Service)
     - id: manual.material
+      include: ManualInclude_8_RpgMaterial_cn.md
       pattern: pages/Manual_8.RpgMaterial_cn.html
       show: 'yes'
       text: 8.Rpg材料数据系统(RpgMaterial)
     - id: manual.lua
+      include: ManualInclude_9_Lua_cn.md
       pattern: pages/Manual_9.Lua_cn.html
       show: 'yes'
       text: 9. Lua解释器
     - id: manual.others
+      include: ManualInclude_99_Others_cn.md
       pattern: pages/Manual_10.Others_cn.html
       show: 'no'
       text: 9.其它

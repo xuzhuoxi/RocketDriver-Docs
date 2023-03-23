@@ -63,42 +63,52 @@ manual:
   catalog_pattern: pages/Home_Manual_en.html
   nav:
     - id: manual.event
+      include: ManualInclude_1_Event_en.md
       pattern: pages/Manual_1.Event_en.html
       show: 'yes'
       text: '1.Event System(Event) '
     - id: manual.loader
+      include: ManualInclude_2_Loader_en.md
       pattern: pages/Manual_2.Loader_en.html
       show: 'yes'
       text: '2.Loader System(Loader) '
     - id: manual.i18n
+      include: ManualInclude_3_i18n_en.md
       pattern: pages/Manual_3.i18n_en.html
       show: 'yes'
       text: 3.Internationalization System(i18n)
     - id: manual.net
+      include: ManualInclude_4_Net_en.md
       pattern: pages/Manual_4.Net_en.html
       show: 'yes'
       text: 4.Net Manager(NetManager)
     - id: manual.audio
+      include: ManualInclude_5_Audio_en.md
       pattern: pages/Manual_5.Audio_en.html
       show: 'yes'
       text: '5.Audio Manager(AudioManager) '
     - id: manual.panel
+      include: ManualInclude_6_Panel_en.md
       pattern: pages/Manual_6.Panel_en.html
       show: 'yes'
       text: 6.Panel Manager(PanelManager)
     - id: manual.service
+      include: ManualInclude_7_Service_en.md
       pattern: pages/Manual_7.Service_en.html
       show: 'yes'
       text: 7.Service Framework(Service)
     - id: manual.material
+      include: ManualInclude_8_RpgMaterial_en.md
       pattern: pages/Manual_8.RpgMaterial_en.html
       show: 'yes'
       text: 8.RPG Material Data System(RpgMaterial)
     - id: manual.lua
+      include: ManualInclude_9_Lua_en.md
       pattern: pages/Manual_9.Lua_en.html
       show: 'yes'
       text: 9. Lua Interpreter
     - id: manual.others
+      include: ManualInclude_99_Others_en.md
       pattern: pages/Manual_10.Others_en.html
       show: 'no'
       text: 9.Others
