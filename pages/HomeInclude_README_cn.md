@@ -6,7 +6,8 @@
 
 ### 2. 版本说明
 + 最新发行版本  
-  v{{site.version}} 构建于{{site.build}}。  
+  版本：1.1.0 
+  构建时间：3023.03.18  
 + 更新日志  
   [查看更新日志](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_CHANGELOG_cn.html).  
 
