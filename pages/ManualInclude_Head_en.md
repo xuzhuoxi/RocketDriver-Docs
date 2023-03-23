@@ -32,7 +32,7 @@ Source code storage locations in GameDriver Pro are regular.
 ## Functional Overview
 
 ### GameDriver/Runtime/CSharp
-The namespace is **JLGame.GameDriver.CSharp**  
+The namespace is **JLGames.GameDriver.CSharp**  
 + Algs  
   Transparent algorithm related functions  
   + AStar  
@@ -89,7 +89,7 @@ Generic Callback Context
 Generic clone interface  
 
 ### GameDriver/Runtime/Actions  
-The namespace is **JLGame.GameDriver.Actions**  
+The namespace is **JLGames.GameDriver.Actions**  
 + Animatorx  
 Feature support for Unity's animation system. Contains animation search, animation playback, event management and other functions.  
 + AssetIndex  
@@ -156,7 +156,7 @@ Editor function. It is an extension to the UIElements functionality in Unity.
 Unity coroutine related functions.  
 
 ### GameDriver/Runtime/Games  
-The namespace is **JLGame.GameDriver.Games**  
+The namespace is **JLGames.GameDriver.Games**  
 + LocalAccount  
 Local account storage function.  
 + NetManager  

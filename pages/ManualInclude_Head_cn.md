@@ -22,14 +22,14 @@
 
 # 功能
 GameDriver Pro中的源代码存放位置是有规律的。  
-+ **GameDriver/Runtime/CSharp** 中的源码**只依赖**于C#标准库，**不依赖**Unity标准库。 是对C#的功能扩展，命名空间为 **JLGame.GameDriver.CSharp**。
-+ **GameDriver/Runtime/Actions** 中的源码**依赖**于CSharp和Unity标准库。 是对Unity引擎的功能扩展，命名空间为 **JLGame.GameDriver.Actions**。
-+ **GameDriver/Runtime/Games** 中的源码依赖于CSharp与Actions。 是游戏开发过程常用的系统功能的通用实现，命名空间为 **JLGame.GameDriver.Games**。
++ **GameDriver/Runtime/CSharp** 中的源码**只依赖**于C#标准库，**不依赖**Unity标准库。 是对C#的功能扩展，命名空间为 **JLGames.GameDriver.CSharp**。
++ **GameDriver/Runtime/Actions** 中的源码**依赖**于CSharp和Unity标准库。 是对Unity引擎的功能扩展，命名空间为 **JLGames.GameDriver.Actions**。
++ **GameDriver/Runtime/Games** 中的源码依赖于CSharp与Actions。 是游戏开发过程常用的系统功能的通用实现，命名空间为 **JLGames.GameDriver.Games**。
 
 ## 功能概述
 
 ### GameDriver/Runtime/CSharp 
-命名空间为 **JLGame.GameDriver.CSharp**  
+命名空间为 **JLGames.GameDriver.CSharp**  
 + Algs  
   通透算法相关功能  
   + AStar  
@@ -86,7 +86,7 @@ XML相关功能支持： 序列化与反序列化
 通用克隆接口  
 
 ### GameDriver/Runtime/Actions
-命名空间为 **JLGame.GameDriver.Actions**  
+命名空间为 **JLGames.GameDriver.Actions**  
 + Animatorx  
 针对Unity动画系统的功能支持。包含动画查找、动画播放、事件管理等功能。  
 + AssetIndex  
@@ -153,7 +153,7 @@ Editor功能。是对Untiy中UIElements功能的扩展。
 Unity协程相关功能。  
 
 ### GameDriver/Runtime/Games
-命名空间为 **JLGame.GameDriver.Games**  
+命名空间为 **JLGames.GameDriver.Games**  
 + LocalAccount  
 本地账号存储功能。  
 + NetManager  
