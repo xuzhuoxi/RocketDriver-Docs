@@ -1,6 +1,7 @@
 ## 8. Rpg材料数据系统
 这是一套通用的游戏数据管理系统。  
 针对玩家的数值型数据，以KTV(Key-Type-Value)形式进行管理。  
+
 + **JLGames.GameDriver.Games.RpgMaterial** 
   提供了Rpg材料数据系统的功能支持。依赖关系如下：  
   ![image](assets/img/RpgMaterial_Dependencies.png)  
@@ -38,7 +39,7 @@
   数据对象基础接口  
 + IElementSet 
   数据集合基础接口，用于管理IElement对象。  
-+ IUserMaterialData和IUserMaterialData
++ IUserData、IUserData1、IUserValidData、IUserValidData1
   用户数据相关接口。  
 + ISerializeDataBinary、ISerializeDataJson和ISerializeDataString
   数据序列化相关接口。  
@@ -50,26 +51,34 @@
   IElementSet的实现类，提供对IElement对象的管理功能，可用于继承或组合。  
 
 + 配置数据相关数据结构
-  + MaterialData
+  + MetaData
     配置数据基础，包含Id, 名称、类型、大小约束、描述。  
-  + MaterialDataDisplay
-    配置数据显示相关数据，包含图标Id、显示权重。  
-  + MaterialDataOper
+  + MetaDisplay
+    配置数据显示相关数据，包含图标Id、显示权重，显示品质。  
+  + MetaOper
     配置数据操作行为设定，包含按位定义值。  
     **操作行为设定**：  
     + 假设二进制第1位定义为可使用，第2位定义为可丢弃。
     + 当值为二进制(11)时，代表数据定义即可使用也可丢弃。
-  + MaterialDataWorth
-    配置数据价值定义相关数据，包含价值、品质。  
+  + MetaWorth
+    配置数据价值定义相关数据，包含价值。  
     **价值定义**：  
     + 类型市场商品标出的单价。
     + 用于不同配置间数量比较与计算。
+  + MetaValidDuration
+    配置数据有效时长相关数据。  
+  + MetaValidStamp
+    配置数据有效时间区间相关数据。  
 
 + 用户数据相关数据结构
-  + UserMaterialData
-    用户数据基础，包含Id(对应MaterialData的Id)、类型(对应MaterialData的类型)、数量  
-  + UserMaterialData1
-    继承于UserMaterialData,，增加唯一Id这个属性  
+  + UserData
+    用户数据基础，包含Id(对应MetaData的Id)、类型(对应MetaData的类型)、数量  
+  + UserData1
+    继承于 UserData,，增加唯一Id这个属性。  
+  + UserValidData
+    继承于 UserData，增加了获得时间戳属性，  
+  + UserValidData1
+    继承于 UserValidData，增加唯一Id这个属性。  
 
 + 计算和通知相关数据结构
   + DataNum
@@ -119,6 +128,8 @@
   继承自 IMaterial，进一步定义了有操作行为的配置数据的属性与功能。  
 + IMaterialWorth
   继承自 IMaterial，进一步定义了有价值定义的配置数据的属性与功能。  
++ IMaterialValid
+  继承自 IMaterial，进一步定义了有时间检验的配置数据的属性与功能。  
 + IMaterialSet
   继承自 IElementSet，并定义了配置数据集合的常用功能。  
 + IInitMaterial、IInitMaterial\<TCfg\>
@@ -134,6 +145,10 @@
   实现 IMaterialOper的 抽象类，实现部分功能，子类可重写行为。  
 + MaterialWorth
   实现 IMaterialWorth 的抽象类，实现部分功能，子类可重写行为。  
++ MaterialValidDuration
+  实现 IMaterialValid 的抽象类，实现时长处理部分功能，子类可重写行为。  
++ MaterialValidStamp
+  实现 IMaterialValid 的抽象类，实现时效处理部分功能，子类可重写行为。  
 
 #### 8.1.3 User模块设计说明
 + 提供了普通用户数据功能。
@@ -162,11 +177,21 @@
     继承自 IUserMaterial，增加了与价值相关的属性与功能。  
   + IUserMaterialWorth1
     继承自 IUserMaterialWorth，增加了唯一Id的属性。  
++ IUserMaterialValid 和 IUserMaterialValid1
+  + IUserMaterialValid
+    继承自 IUserMaterial，增加了与时间检验相关的属性与功能。  
+  + IUserMaterialValid1
+    继承自 IUserMaterialValid，增加了唯一Id的属性。  
 + IUserMaterialMod 和 IUserMaterialMod1
   + IUserMaterialMod
     定义用户数据的修改接口  
   + IUserMaterialMod1
-    定义带唯一Id的用户数据的修改接口  
+    继承自 IUserMaterialMod，添加了唯一Id的属性修改接口。  
++ IUserMaterialValidMod 和 IUserMaterialValidMod1
+  + IUserMaterialValidMod
+    继承自 IUserMaterialMod，添加了用户获得时间戳修改接口  
+  + IUserMaterialValidMod1
+    继承自 IUserMaterialValidMod，添加了唯一Id的属性修改接口。  
 + IUserMaterialSet
   定义用户数据集合中关于读取、查找相关的接口  
 + IUserMaterialSetMod
@@ -192,9 +217,14 @@
     实现 IUserMaterialWorth1 的抽象类，实现部分功能，子类可重写行为。  
 + UserMaterialWorth 和 UserMaterialWorth1
   + UserMaterialWorth
-    实现 IUserMaterialWorth1 的抽象类，实现部分功能，子类可重写行为。  
+    实现 IUserMaterialWorth 的抽象类，实现部分功能，子类可重写行为。  
   + UserMaterialWorth1
     实现 IUserMaterialWorth1 的抽象类，实现部分功能，子类可重写行为。  
++ UserMaterialValid 和 UserMaterialValid1
+  + UserMaterialValid
+    实现 IUserMaterialValid 的抽象类，实现部分功能，子类可重写行为。  
+  + UserMaterialValid1
+    实现 IUserMaterialValid1 的抽象类，实现部分功能，子类可重写行为。  
 + UserMaterialSet
    实现 IUserMaterialSet 的抽象类，实现部分功能，子类可重写行为。  
 
@@ -215,6 +245,8 @@
   可操作材料 Service 的基本接口定义。  
 + IMaterialServiceWorth
   价值材料 Service 的基本接口定义。  
++ IMaterialServiceValid
+  时效材料 Service 的基本接口定义。  
 + IMaterialServiceMod
   材料service的与修改相关的接口定义。  
 
@@ -226,11 +258,15 @@
   提供一些与 service 相关的基础逻辑函数。  
 
 #### 8.1.5 Asset模块设计说明
+![image](assets/img/RpgMaterial_Asset.png)   
 + MaterialAssetData
   材料用户数据的序列化结构，用于Unity面板。  
 + MaterialAssetData1
   带唯一Id的材料用户数据的序列化结构，用于Unity面板。  
-  ![image](assets/img/RpgMaterial_Asset.png)  
++ MaterialAssetValidData
+  材料用户数据(带获得时间戳)的序列化结构，用于Unity面板。  
++ MaterialAssetValidData1
+  带唯一Id的材料用户数据(带获得时间戳)的序列化结构，用于Unity面板。  
 
 ### 8.2 使用
 依赖于服务框架(JLGames.GameDriver.Games.Service)，具体使用流程与一般服务一致。  

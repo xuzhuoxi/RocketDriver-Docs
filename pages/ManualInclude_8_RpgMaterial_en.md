@@ -38,7 +38,7 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Data Object Base Interface  
 + IElementSet
   Data collection base interface for managing IElement objects.  
-+ IUserMaterialData and IUserMaterialData
++ IUserData、IUserData、IUserValidData、IUserValidData1
   User data related interface.  
 + ISerializeDataBinary, ISerializeDataJson and ISerializeDataString
   Data serialization related interface.  
@@ -50,26 +50,34 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   The implementation class of IElementSet provides management functions for IElement objects, which can be used for inheritance or combination.  
 
 + Configuration data related data structures
-  + MaterialData
+  + MetaData
     Configuration data base, including Id, name, type, size constraint, description.  
-  + MaterialDataDisplay
-    Configuration data displays related data, including icon ID and display weight.  
-  + MaterialDataOper
+  + MetaDisplay
+    Configuration data displays related data, including icon ID 、 display weight and display quality .  
+  + MetaOper
     Configuration data manipulation behavior settings, including bit-wise defined values.  
     **Operation behavior settings**:  
     + Assume that the 1st bit of the binary is defined as usable and the 2nd bit is defined as discardable.
     + When the value is binary (11), it means that the data definition can be used or discarded.
-  + MaterialDataWorth
-    Configure data value to define relevant data, including value and quality.  
+  + MetaWorth
+    Configure data value to define relevant data, including value.  
     **Value Definition**:  
     + The marked unit price of the type market item.
     + For quantity comparison and calculation between different configurations.
+  + MetaValidDuration
+    Configure the data related to the validity period of the data.。  
+  + MetaValidStamp
+    Configuration data valid time interval related data。 
 
 + User data related data structures
-  + UserMaterialData
-    User data base, including Id (corresponding to the Id of MaterialData), type (corresponding to the type of MaterialData), quantity  
-  + UserMaterialData1
-    Inherited from UserMaterialData, add the unique Id attribute  
+  + UserData
+    User data base, including Id (corresponding to the Id of MetaData), type (corresponding to the type of MetaData), quantity  
+  + UserData1
+    Inherited from UserData, add the unique Id property.  
+  + UserValidData
+    Inherited from UserData, adding the timestamp attribute,  
+  + UserValidData1
+    Inherited from UserValidData, add the unique Id property.  
 
 + Calculate and notify related data structures
   + DataNum
@@ -119,6 +127,8 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Inherited from IMaterial, it further defines the properties and functions of configuration data with operational behavior.  
 + IMaterialWorth
   Inherited from IMaterial, it further defines the properties and functions of the configuration data with valuable definitions.  
++ IMaterialValid
+  Inherited from IMaterial, it further defines the properties and functions of time-tested configuration data.  
 + IMaterialSet
   Inherited from IElementSet and defines common functions for configuring data collections.  
 + IInitMaterial, IInitMaterial\<TCfg\>
@@ -134,6 +144,10 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   The abstract class that implements IMaterialOper, implements some functions, and subclasses can override the behavior.  
 + MaterialWorth
   An abstract class that implements IMaterialWorth, implements some functions, and subclasses can override the behavior.  
++ MaterialValidDuration
+  An abstract class that implements IMaterialValid, implements some functions, and subclasses can override the behavior.   
++ MaterialValidStamp
+  An abstract class that implements IMaterialValid, implements some functions, and subclasses can override the behavior.   
 
 #### 8.1.3 User module design description
 + Provides normal user data functions.
@@ -162,11 +176,21 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
     Inherited from IUserMaterial, adding value-related properties and functions.  
   + IUserMaterialWorth1
     Inherited from IUserMaterialWorth, adding the unique Id attribute.  
++ IUserMaterialValid and IUserMaterialValid1
+  + IUserMaterialValid
+    Inherited from IUserMaterial, adding properties and functions related to time inspection.  
+  + IUserMaterialValid1
+    Inherited from IUserMaterialValid, the unique Id property is added.  
 + IUserMaterialMod and IUserMaterialMod1
   + IUserMaterialMod
     Define the modification interface of user data  
   + IUserMaterialMod1
-    Define a modification interface for user data with a unique Id  
+    Inherited from IUserMaterialMod, a unique Id attribute modification interface is added.  
++ IUserMaterialValidMod and IUserMaterialValidMod1
+  + IUserMaterialValidMod
+    Inherited from IUserMaterialMod, added the user to obtain the timestamp modification interface  
+  + IUserMaterialValidMod1
+    Inherited from IUserMaterialValidMod, the unique Id attribute modification interface is added.    
 + IUserMaterialSet
   Define the interface related to reading and searching in the user data collection  
 + IUserMaterialSetMod
@@ -192,9 +216,14 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
     The abstract class that implements IUserMaterialWorth1, implements some functions, and subclasses can override the behavior.  
 + UserMaterialWorth and UserMaterialWorth1
   + UserMaterialWorth
-    The abstract class that implements IUserMaterialWorth1, implements some functions, and subclasses can override the behavior.  
+    The abstract class that implements IUserMaterialWorth, implements some functions, and subclasses can override the behavior.  
   + UserMaterialWorth1
     The abstract class that implements IUserMaterialWorth1, implements some functions, and subclasses can override the behavior.  
++ UserMaterialValid 和 UserMaterialValid1
+  + UserMaterialValid
+    An abstract class that implements IUserMaterialValid to achieve some functions, and subclasses can override the behavior.  
+  + UserMaterialValid1
+    The abstract class that implements IUserMaterialValid1, realizes some functions, and subclasses can override the behavior.  
 + UserMaterialSet
    The abstract class that implements IUserMaterialSet, implements some functions, and subclasses can override the behavior.  
 
@@ -215,22 +244,28 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Basic interface definition for the Actionable Material Service.  
 + IMaterialServiceWorth
   Basic interface definition for Value Material Service.  
++ IMaterialServiceValid
+  The basic interface definition of Aging Material Service.  
 + IMaterialServiceMod
   Modification-related interface definitions for material services.  
 
 ##### 8.1.4.2 Service Logic Design
 + MaterialService
-  A default material service implementation class that can be used on demand. Direct modification and inheritance are not recommended.
-  Internal functions are composed of functional units in User, Material, and Common.
+  A default material service implementation class that can be used on demand. Direct modification and inheritance are not recommended.  
+  Internal functions are composed of functional units in User, Material, and Common.  
 + ServiceUtil
-  Provide some basic logic functions related to service.
+  Provide some basic logic functions related to service.  
 
 #### 8.1.5 Asset Module Design Instructions
+![image](assets/img/RpgMaterial_Asset.png)   
 + MaterialAssetData
   Serialized structure of material user data, used in Unity panels.  
 + MaterialAssetData1
-  Serialized structure of material user data with unique Id for use in Unity panels.  
-  ![image](assets/img/RpgMaterial_Asset.png)  
+  Serialized structure of material user data with unique Id for use in Unity panels.   
++ MaterialAssetValidData
+  Serialized structure of material user data (with acquisition timestamp) for use with Unity panels.  
++ MaterialAssetValidData1
+  Serialized structure of material user data (with acquisition timestamp) with unique Id for Unity panels.  
 
 ### 8.2 Use
 Depends on the service framework(JLGames.GameDriver.Games.Services), and the specific usage process is consistent with the general service.  

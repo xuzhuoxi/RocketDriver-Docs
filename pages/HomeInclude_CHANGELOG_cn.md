@@ -1,5 +1,53 @@
 # GameDriver Pro 更新日志
 
+## 版本 v1.2.0(2023.04.21)
+
+### 新功能  
++ **RpgMaterial**: 增加配置对时间有效范围的验证功能。  
++ **RpgMaterial**: 增加配置对时间有效时长的验证功能。  
++ **RpgMaterial**: 增加用户数据记录初次获得时间戳的功能。  
+
+### 更新  
++ JLGames.GameDriver.Games.RpgMaterial.Common 重命名：  
+  + MaterialData =>MetaData  
+  + MaterialDataDisplay => MetaDisplay  
+  + MaterialDataOper => MetaOper  
+  + MaterialDataWorth => MetaWorth 
+  + IUserMaterialData => IUserData  
+  + IUserMaterialData1 => IUserData1  
+  + UserMaterialData => UserData  
+  + UserMaterialData1 => UserData1  
++ JLGames.GameDriver.Games.RpgMaterial.Common 新增类：  
+  + MetaValidDuration： 用于处理时长验证功能。  
+  + MetaValidStamp： 用于处理有效时间范围的验证功能。  
+  + IUserValidData： 用于记录**无**唯一Id、有获得时间戳记录的用户数据接口。  
+  + IUserValidData1： 用于记录**有**唯一Id、有获得时间戳记录的用户数据接口。  
+  + UserValidData： 用于记录**无**唯一Id、有获得时间戳记录的用户数据。  
+  + UserValidData1： 用于记录**有**唯一Id、有获得时间戳记录的用户数据。  
++ JLGames.GameDriver.Games.RpgMaterial.Material 增加加接口与实现：  
+  + IMaterialValid： 配置结构的时间相关验证的接口定义。  
+  + MaterialValidDuration： 抽象类，实现了对配置结构的时长验证支持。  
+  + MaterialValidStamp： 抽象类，实现了对配置结构的固定时间验证支持。  
++ JLGames.GameDriver.Games.RpgMaterial.User 增加加接口与实现：  
+  + IUserMaterialValid:  用户数据结构时间相关验证的接口定义。  
+  + IUserMaterialValid1： 用户数据结构时间相关验证的接口定义。  
+  + IUserMaterialValidMod： 用户数据结构时间相关验证的接口定义（修改）。  
+  + IUserMaterialValidMod1： 用户数据结构时间相关验证的接口定义（修改）。  
+  + UserMaterialValid： 抽象类，用户数据结构参考基类  
+  + UserMaterialValid1： 抽象类，用户数据结构参考基类  
++ JLGames.GameDriver.Games.RpgMaterial.Service 增加加接口与实现：  
+  + IMaterialServiceValid: 时间相关验证的服务接口。  
++ **RpgMaterial**: 调整部分源代码的目录结构。   
++ **RpgMaterial**: 新增获取当前时间戳的代理函数设置功能ValidUtil。   
++ **DateTimeUtil**： 新增本地时区的格式化字符串输入函数FormatDateTimeLocal。  
+
+### 修复问题  
++ DateTimeUtil.FormatDateTime 补充强制UTC设置。  
+
+
+
+------
+
 
 
 ## 版本 v1.1.0(2023.03.18) 
