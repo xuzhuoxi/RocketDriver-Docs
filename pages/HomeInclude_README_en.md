@@ -6,8 +6,8 @@
 
 ### 2. Release Notes
 + latest release version  
-  Version: 1.2.0   
-  Built on：2023.04.21  
+  Version: 1.2.0515   
+  Built on：2023.05.15  
 + changelog  
   [View Changelog](https://www.xuzhuoxi.com/GameDriver-Docs/pages/Home_CHANGELOG_en.html).  
 

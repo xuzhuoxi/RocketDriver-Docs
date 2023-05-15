@@ -1,4 +1,19 @@
 # GameDriver Pro Changelog
+
+## Version v1.2.0515(2023.05.15)
+
+### New Features  
++ **Loaderx**: Add the entry to obtain the LoaderSettings implementation in the ILoader interface.  
+
+### Fixes  
++ **Loaderx**: Fix the lack of macro definition in the custom Editor code in Settings, and the error reported when the platform is compiled.  
+
+
+
+------
+
+
+
 ## Version v1.2.0(2023.04.21)
 
 ### New Features  

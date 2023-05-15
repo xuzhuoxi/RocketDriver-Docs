@@ -9,7 +9,7 @@ lang: en-US
 This is a game development framework to assist in the development of game applications in the Unity engine.  
 You can purchase it in the [Unity Asset Store](https://assetstore.unity.com/packages/slug/234202) and download the plugin package in the Unity Package Manager and use it in Unity.  
 
-If you are a student, educator or open source contributor, we can provide you with a free beta version, **Beta version is not commercially available**.  
+The Beta Version is provided here, **Please do not** use the beta version for commercial projects.  
 Beta version: [Download](downloads/GameDriver Pro - Beta.unitypackage)  
 
 For other questions,, please contact **xuzhuoxi@gmail.com** or **mailxuzhuoxi@163.com**  

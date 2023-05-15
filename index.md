@@ -9,8 +9,8 @@ lang: zh-CN
 这是一个游戏开发框架，用于在Unity引擎中协助开发游戏应用。  
 您可以在[Unity资源商店](https://assetstore.unity.com/packages/slug/234202) 购买，并在 Unity Package Manager 中下载插件包并在Unity中使用。  
 
-如果您是学生、教育工作者或开源贡献者，我们可以为您提供免费的测试版本，**测试版本不可商用**。   
-测试版本：[下载](downloads/GameDriver Pro - Beta.unitypackage)  
+这里提供Beta体验版本，**请不要**把Beta体验版本用于商业项目。  
+Beta体验版本：[下载](downloads/GameDriver Pro - Beta.unitypackage)  
 
 如有其它问题，请联系 **xuzhuoxi@gmail.com** 或 **mailxuzhuoxi@163.com**。  
 
