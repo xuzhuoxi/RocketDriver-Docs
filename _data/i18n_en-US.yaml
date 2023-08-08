@@ -12,13 +12,13 @@ contact:
   text: Have a thought? You can contact author!
   title: Contact Author
 home:
-  description: GameDriver Pro is a game framework for Unity engine
+  description: RocketDriver Pro is a game framework for Unity engine
   downloads:
     download: Download
     file_an: File an
     issue: Issue
     manual: Manual
-    manual_pdf: downloads/GameDriverPro-Manual_en.pdf
+    manual_pdf: downloads/RocketDriverPro-Manual_en.pdf
     package: Package
   logo: /assets/img/logo.webp
   nav:
@@ -55,7 +55,7 @@ home:
       show: 'yes'
       text: Contact Author
   page: /index_en.html
-  title: GameDriver Pro
+  title: RocketDriver Pro
 i18n:
   link: zh-CN
 manual:
@@ -101,7 +101,7 @@ manual:
       include: ManualInclude_8_RpgMaterial_en.md
       pattern: pages/Manual_8.RpgMaterial_en.html
       show: 'yes'
-      text: 8.RPG Material Data System(RpgMaterial)
+      text: 8.Rpg Material Data System(RpgMaterial)
     - id: manual.lua
       include: ManualInclude_9_Lua_en.md
       pattern: pages/Manual_9.Lua_en.html

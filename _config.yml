@@ -1,11 +1,11 @@
-title: GameDriver Pro
+title: RocketDriver Pro
 show_logo: true
 show_downloads: true
 google_analytics: true
 theme: jekyll-theme-minimal
 
-version: '1.2.0515'
-build: '2023.05.15'
+version: '2.0.0810'
+build: '2023.08.10'
 
 author:
   name: XUZHUOXI
@@ -16,10 +16,10 @@ unity:
   publisher_url: https://assetstore.unity.com/publishers/74539
 
 home:
-  url: https://www.xuzhuoxi.com/GameDriver-Docs
+  url: https://www.xuzhuoxi.com/RocketDriver-Docs
 
 github:
-  issues_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues
-  issues_new_url: https://github.com/xuzhuoxi/GameDriver-Docs/issues/new
+  issues_url: https://github.com/xuzhuoxi/RocketDriver-Docs/issues
+  issues_new_url: https://github.com/xuzhuoxi/RocketDriver-Docs/issues/new
   
 formspree_form_path : 'f/mpznbjpa'

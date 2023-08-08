@@ -12,13 +12,13 @@ contact:
   text: '有想法？可以联系作者哦! '
   title: 联系作者
 home:
-  description: GameDriver Pro 是一款基于Unity引擎的游戏开发框架
+  description: RocketDriver Pro 是一款基于Unity引擎的游戏开发框架
   downloads:
     download: 下载
     file_an: 提交
     issue: 问题
     manual: 用户手册
-    manual_pdf: downloads/GameDriverPro-Manual_cn.pdf
+    manual_pdf: downloads/RocketDriverPro-Manual_cn.pdf
     package: 软件包
   logo: /assets/img/logo.webp
   nav:
@@ -55,7 +55,7 @@ home:
       show: 'yes'
       text: 联系作者
   page: /index.html
-  title: GameDriver Pro
+  title: RocketDriver Pro
 i18n:
   link: en-US
 manual:

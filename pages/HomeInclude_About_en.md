@@ -1,6 +1,6 @@
-# About GameDriver Pro
+# About RocketDriver Pro
 
-###  GameDriver Pro
+###  RocketDriver Pro
 Version: {{ site.version }}  
 Built on：{{site.build}}  
 

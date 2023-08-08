@@ -1,6 +1,6 @@
-# 关于 GameDriver Pro
+# 关于 RocketDriver Pro
 
-### GameDriver Pro
+### RocketDriver Pro
 版本：{{ site.version }}  
 构建日期：{{site.build}}  
 
