@@ -1,12 +1,12 @@
 ## 2. Loading management module (Loader) - supports free switching of three modes: Resources, Editor, Assetbundle
 
-+ **JLGames.GameDriver.Actions.Loader** provides full support for the loader.
-+ **"Tools -> GameDriver -> Project -> Gen LoaderSettings"** provides the generation entry for the loader configuration file.
++ **JLGames.RocketDriver.Actions.Loader** provides full support for the loader.
++ **"Tools -> RocketDriver -> Project -> Gen LoaderSettings"** provides the generation entry for the loader configuration file.
 
 ### 2.1 Initialization
 
 #### 2.1.1 Generate configuration assets
-Execute menu "Tools -> GameDriver -> Project -> Gen LoaderSettings".  
+Execute menu "Tools -> RocketDriver -> Project -> Gen LoaderSettings".  
 The LoaderSettings.asset (renameable) file will be generated under the project Assets/Resources.  
 ![image](assets/img/loader_1.png)  
 ![image](assets/img/loader_2.png)  
@@ -99,5 +99,5 @@ The IAssetLoader interface functions are divided into four categories:
   + For more usage, please refer to the example, API or source code.  
 
 ### 2.3 Example
-GameDriver/Samples/Loader  
+JLGames/RocketDriver/Samples/Loader  
 ![image](assets/img/loader_8.png)  

@@ -1,12 +1,12 @@
 ## 2. 加载管理模块(Loader) - 支持Resources、Editor、Assetbundle三种模式自由切换
 
-+ **JLGames.GameDriver.Actions.Loader** 提供了加载器全部的功能支持。
-+ **“Tools -> GameDriver -> Project -> Gen LoaderSettings”**提供了加载器配置文件的生成入口。
++ **JLGames.RocketDriver.Actions.Loader** 提供了加载器全部的功能支持。
++ **“Tools -> RocketDriver -> Project -> Gen LoaderSettings”**提供了加载器配置文件的生成入口。
 
 ### 2.1 初始化
 
 #### 2.1.1 生成配置资产
-执行菜单 “Tools -> GameDriver -> Project -> Gen LoaderSettings”。  
+执行菜单 “Tools -> RocketDriver -> Project -> Gen LoaderSettings”。  
 在项目Assets/Resources下会生成 LoaderSettings.asset(可重命名) 文件。  
 ![image](assets/img/loader_1.png)  
 ![image](assets/img/loader_2.png)  
@@ -99,5 +99,5 @@ IAssetLoader接口函数分四类：
   + 更多用法请参考示例、API或源码。   
 
 ### 2.3 示例
-GameDriver/Samples/Loader  
+JLGames/RocketDriver/Samples/Loader  
 ![image](assets/img/loader_8.png)  

@@ -1,6 +1,6 @@
 ## 3. 国际化(i18n) - 轻量级国际化解决方案
 
-+ **JLGames.GameDriver.Actions.i18n** 提供了国际化模块全部的功能支持。
++ **JLGames.RocketDriver.Actions.i18n** 提供了国际化模块全部的功能支持。
 + 建议使用 [BabelEdit](https://www.codeandweb.com/babeledit) 创作管理数据集。
 + 使用国际化(i18n)分为三个步骤：
   1. 准备数据。
@@ -46,7 +46,7 @@
 ### 3.3 通过配置资产进行初始化
 
 #### 3.3.1 生成配置资产并配置信息
-1. 选择配置资产的生成目录，点击菜单"Tools -> GameDriver -> Project -> Gen I18NSettings".  
+1. 选择配置资产的生成目录，点击菜单"Tools -> RocketDriver -> Project -> Gen I18NSettings".  
 2. 生成的资产文件名为 "I18NSettings.asset".  
 3. 设置文件集的扩展名称：Asset Extension。 这里建议 "json"。  
 4. 把文件集加入到Assets配置列表中。或设置其中一个为默认(**只有最后一个默认生效**)。  
@@ -81,5 +81,5 @@
 ![image](assets/img/i18n_12.png)  
 
 ### 3.5 示例
-GameDriver/Samples/i18n  
+JLGames/RocketDriver/Samples/i18n  
 ![image](assets/img/i18n_4.png)  

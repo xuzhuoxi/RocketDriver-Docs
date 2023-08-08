@@ -1,9 +1,9 @@
 ## 4. 网络管理扩展模块(NetManager)
 简单易用的网络链接管理模块  
-+ **JLGames.GameDriver.CSharp.Net** 提供了C# 针对 Socket API 的一个封装， 使开发者可以对TCP、UDP、 HTTP(HTTPS)、WebSocket(WebSockets)等协议在同一套API上进行开发。
-+ **JLGames.GameDriver.CSharp.Net** 同时提供了对数据进行封包解包的支持与扩展 。
-+ **JLGames.GameDriver.Games.NetManager** 中提供了对链接引用的管理功能。 
-+ **JLGames.GameDriver.Games.NetManager.Virtual** 中单机服务器的扩展支持，可以为无实际网络链接的情况下模拟服务器协议捕捉与逻辑处理的行为。 
++ **JLGames.RocketDriver.CSharp.Net** 提供了C# 针对 Socket API 的一个封装， 使开发者可以对TCP、UDP、 HTTP(HTTPS)、WebSocket(WebSockets)等协议在同一套API上进行开发。
++ **JLGames.RocketDriver.CSharp.Net** 同时提供了对数据进行封包解包的支持与扩展 。
++ **JLGames.RocketDriver.Games.NetManager** 中提供了对链接引用的管理功能。 
++ **JLGames.RocketDriver.Games.NetManager.Virtual** 中单机服务器的扩展支持，可以为无实际网络链接的情况下模拟服务器协议捕捉与逻辑处理的行为。 
 
 ### 4.1 VirtualServer的使用
 
@@ -78,5 +78,5 @@ NetManager.Shared.GetClient<IVirtualClient>("client")
 ![image](assets/img/net_14.png)  
 
 ### 4.3 示例
-GameDriver/Samples/NetManager  
+JLGames/RocketDriver/Samples/NetManager  
 ![image](assets/img/net_6.png)  

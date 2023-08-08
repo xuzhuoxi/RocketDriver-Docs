@@ -1,7 +1,7 @@
 ## 1. 事件(Event) - 高效的事件模块，支持Unity多线程
 事件采用“**监听**-**捕获**”机制，监听时支持捕获次数、 捕获优先级的设置。  
-+ **JLGames.GameDriver.CSharp.Event** 负责事件系统的核心逻辑实现。
-+ **JLGames.GameDriver.Actions.ThreadEvent** 针对多线程提供支持。
++ **JLGames.RocketDriver.CSharp.Event** 负责事件系统的核心逻辑实现。
++ **JLGames.RocketDriver.Actions.ThreadEvent** 针对多线程提供支持。
 
 ### 1.1 核心功能 - 添加监听、移除监听、分发事件
 
@@ -29,5 +29,5 @@
 继承EventDispathver或ThreadEventDispatcher并实现自定义接口，可用于扩展事件行为。  
 
 ### 1.2 示例
-GameDriver/Samples/Event  
+JLGames/RocketDriver/Samples/Event  
 ![image](assets/img/event_1.png)  

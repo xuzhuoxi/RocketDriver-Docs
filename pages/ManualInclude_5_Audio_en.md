@@ -1,7 +1,7 @@
 ## 5. Audio Manager (AudioManager)
 The perfect audio management module supports scene and UI music sound effects, and removes the dependency of Assetbundle.  
 
-+ **JLGames.GameDriver.Actions.Audio** provides full functional support for audio management.
++ **JLGames.RocketDriver.Actions.Audio** provides full functional support for audio management.
 + Audio loading uses the default loader (Loader), but also supports custom loader.
 + Use Ico method to inject audio resource information.
 + There is no need to directly reference audio resources, which realizes the separation of resource usage and resource packaging.
@@ -10,14 +10,14 @@ The perfect audio management module supports scene and UI music sound effects, a
 ### 5.1 Initialization
 
 #### 5.1.1 Generate configuration assets
-Execute menu "Tools -> GameDriver -> Project -> Gen AudioSettings".  
+Execute menu "Tools -> RocketDriver -> Project -> Gen AudioSettings".  
 The AudioSettings.asset (renameable) file will be generated under the project Assets/Resources.  
 ![image](assets/img/audio_2.png)  
 + SysSettings are system-level settings and cannot be modified by users.
 + UserSettings are user-level settings, open to AP modification. I
 
 #### 5.1.2 Setting up management objects
-Copy GameDriver/Assets/AudioManager/Prefabs/AudioManager.prefab to the project initialization scene, and re-associate AudioSettings.asset  
+Copy JLGames/RocketDriver/Assets/AudioManager/Prefabs/AudioManager.prefab to the project initialization scene, and re-associate AudioSettings.asset  
 ![image](assets/img/audio_1.png)  
 + Dont Destroy OnLoad whether to save the object when the scene is destroyed
 + Music Register Infos Music information preprocessing registry
@@ -51,5 +51,5 @@ Audio information can be registered in the script using the AudioManager functio
 AudioDemoMusicNode and AudioDemoSoundNode components in the example.  
 
 #### 5.3 Example
-GameDriver/Samples/Audio  
+JLGames/RocketDriver/Samples/Audio  
 ![image](assets/img/audio_5.png)  

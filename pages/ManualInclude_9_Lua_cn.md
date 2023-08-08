@@ -39,5 +39,5 @@
 ![image](assets/img/Lua_7.jpg)  
 
 ### 9.3 示例
-GameDriver/Samples/LuaDemo   
+JLGames/GameDriver/Samples/LuaDemo   
 ![image](assets/img/Lua_1.png)  

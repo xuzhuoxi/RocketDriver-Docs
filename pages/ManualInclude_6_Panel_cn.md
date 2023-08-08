@@ -1,6 +1,6 @@
 ## 6. 面板管理模块(PanelManager)
-+ **JLGames.GameDriver.Actions.Layer** 提供了容器层级管理功能。
-+ **JLGames.GameDriver.Games.PanelManager** 提供了面板管理功能。
++ **JLGames.RocketDriver.Actions.Layer** 提供了容器层级管理功能。
++ **JLGames.RocketDriver.Games.PanelManager** 提供了面板管理功能。
 + 面板管理模块的使用流程： 注册 -> 展示 -> 关闭
 + 若要缓存面板不销毁，建议把面板移出屏幕外。 
 
@@ -191,5 +191,5 @@ IInitPanel、IParamsPanel、IRefreshPanel、IDisposePanel
   ![image](assets/img/panel_12.png)  
 
 ### 6.5 示例
-GameDriver/Samples/Panel  
+JLGames/RocketDriver/Samples/Panel  
 ![image](assets/img/panel_20.png)  

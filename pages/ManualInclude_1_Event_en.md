@@ -1,7 +1,7 @@
 ## 1. Event - Efficient event module, supports Unity multithreading
 The event adopts the "**monitoring**-**capture**" mechanism, which supports the settings of the number of captures and capture priority during monitoring.  
-+ **JLGames.GameDriver.CSharp.Event** is responsible for the core logic implementation of the event system.
-+ **JLGames.GameDriver.Actions.ThreadEvent** provides support for multithreading.
++ **JLGames.RocketDriver.CSharp.Event** is responsible for the core logic implementation of the event system.
++ **JLGames.RocketDriver.Actions.ThreadEvent** provides support for multithreading.
 
 ### 1.1 Core functions - add listeners, remove listeners, dispatch events
 
@@ -29,5 +29,5 @@ The logic implementation has been completed in the implementation class ThreadEv
 Extends EventDispathver or ThreadEventDispatcher and implements a custom interface that can be used to extend event behavior.  
 
 ### 1.2 Example
-GameDriver/Samples/Event  
+JLGames/RocketDriver/Samples/Event  
 ![image](assets/img/event_1.png)  

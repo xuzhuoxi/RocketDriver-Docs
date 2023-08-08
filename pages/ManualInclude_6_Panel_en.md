@@ -1,6 +1,6 @@
 ## 6. Panel Manager (PanelManager)
-+ **JLGames.GameDriver.Actions.Layer** provides container level management.
-+ **JLGames.GameDriver.Games.PanelManager** provides panel management functions.
++ **JLGames.RocketDriver.Actions.Layer** provides container level management.
++ **JLGames.RocketDriver.Games.PanelManager** provides panel management functions.
 + The usage process of the panel management module: registration -> display -> close
 + If the cached panel is not destroyed, it is recommended to move the panel off the screen.
 
@@ -191,5 +191,5 @@ IInitPanel, IParamsPanel, IRefreshPanel, IDisposePanel
   ![image](assets/img/panel_12.png)  
 
 ### 6.5 Example
-GameDriver/Samples/Panel  
+JLGames/RocketDriver/Samples/Panel  
 ![image](assets/img/panel_20.png)  

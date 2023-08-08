@@ -1,18 +1,18 @@
 ## 8. Rpg Material Data System
 This is a general game data management system.  
 The player's numerical data is managed in the form of KTV (Key-Type-Value).  
-+ **JLGames.GameDriver.Games.RpgMaterial**
++ **JLGames.RocketDriver.Games.RpgMaterial**
   Provides functional support for the Rpg material data system. The dependencies are as follows:  
   ![image](assets/img/RpgMaterial_Dependencies.png)  
-  + **JLGames.GameDriver.Games.RpgMaterial.Common**
+  + **JLGames.RocketDriver.Games.RpgMaterial.Common**
   The basic data structure of the system.  
-  + **JLGames.GameDriver.Games.RpgMaterial.Material**
+  + **JLGames.RocketDriver.Games.RpgMaterial.Material**
   A data structure in the system about material definitions.  
-  + **JLGames.GameDriver.Games.RpgMaterial.User**
+  + **JLGames.RocketDriver.Games.RpgMaterial.User**
   The data structure in the system about user data storage.  
-  + **JLGames.GameDriver.Games.RpgMaterial.Service**
+  + **JLGames.RocketDriver.Games.RpgMaterial.Service**
   The data structure in the system that provides external interface support.  
-  + **JLGames.GameDriver.Games.RpgMaterial.Asset**
+  + **JLGames.RocketDriver.Games.RpgMaterial.Asset**
   The data structure in the system that is serialized for Unity.  
 
 ### 8.1 Design Ideas
@@ -268,7 +268,7 @@ The player's numerical data is managed in the form of KTV (Key-Type-Value).
   Serialized structure of material user data (with acquisition timestamp) with unique Id for Unity panels.  
 
 ### 8.2 Use
-Depends on the service framework(JLGames.GameDriver.Games.Services), and the specific usage process is consistent with the general service.  
+Depends on the service framework(JLGames.RocketDriver.Games.Services), and the specific usage process is consistent with the general service.  
 
 #### 8.2.1 Classification of material data
 Classify material configuration table data according to business needs  
@@ -297,7 +297,7 @@ According to the [Service Framework Description] (Manual_7.Service_en.html#7.4),
 + Supports trigger function by default, and supports trigger execution when user data changes.
 
 ### 8.3 Example
-GameDriver/Samples/RpgMaterial  
+JLGames/RocketDriver/Samples/RpgMaterial  
 ![image](assets/img/RpgMaterial_1.jpg)  
 + Example Explanation
    1. Provides examples of three material types: Resource, Item, and Giftbag.

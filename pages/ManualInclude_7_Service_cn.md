@@ -1,7 +1,7 @@
 ## 7. 服务框架(Service)
-+ **JLGames.GameDriver.CSharp.Service** 提供了服务框架的基础接口与行为规范。
-+ **JLGames.GameDriver.Actions.Service** 提供了针对Unity的服务配置资产(**未启用**)。
-+ **JLGames.GameDriver.Games.Service** 提供了常用的服务功能。
++ **JLGames.RocketDriver.CSharp.Service** 提供了服务框架的基础接口与行为规范。
++ **JLGames.RocketDriver.Actions.Service** 提供了针对Unity的服务配置资产(**未启用**)。
++ **JLGames.RocketDriver.Games.Service** 提供了常用的服务功能。
 
 ### 7.1 设计目的
 游戏项目有一些比较明显的特点：数据偶合度高、系统依赖性强。  
@@ -191,7 +191,7 @@ ServiceConfig中获取服务实例的函数有多个，但最终调用的都是G
 2. 在IClearService接口中的Clear函数中把事件监听也全部清除。
 
 ### 7.5 示例
-GameDriver/Samples/Service  
+JLGames/RocketDriver/Samples/Service  
 ![image](assets/img/service_18.png)  
 ![image](assets/img/service_19.png)  
 示例中的服务说明：  

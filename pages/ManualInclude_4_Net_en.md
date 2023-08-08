@@ -1,9 +1,9 @@
 ## 4. Network management extension module (NetManager)
 Easy-to-use network link management module  
-+ **JLGames.GameDriver.CSharp.Net** provides a C# package for Socket API, which enables developers to develop protocols such as TCP, UDP, HTTP(HTTPS), WebSocket(WebSockets) on the same set of APIs.  
-+ **JLGames.GameDriver.CSharp.Net** also provides support and extension for data packing and unpacking.  
-+ Management of link references is available in **JLGames.GameDriver.Games.NetManager**.  
-+ Extended support for stand-alone servers in **JLGames.GameDriver.Games.NetManager.Virtual**, which can simulate the behavior of server protocol capture and logic processing without an actual network connection.  
++ **JLGames.RocketDriver.CSharp.Net** provides a C# package for Socket API, which enables developers to develop protocols such as TCP, UDP, HTTP(HTTPS), WebSocket(WebSockets) on the same set of APIs.  
++ **JLGames.RocketDriver.CSharp.Net** also provides support and extension for data packing and unpacking.  
++ Management of link references is available in **JLGames.RocketDriver.Games.NetManager**.  
++ Extended support for stand-alone servers in **JLGames.RocketDriver.Games.NetManager.Virtual**, which can simulate the behavior of server protocol capture and logic processing without an actual network connection.  
 
 ### 4.1 Use of VirtualServer
 
@@ -78,5 +78,5 @@ NetManager.Shared.GetClient<IVirtualClient>("client")
 ![image](assets/img/net_14.png)  
 
 ### 4.3 Example
-GameDriver/Samples/NetManager  
+JLGames/RocketDriver/Samples/NetManager  
 ![image](assets/img/net_6.png)  

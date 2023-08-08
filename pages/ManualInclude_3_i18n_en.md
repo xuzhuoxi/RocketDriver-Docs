@@ -1,6 +1,6 @@
 ## 3. Internationalization (i18n) - Lightweight Internationalization Solution
 
-+ **JLGames.GameDriver.Actions.i18n** provides full functional support for the internationalization module.
++ **JLGames.RocketDriver.Actions.i18n** provides full functional support for the internationalization module.
 + [BabelEdit](https://www.codeandweb.com/babeledit) is recommended for authoring management datasets.
 + Use internationalization (i18n) in three steps:
    1. Prepare the data.
@@ -46,7 +46,7 @@ Call the LoadData function in the II18NManager instance:
 ### 3.3 Initialize by configuring asset
 
 #### 3.3.1 Generate configuration assets and configure information
-1. Select the generation directory of the configuration assets, click the menu "Tools -> GameDriver -> Project -> Gen I18NSettings".  
+1. Select the generation directory of the configuration assets, click the menu "Tools -> RocketDriver -> Project -> Gen I18NSettings".  
 2. The generated asset file is named "I18NSettings.asset".  
 3. Set the extension name of the fileset: Asset Extension. "json" is suggested here.  
 4. Add the fileset to the Assets configuration list. Or set one of them as default (**only the last default takes effect**).  
@@ -81,5 +81,5 @@ Support script format in the file content: `{{id}}`
 ![image](assets/img/i18n_12.png)  
 
 ### 3.5 Example
-GameDriver/Samples/i18n  
+JLGames/RocketDriver/Samples/i18n  
 ![image](assets/img/i18n_4.png)  

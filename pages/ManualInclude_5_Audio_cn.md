@@ -1,7 +1,7 @@
 ## 5. 音频管理模块(AudioManager) 
 完善的音频管理模块，支持场景与UI的音乐音效同时，去除Assetbundle的依赖。  
 
-+ **JLGames.GameDriver.Actions.Audio** 提供了音频管理全部的功能支持。
++ **JLGames.RocketDriver.Actions.Audio** 提供了音频管理全部的功能支持。
 + 音频的加载使用默认的加载器(Loader)，同时也支持自定义的加载器。
 + 采用Ico方式注入音频资源信息。
 + 无须直接引用音频资源，实现了资源使用与资源打包的分离。  
@@ -10,14 +10,14 @@
 ### 5.1 初始化
 
 #### 5.1.1 生成配置资产
-执行菜单 “Tools -> GameDriver -> Project -> Gen AudioSettings”。  
+执行菜单 “Tools -> RocketDriver -> Project -> Gen AudioSettings”。  
 在项目Assets/Resources下会生成 AudioSettings.asset(可重命名) 文件。  
 ![image](assets/img/audio_2.png)  
 + SysSettings为系统级别的设置，用户无法修改。
 + UserSettings为用户级别的设置，开放AP修改。I
 
 #### 5.1.2 设置管理物件
-复制GameDriver/Assets/AudioManager/Prefabs/AudioManager.prefab到项目初始化场景中，并重新关联AudioSettings.asset  
+复制JLGames/RocketDriver/Assets/AudioManager/Prefabs/AudioManager.prefab到项目初始化场景中，并重新关联AudioSettings.asset  
 ![image](assets/img/audio_1.png)  
 + Dont Destroy OnLoad 场景销毁时是否保存物件
 + Music Register Infos 音乐信息预处理注册表
@@ -51,5 +51,5 @@ AudioManagerPool.Shared.SetLoaderAdapter(new AudioLoader());
 示例中的AudioDemoMusicNode、AudioDemoSoundNode组件。  
 
 #### 5.3 示例
-GameDriver/Samples/Audio  
+JLGames/RocketDriver/Samples/Audio  
 ![image](assets/img/audio_5.png)  
