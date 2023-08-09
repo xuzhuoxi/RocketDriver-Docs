@@ -4,7 +4,7 @@
 
 **NOTE**: This version has made a lot of changes to the namespace.  
 
-### new function  
+### New Features  
 + Lua: Add AOT replacement support for Monoe scripts.  
 + New queue serial processing function: CSharp.Serial.  
 
@@ -20,7 +20,7 @@
 + Games/RpgMaterial: The UId field is also added to the array structure related to data changes.  
 + Games/RpgMaterial: When data of the same type and MId can be superimposed, the default UId is 0.  
 
-### Fix issues
+### Fixes 
 + CSharp.Buffer: An error caused by insufficient buffer area when ByteBuffer writes data.  
 + CSharp.Buffer: Bug fix, the function CopyBytes(int offset =0) calculates the remaining length incorrectly.  
 + CSharp.Net: SockClient reported an error caused by disconnection during the process of receiving messages.  
