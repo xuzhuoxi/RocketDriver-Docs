@@ -49,6 +49,9 @@ Event related functions. Contains event monitoring, removal and scheduling funct
 Extensions for basic data types in CSharp.  
 + Imagex  
 Image related functions. Now includes RGBA data objects, filter processing functions, and more.  
++ Languages  
+Other programming language related  
+  + Lua: Lua interpreter  
 + Mathx  
 Mathematical calculation related functions.  
 + Net  
@@ -110,8 +113,10 @@ Extensions to commonly used data structures in Unity.
 Image related functions. Contains color conversion functions, image pixel data structures, texture functions, etc.  
 + i18n  
 Internationalization function. For details, see [3. Internationalization System(i18n)](Manual_3.i18n_en.html).  
-+Jsonx  
++ Jsonx  
 Related functions for Json processing.  
++ Languages  
+  + Lua: Lua extension support on Unity engine  
 + Layer  
 Unity displays the structural layered design capabilities.  
 + Loaderx  

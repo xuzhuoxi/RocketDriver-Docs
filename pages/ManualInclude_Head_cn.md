@@ -46,6 +46,9 @@ RocketDriver Pro中的源代码存放位置是有规律的。
 CSharp中基础数据类型的扩展功能。  
 + Imagex  
 图像相关功能。现包含 RGBA数据对象、 滤波器处理功能等。   
++ Languages  
+其它编程语言相关  
+  + Lua： Lua解释器  
 + Mathx  
 数学计算相关功能。  
 + Net  
@@ -101,14 +104,16 @@ Editor功能，提供对项目中资产生成 “名称 -> 路径” 索引的�
 时间相关功能，包含依赖Unity引擎的计时器、周期循环时间片功能等。  
 + ExcelExporter  
 对第三方导表工具[ExcelExporter](https://github.com/xuzhuoxi/ExcelExporter)导出数据的功能支持。  
-+ Extensions
-Unity中常用数据结构的扩展功能。  
++ Extensions  
+Unity中常用数据结构的扩展功能。    
 + Graphicsx  
 图像相关功能。包含颜色转换函数、图像的像素数据结构、纹理函数等。  
 + i18n  
 国际化功能。 详细请看[3.国际化(i18n)](Manual_3.i18n_cn.html)。 
 + Jsonx  
 Json处理的相关功能。  
++ Languages  
+  + Lua:  Lua扩展在Unity引擎上的支持  
 + Layer  
 Unity显示结构分层设计功能。  
 + Loaderx  
