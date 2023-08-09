@@ -1,5 +1,39 @@
 # RocketDriver Pro Changelog
 
+## Version v2.0.0810(2023.08.10)
+
+**NOTE**: This version has made a lot of changes to the namespace.  
+
+### new function  
++ Lua: Add AOT replacement support for Monoe scripts.  
++ New queue serial processing function: CSharp.Serial.  
+
+### Updates & Modifications
++ Updated name: The project was renamed from **GameDrive Pro** to **RocketDriver Pro**, **to avoid trademark disputes**.  
++ CSharp.Buff: Standardize the interfaces and implementations of Reader, Writer, and Copier.  
++ CSharp.Net: Optimize Socket's function of receiving messages, change from multi-threaded writing to Socket.BeginReceive.  
++ CSharp.Net: Optimize ScokClinet's connection and disconnection functions.  
++ CSharp.Net: Optimize the function of the message read and write interface, and rename it to IMessageBuffPacker => IMessageWriter, IMessageBuffUnpacker => IMessageReader.  
++ CSharp.Net: standardized IMessageReader, IMessageWriter interface.  
++ Actions.ThreadEvent: MonoEventProxy extended function, adding the function of specifying the execution logic of the main thread.  
++ Games/RpgMaterial: Optimized structure: All user data contains UId, unified logic.  
++ Games/RpgMaterial: The UId field is also added to the array structure related to data changes.  
++ Games/RpgMaterial: When data of the same type and MId can be superimposed, the default UId is 0.  
+
+### Fix issues
++ CSharp.Buffer: An error caused by insufficient buffer area when ByteBuffer writes data.  
++ CSharp.Buffer: Bug fix, the function CopyBytes(int offset =0) calculates the remaining length incorrectly.  
++ CSharp.Net: SockClient reported an error caused by disconnection during the process of receiving messages.  
++ CSharp.Net: Fix the problem that SockReceiver only interprets one piece of data each time.  
++ CSharp.Net: Fix the call error when ISockReceiver and ISockSender are empty in SockClient.  
+
+
+
+
+------
+
+
+
 ## Version v1.2.0515(2023.05.15)
 
 ### New Features  

@@ -1,5 +1,39 @@
 # RocketDriver Pro 更新日志
 
+## 版本 v2.0.0810(2023.08.10)
+
+**注意**：本版本对的命名空间进行大量修改。  
+
+### 新功能  
++ Lua: 增加Monoe脚本的AOT替换支持。  
++ 新增加队列串行处理功能：CSharp.Serial。  
+
+### 更新&修改  
++ 更新名称： 项目由 **GameDrive Pro** 改名为 **RocketDriver Pro**， **避免商标纠纷**。  
++ CSharp.Buff: 规范化各个Reader、Writer、Copier接口与实现。  
++ CSharp.Net: 优化Socket关于接收消息的功能，由多线程写法改为Socket.BeginReceive。  
++ CSharp.Net: 优化ScokClinet关于连接与断开连接的功能。  
++ CSharp.Net:  优化消息读写接口的功能，并重命名为 IMessageBuffPacker => IMessageWriter、 IMessageBuffUnpacker => IMessageReader。  
++ CSharp.Net: 规范化IMessageReader、IMessageWriter接口。  
++ Actions.ThreadEvent: MonoEventProxy扩展功能，增加指定主线程执行逻辑的功能。  
++ Games/RpgMaterial: 优化结构：全部用户数据都包含UId，统一逻辑。  
++ Games/RpgMaterial: 数据变更相关数组结构同样加入UId字段。  
++ Games/RpgMaterial: 当相同类型与MId的数据可叠加时，默认UId为0。  
+
+### 修复问题  
++ CSharp.Buffer: ByteBuffer写入数据时缓存区不足带来的报错。  
++ CSharp.Buffer: 修复Bug，函数CopyBytes(int offset =0) 计算剩余长度错误。  
++ CSharp.Net: SockClient在接收消息的过程中断开连接带来的报错。  
++ CSharp.Net: 修复SockReceiver每次只解释一条数据的问题。  
++ CSharp.Net: 修复SockClient中ISockReceiver与ISockSender为空时的调用报错。  
+
+
+
+
+------
+
+
+
 ## 版本 v1.2.0515(2023.05.15)
 
 ### 新功能  
