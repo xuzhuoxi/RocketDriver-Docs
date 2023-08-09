@@ -4,7 +4,7 @@
 本用户指南旨在为 RocketDriver Pro 用户提供关于工具的基本概述、功能和用法。  
 
 ### 安装
-1. 从Unity的Asset Store下载GameRiver Pro后，请转到：“Assets->Import Package->Custom Package...”。 
+1. 从Unity的Asset Store下载 RocketDriver Pro后，请转到：“Assets->Import Package->Custom Package...”。 
 2. 在“导入资产”窗口中，查找并选择RocketDriver Pro UnityPackage文件。 
 3. 在“导入软件包”窗口中出现Unity之后，请验证所有项目选择导入，然后单击窗口右下方的导入按钮。
 4. RocketDriver Pro的全部文件将加入到Assets/JLGames/RocketDriver中。 

@@ -5,7 +5,7 @@ This User Manaul was designed to provide GaemDriver Pro users with a basic overv
 features and functionality of the tool.  
 
 ### Install
-1. After downloading GameRiver Pro from Unity's Asset Store, go to: "Assets->Import Package->Custom Package...". 
+1. After downloading RocketDriver Pro from Unity's Asset Store, go to: "Assets->Import Package->Custom Package...". 
 2. In the Import Assets window, find and select the RocketDriver Pro UnityPackage file. 
 3. Once Unity appears in the Import Packages window, verify that Import is selected for all projects, then click the Import button at the bottom right of the window. 
 4. All RocketDriver Pro files will be added to Assets/JLGames/RocketDriver.
