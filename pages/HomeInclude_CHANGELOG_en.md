@@ -9,7 +9,7 @@
 + New queue serial processing function: CSharp.Serial.  
 
 ### Updates & Modifications
-+ Updated name: The project was renamed from **GameDrive Pro** to **RocketDriver Pro**, **to avoid trademark disputes**.  
++ Updated name: The project was renamed to **RocketDriver Pro**, **to avoid trademark disputes**.  
 + CSharp.Buff: Standardize the interfaces and implementations of Reader, Writer, and Copier.  
 + CSharp.Net: Optimize Socket's function of receiving messages, change from multi-threaded writing to Socket.BeginReceive.  
 + CSharp.Net: Optimize ScokClinet's connection and disconnection functions.  
@@ -56,7 +56,7 @@
 + **RpgMaterial**: Add the function of user data record getting timestamp for the first time.  
 
 ### Updates  
-+ JLGames.GameDriver.Games.RpgMaterial.Common renamed:  
++ JLGames.RocketDriver.Games.RpgMaterial.Common renamed:  
    + MaterialData => MetaData  
    + MaterialDataDisplay => MetaDisplay  
    + MaterialDataOper => MetaOper  
@@ -65,25 +65,25 @@
    + IUserMaterialData1 => IUserData1  
    + UserMaterialData => UserData  
    + UserMaterialData1 => UserData1  
-+ JLGames.GameDriver.Games.RpgMaterial.Common new class:  
++ JLGames.RocketDriver.Games.RpgMaterial.Common new class:  
    + MetaValidDuration: Used to handle the duration validation function.  
    + MetaValidStamp: Validation function for handling valid time ranges.  
    + IUserValidData: User data interface used to record **without** unique Id and with timestamp records.  
    + IUserValidData1: It is used to record the user data interface with **unique** ID and timestamp record.  
    + UserValidData: Used to record user data that has **no** unique Id and has obtained timestamp records.  
    + UserValidData1: Used to record user data with **unique** ID and timestamp records.  
-+ JLGames.GameDriver.Games.RpgMaterial.Material added interface and implementation:  
++ JLGames.RocketDriver.Games.RpgMaterial.Material added interface and implementation:  
    + IMaterialValid: Interface definition for time-dependent validation of configuration structures.  
    + MaterialValidDuration: An abstract class that implements duration validation support for configuration structures.  
    + MaterialValidStamp: An abstract class that implements fixed-time validation support for configuration structures.  
-+ JLGames.GameDriver.Games.RpgMaterial.User added interface and implementation:  
++ JLGames.RocketDriver.Games.RpgMaterial.User added interface and implementation:  
    + IUserMaterialValid: Interface definition for time-related validation of user data structures.  
    + IUserMaterialValid1: Interface definition for time-dependent validation of user data structures.  
    + IUserMaterialValidMod: Interface definition (modification) for time-dependent validation of user data structures.  
    + IUserMaterialValidMod1: Interface definition (modification) for time-dependent validation of user data structures.  
    + UserMaterialValid: abstract class, user data structure reference base class  
    + UserMaterialValid1: abstract class, user data structure reference base class  
-+ Add interface and implementation of JLGames.GameDriver.Games.RpgMaterial.Service:  
++ Add interface and implementation of JLGames.RocketDriver.Games.RpgMaterial.Service:  
    + IMaterialServiceValid: Service interface for time-related validation.  
 + **RpgMaterial**: Adjust the directory structure of some source codes.  
 + **RpgMaterial**: Added the proxy function setting function ValidUtil to obtain the current timestamp.  

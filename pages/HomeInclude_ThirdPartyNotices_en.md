@@ -1,10 +1,10 @@
-# Third Party Notices
+# Third Party Remarks
 
 ###  1. BabelEdit
 **TRANSLATION FILE EDITOR**  
 BabelEdit is a multi-language editor that supports various file formats, including JSON, YAML, XML, INI, CSV, PO, XLIFF, and more. It helps developers easily manage and translate multi-language projects, improving development efficiency.  
 
-The data files used in **the internationalization solution (i18n)** are from the EabelEdit editor.  
+The data files used in **the internationalization solution (i18n)** are from the BabelEdit editor.  
 
 **Links**:  
 [https://www.codeandweb.com/babeledit](https://www.codeandweb.com/babeledit)  
@@ -38,3 +38,10 @@ Name: **Lua Interpreter**
 Author: **Liu Junfeng**  
 URL: http://www.codeproject.com/Articles/228212/Lua-Interpreter  
 License: **MIT** (http://opensource.org/licenses/mit-license.php)  
+
+### 5. TinyJson
+A third-party json interpreter is used in the Runtime.  
+库名称: **Tiny Json**  
+作者: **Alex Parker**  
+URL: https://github.com/zanders3/json  
+License: **MIT** (https://github.com/zanders3/json/blob/master/LICENSE)   

@@ -9,7 +9,7 @@
 + 新增加队列串行处理功能：CSharp.Serial。  
 
 ### 更新&修改  
-+ 更新名称： 项目由 **GameDrive Pro** 改名为 **RocketDriver Pro**， **避免商标纠纷**。  
++ 更新名称： 项目改名为 **RocketDriver Pro**， **避免商标纠纷**。  
 + CSharp.Buff: 规范化各个Reader、Writer、Copier接口与实现。  
 + CSharp.Net: 优化Socket关于接收消息的功能，由多线程写法改为Socket.BeginReceive。  
 + CSharp.Net: 优化ScokClinet关于连接与断开连接的功能。  
@@ -56,7 +56,7 @@
 + **RpgMaterial**: 增加用户数据记录初次获得时间戳的功能。  
 
 ### 更新  
-+ JLGames.GameDriver.Games.RpgMaterial.Common 重命名：  
++ JLGames.RocketDriver.Games.RpgMaterial.Common 重命名：  
   + MaterialData =>MetaData  
   + MaterialDataDisplay => MetaDisplay  
   + MaterialDataOper => MetaOper  
@@ -65,25 +65,25 @@
   + IUserMaterialData1 => IUserData1  
   + UserMaterialData => UserData  
   + UserMaterialData1 => UserData1  
-+ JLGames.GameDriver.Games.RpgMaterial.Common 新增类：  
++ JLGames.RocketDriver.Games.RpgMaterial.Common 新增类：  
   + MetaValidDuration： 用于处理时长验证功能。  
   + MetaValidStamp： 用于处理有效时间范围的验证功能。  
   + IUserValidData： 用于记录**无**唯一Id、有获得时间戳记录的用户数据接口。  
   + IUserValidData1： 用于记录**有**唯一Id、有获得时间戳记录的用户数据接口。  
   + UserValidData： 用于记录**无**唯一Id、有获得时间戳记录的用户数据。  
   + UserValidData1： 用于记录**有**唯一Id、有获得时间戳记录的用户数据。  
-+ JLGames.GameDriver.Games.RpgMaterial.Material 增加加接口与实现：  
++ JLGames.RocketDriver.Games.RpgMaterial.Material 增加加接口与实现：  
   + IMaterialValid： 配置结构的时间相关验证的接口定义。  
   + MaterialValidDuration： 抽象类，实现了对配置结构的时长验证支持。  
   + MaterialValidStamp： 抽象类，实现了对配置结构的固定时间验证支持。  
-+ JLGames.GameDriver.Games.RpgMaterial.User 增加加接口与实现：  
++ JLGames.RocketDriver.Games.RpgMaterial.User 增加加接口与实现：  
   + IUserMaterialValid:  用户数据结构时间相关验证的接口定义。  
   + IUserMaterialValid1： 用户数据结构时间相关验证的接口定义。  
   + IUserMaterialValidMod： 用户数据结构时间相关验证的接口定义（修改）。  
   + IUserMaterialValidMod1： 用户数据结构时间相关验证的接口定义（修改）。  
   + UserMaterialValid： 抽象类，用户数据结构参考基类  
   + UserMaterialValid1： 抽象类，用户数据结构参考基类  
-+ JLGames.GameDriver.Games.RpgMaterial.Service 增加加接口与实现：  
++ JLGames.RocketDriver.Games.RpgMaterial.Service 增加加接口与实现：  
   + IMaterialServiceValid: 时间相关验证的服务接口。  
 + **RpgMaterial**: 调整部分源代码的目录结构。   
 + **RpgMaterial**: 新增获取当前时间戳的代理函数设置功能ValidUtil。   
