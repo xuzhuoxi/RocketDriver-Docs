@@ -1,5 +1,32 @@
 # RocketDriver Pro Changelog
 
+## Version v2.1.1111(2023.11.11)
+
+### New Features
++ CodingMap: Key-Value structure based on Dictionary<string,object>, including byte serialization and deserialization functions.。
++ CodingList: List-based Key-Value structure, including byte serialization and deserialization functions.
++ Editor: Add a tool to find whether Prefab contains Layer.
++ Editor: Added right-click menu generation for LoaderSettings, AudioSettings, I18NSettings, and PreloadSettings.
++ Animatorx: Add two random animation processors.
+
+### Updates & Modifications
++ TransformUtil: Updated function naming in TransformUtil.
++ MetaObjectPool: Adds a search function and a function to delete specified elements.
++ MetaGameObjectPool: Overrides the RemoveFirst and RemoveLast functions.
+
+### Fixes
++ VectorInt.Mul: Buf fix。
++ DataBuffer:  Fix errors when reading. Optimize reading array related functions. Update the logic for writing to the array.
++ DataTimex:  Fixed the problem of MonoTimer cumulative time using Time.deltaTime and changing it to Time.FixedDeltaTime.
+
+
+
+
+------
+
+
+
+
 ## Version v2.0.0810(2023.08.10)
 
 **NOTE**: This version has made a lot of changes to the namespace.  

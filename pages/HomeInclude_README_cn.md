@@ -6,8 +6,8 @@
 
 ### 2. 版本说明
 + 最新发行版本  
-  版本：1.2.0515   
-  构建时间：2023.05.15  
+  版本：2.1.1111   
+  构建时间：2023.11.11  
 + 更新日志  
   [查看更新日志](https://www.xuzhuoxi.com/RocketDriver-Docs/pages/Home_CHANGELOG_cn.html).  
 

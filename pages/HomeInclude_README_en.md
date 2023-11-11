@@ -6,8 +6,8 @@
 
 ### 2. Release Notes
 + latest release version  
-  Version: 1.2.0515   
-  Built on：2023.05.15  
+  Version: 2.1.1111   
+  Built on：2023.11.11  
 + changelog  
   [View Changelog](https://www.xuzhuoxi.com/RocketDriver-Docs/pages/Home_CHANGELOG_en.html).  
 

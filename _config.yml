@@ -4,8 +4,8 @@ show_downloads: true
 google_analytics: true
 theme: jekyll-theme-minimal
 
-version: '2.0.0810'
-build: '2023.08.10'
+version: '2.1.1111'
+build: '2023.11.11'
 
 author:
   name: XUZHUOXI

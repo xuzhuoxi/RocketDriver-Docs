@@ -1,5 +1,32 @@
 # RocketDriver Pro 更新日志
 
+## 版本 v2.1.1111(2023.11.11)
+
+### 新功能  
++ CodingMap: 基于Dictionary<string,object>的Key-Value结构，包含字节序列化与反序列化功能。  
++ CodingList: 基于List的Key-Value结构，包含字节序列化与反序列化功能。  
++ Editor: 增加一个查找Prefab是否包含Layer的工具。 
++ Editor: 增加 LoaderSettings、AudioSettings、I18NSettings、PreloadSettings 的右键菜单生成。
++ Animatorx: 增加两个随机动画处理器。
+
+### 更新&修改  
++ TransformUtil: 修改部分函数命名。
++ MetaObjectPool: 增加查找函数、增加删除指定元素的函数。
++ MetaGameObjectPool: 重写RemoveFirst和RemoveLast函数。
+
+### 修复问题  
++ VectorInt.Mul: 修复逻辑错误。
++ DataBuffer: 修复读取时的错误。优化读取数组相关函数。更新写入数组的逻辑。
++ DataTimex:  修复MonoTimer累计时间使用Time.deltaTime的问题，更改为Time.FixedDeltaTime.
+
+
+
+
+------
+
+
+
+
 ## 版本 v2.0.0810(2023.08.10)
 
 **注意**：本版本对的命名空间进行大量修改。  
