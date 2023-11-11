@@ -88,9 +88,9 @@ In the case of obtaining the bundle instance, the instance of the resource asset
 It is recommended to use synchronous functions for loading resource assets, and asynchronous functions are not recommended. The reason is that Unity does not support opening coroutines within coroutines friendly, and if there are too many layers (like 16 layers), unpredictable errors will appear.  
 
 The IAssetLoader interface functions are divided into four categories:  
-  + Single resource asset loading (sync|sync)  
+  + Single resource asset loading (sync|async)  
     ![image](assets/img/loader_12.png)   
-  + Batch resource asset loading (sync|sync)  
+  + Batch resource asset loading (sync|async)  
  ![image](assets/img/loader_13.png)   
   + Single sub-resource asset loading (sync|async)  
     ![image](assets/img/loader_14.png)   
